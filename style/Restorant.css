@@ -13,17 +13,21 @@ img{
     margin: 0px auto;
 }
 section{
+    position: relative;
     width: 350px;
     height: 500px;
     background-image: url(../img/Restorant/new_main01_01.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    vertical-align: bottom;
 }
-section>div{
+section div{
+    position: absolute;
+    top : 80%;
+    left: 50%;
+    transform : translate(-50%, -50%);
     color: white;
     font-weight: bolder;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
 }
