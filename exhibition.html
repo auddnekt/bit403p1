@@ -9,16 +9,6 @@
    <header>
 
    </header>
-       <button type="button" id="modal_open_btn">모달 창 열기</button>
-      <div id="modal">
-       <div class="modal_content">
-           <p>모달창</p>
-           <button type="button" id="modal_close_btn">창 닫기</button>
-       </div>
-       <div class="modal_layer"></div>
-    </div>
-
-<!--    컨텐츠 박스-->
    <section>
         <div id="wrap">
             //소분류 nav 박스
@@ -72,20 +62,9 @@
 
         </div>
    </section>
+   <div id="aa"></div>
     <footer>
 
     </footer>
-
-    <script>
-        document.getElementById("modal_open_btn").onclick =function(){
-          document.getElementById("modal").style.display = "block";
-        }
-        document.getElementById("modal_close_btn").onclick = function(){
-           document.getElementById("modal").style.display = "none";
-        }
-        document.getElementById("modal_layer").onclick = function(){
-            document.getElementById("modal").style.display = "none";
-        }
-    </script>
 </body>
 </html>
