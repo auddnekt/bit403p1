@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #efefef;
+    }
+
+    #spacer {
+      height: 50%;
+      width: 100%;
+      background: #ffffff;
+    }
+
+    #slides {
+      position: relative;
+      top: -175px;
+      width: 500px;
+      height: 350px;
+      margin: 0 auto;
+
+      user-select: none;
+    }
+
+    .slide {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 500px;
+      height: 350px;
+      background-color: #e0e0e0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      opacity: 0;
+
+      transition: transform 0.8s, opacity 0.8s;
+
+      transition-timing-function: cubic-bezier(.2, .7, .2, 1);
+
+      will-change: transform, opacity;
+      z-index: 1;
+      border-radius: 5px;
+      overflow: hidden;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    &::before {
+        content: '\2022 \2022 \2022';
+        color: #999;
+        font-size: 40px;
+        line-height: 30px;
+        padding-left: 8px;
+        letter-spacing: 2px;
+        display: block;
+        height: 30px;
+        background: linear-gradient(#ddd, #ccc);
+        background-clip: padding-box;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      }
+
+    img {
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
+      }
+
+
+    .slide-left {
+      transform: translateX(-320px) perspective(1000px) rotateY(45deg) scale(0.8);
+      opacity: 0.8;
+      z-index: 3;
+    }
+
+    .slide-center {
+      opacity: 1;
+      z-index: 5;
+    }
+
+    .slide-right {
+      transform: translateX(320px) perspective(1000px) rotateY(-45deg) scale(0.8);
+      opacity: 0.8;
+      z-index: 4;
+    }
+
+      .slide-left {
+        z-index: 4;
+      }
+
+      .slide-right {
+        z-index: 3;
+      }
+
+
+    .btn {
+      font-size: 50px;
+      color: #666666;
+      position: absolute;
+      top: 50%;
+      margin-top: -27px;
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    #btn-left {
+      left: 25px;
+    }
+
+    #btn-right {
+      right: 25px;
+    }
+    </style>
+    <script src = https://code.jquery.com/jquery-3.4.1.min.js></script>
+    <script>
+    (function($) {
+        var $slides = $(".slide"),
+        max = $slides.length - 1,
+        center = 1,
+        classNames = "",
+        animating = false;
+
+      $("#wrap").on("click", function(e) {
+        if (animating) return;
+
+        if (e.target.parentNode.className === "btn") {
+          animating = true;
+
+          switch (e.target.parentNode.id) {
+            case "btn-left":
+              center = rotate(center - 1, max);
+              $slides.parent().attr("class", "sliding-left");
+              break;
+            case "btn-right":
+              center = rotate(center + 1, max);
+              $slides.parent().attr("class", "sliding-right");
+              break;
+          }
+
+          $slides
+            .each(function(i) {
+              classNames = "slide";
+              switch (i) {
+                case rotate(center - 1, max):
+                  classNames += " slide-left";
+                  break;
+                case rotate(center, max):
+                  classNames += " slide-center";
+                  break;
+                case rotate(center + 1, max):
+                  classNames += " slide-right";
+                  break;
+              }
+              this.className = classNames;
+            })
+            .on("transitionend", function() {
+              animating = false;
+            });
+        }
+      });
+
+
+      function rotate(i, max) {
+        if (i < 0) return max;
+        if (i > max) return 0;
+        return i;
+  }
+})(jQuery);
+    </script>
+</head>
+<body>
+<div id="wrap">
+  <div id="spacer"></div>
+  <a class="btn" id="btn-left">''<i class="fa fa-chevron-left"></i></a>
+  <div id="slides">
+    <div class="slide slide-left"><img src="https://picsum.photos/500/350?image=28" alt=""/></div>
+    <div class="slide slide-center"><img src="https://picsum.photos/500/350?image=52" alt=""/></div>
+    <div class="slide slide-right"><img src="https://picsum.photos/500/350?image=82" alt=""/></div>
+  </div>
+  <a class="btn" id="btn-right">''<i class="fa fa-chevron-right"></i></a>
+</div>
+</body>
+</html>
