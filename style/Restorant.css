@@ -1,0 +1,29 @@
+{margin: 0px;}
+
+#wrap{
+
+}
+img{
+
+    padding: 0px;
+}
+.subdiv{
+    width: 1200px;
+
+    margin: 0px auto;
+}
+section{
+    width: 350px;
+    height: 500px;
+    background-image: url(../img/Restorant/new_main01_01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+}
+section>div{
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5em;
+    text-align: center;
+}
