@@ -16,10 +16,12 @@ section{
     position: relative;
     width: 350px;
     height: 500px;
-    background-image: url(../img/Restorant/new_main01_01.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+section.kor{
+        background-image: url(../img/Restorant/new_main01_01.jpg);
 }
 section div{
     position: absolute;
