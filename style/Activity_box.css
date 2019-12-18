@@ -1,0 +1,94 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+
+section ul li a {
+    color: black;
+    text-decoration: none;
+}
+/*컨텐츠 박스 640-1200*/
+
+.box_m{
+    position: relative;
+    border: 1px solid silver;
+    display: inline-block;
+    width: 33.33333%;
+    padding-top:46.35%;
+    float: left;
+    top: 100px;
+}
+
+.box_d {
+    display: inline-block;
+    width: 100%; height: 100%;
+    background-color: red;
+}
+
+.box_link{
+    width: 100%; height: 100%;
+}
+
+.box_img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.box_text_glass{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 70%;
+    width: 100%;
+    height: 30%;
+}
+.box_text_tree{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 80%; top:0%;
+    width: 20%;
+    height: 100%;
+}
+.box_text_couple{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 70%;
+    width: 100%;
+    height: 30%;
+}
+.box_text_back{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 70%;
+    width: 100%;
+    height: 30%;
+}
+.box_text_leviev{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 70%;
+    width: 100%;
+    height: 30%;
+}
+.box_text_cat{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 0px; bottom: 70%;
+    width: 100%;
+    height: 15%;
+}
+
+

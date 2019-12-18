@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+   <title>WE'RE inPLACE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- @일진 --><link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- @일진 --><script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- @일진 --><link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+	<!-- @일진 --><script type="text/javascript" src="js/jquery.mmenu.js"></script>
+	<!-- @일진 --><script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>
+
+    <!--<meta charset="UTF-8">
+    <title>Document</title>-->
     <link rel="stylesheet" href="style/Activity.css">
+    <link rel="stylesheet" href="style/Activity_box.css">
+    <link rel="stylesheet" href="style/exhibition_pc.css" media="all and (min-width:1200px)">
+    <link rel="stylesheet" href="style/exhibition_tablet.css" media="all and (min-width:640px) and (max-width:1199px)">
+    <link rel="stylesheet" href="style/exhibition_phone.css" media="screen and (max-width:639px)">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/Activity.js"></script>
 </head>
 <body>
+  <!--아래는 바디의 해드부분 시작부분 @일진 -->
+	  <div class="wrap3">
+	    <ul>
+	      <li><a href="test11.html">log in</a></li>
+	      <li><a href="./Signup.html">sign up</a></li>
+	    </ul>
+	  </div>
+	  <div class="wrap1"><a href="page_iljin.html">
+	    <img src="images/logo_2.jpg" alt="logo">
+		</a>
+	  </div>
+	  <hr color="silver">
+	  <div class="wrap2">
+	    <ul>
+	      <li><a href="#">all</a></li>
+	      <li><a href="#">cafe</a></li>
+	      <li><a href="./Restorant.html">restorant</a></li>
+	      <li><a href="./Pub&BAR.html">pub&bar</a></li>
+	      <li><a href="exhibition.html">exhibition</a></li>
+	      <li><a href="#">perform</a></li>
+	      <li><a href="#">activity</a></li>
+	    </ul>
+	  </div>
+	<div id="page">
+		<div id="header"> <!--모바일 왼쪽 메뉴바입니다 @일진 -->
+			<a class="navicon" href="#menu-left"> </a>
+		</div>
+
+		<nav id="menu-left">	<!--모바일 왼쪽 메뉴바입니다 @일진 -->
+			<ul>
+				<li><a href="test11.html"><img src="images/loginIcon.jpg" alt="log in" width="25px" >로그인을 후에 이용해주세요</a></li>
+				<li><a href="index.html">Cafe</a></li>
+				<li><a href="./Restorant.html">Restorant</a></li>
+				<li><a href="Pub&BAR.html">Pub&Bar</a></li>
+				<li><a href="exhibition.html">Exhibit</a></li>
+				<li><a href="about.html">Perform</a></li>
+				<li><a href="about.html">Activity</a></li>
+				<div class="clear"> </div>
+			</ul>
+		</nav>
+	</div>
    <header>
        <img src="img/header.jpg">
    </header>
+   <section>
+        <div id="wrap">
+<!--            //컨텐츠 박스-->
+            <div class="con_box">
+                <ul>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/Activity/glass.jpg" alt="와인잔그림"> <div class="box_text_glass"><h5>TREND NEW ACTIVITY</h5><br><h4>CRISTMAS PARTY</h4></div> </div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/Activity/tree.jpg" alt="야자수그림"><div class="box_text_tree"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/Activity/couple.jpg" alt="노부부그림"><div class="box_text_couple">INSERT TEXT</div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/Activity/back.jpg" alt="뒷모습그림"><div class="box_text_back">INSERT TEXT</div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/Activity/leviev.jpg" alt="목걸이그림"><div class="box_text_leviev">INSERT TEXT</div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/Activity/cat.jpg" alt="고양이그림"><div class="box_text_cat">INSERT TEXT</div></div></a></li>
+                </ul>
+            </div>
+            <br>
+        </div>
+    </section>
+
+ <!--      아코디언       -->
   <div style="height:5000px;"></div>
   <div id="acc">
     <h2>세부카테고리1</h2>
@@ -38,6 +109,8 @@
         </ul>
     </div>
     </div>
+
+    <!-- footer  --------------------------------- -->
     <footer>
     <div>
        <h3>in PLACE</h3>
