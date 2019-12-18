@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="style/exhibition_pc.css" media="all and (min-width:1200px)">
     <link rel="stylesheet" href="style/exhibition_tablet.css" media="all and (min-width:640px) and (max-width:1199px)">
     <link rel="stylesheet" href="style/exhibition_phone.css" media="screen and (max-width:639px)">
+    <style>
+        #map{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+    </style>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
@@ -42,7 +52,8 @@
                     <li class="box_m"><a class="box_link" href="https://www.naver.com/"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_img_1.png" alt="img1"> <div class="box_text">INSERT TEXT</div> </div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요1.png" alt="img2"></div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요3.png" alt="img3"></div></a></li>
-                    <li class="li_map"><a class="box_link" href="#"><div class="box_map">m</div></a></li>
+<!--                    <li class="li_map"><a class="box_link" href="#"><div class="box_map" id="map">m</div></a></li>-->
+                    <li class="li_map"><div class="box_map"><div id="map"></div></div></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요5.png" alt="img4"></div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요6.png" alt="img5"></div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요7.png" alt="img6"></div></a></li>
@@ -114,6 +125,40 @@
                 $("#modal").css("display","block");
             });
         });
+    </script>
+<!----------------------------    google map AIP--------------------------------->
+
+
+      <script>
+
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+
+        var contentString = '<div id="content">title</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          title: 'Uluru (Ayers Rock)'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy2Z0I3uHelbWqA71c1GX_jTFGcFqMhNw&callback=initMap">
     </script>
 <!-------------X--------------------모달 스크립트----------------X------------>
 </body>
