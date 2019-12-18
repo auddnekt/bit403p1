@@ -12,6 +12,10 @@
     <!--<meta charset="UTF-8">
     <title>Document</title>-->
     <link rel="stylesheet" href="style/Activity.css">
+    <link rel="stylesheet" href="style/Activity_box.css">
+    <link rel="stylesheet" href="style/exhibition_pc.css" media="all and (min-width:1200px)">
+    <link rel="stylesheet" href="style/exhibition_tablet.css" media="all and (min-width:640px) and (max-width:1199px)">
+    <link rel="stylesheet" href="style/exhibition_phone.css" media="screen and (max-width:639px)">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/Activity.js"></script>
 </head>
@@ -60,6 +64,24 @@
    <header>
        <img src="img/header.jpg">
    </header>
+   <section>
+        <div id="wrap">
+<!--            //컨텐츠 박스-->
+            <div class="con_box">
+                <ul>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/img6.jpg" alt="img1"> <div class="box_text">INSERT TEXT</div> </div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/img6.jpg" alt="img2"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/img6.jpg" alt="img3"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/img6.jpg" alt="img4"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/img6.jpg" alt="img5"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/img6.jpg" alt="img6"></div></a></li>
+                </ul>
+            </div>
+            <br>
+        </div>
+    </section>
+
+ <!--      아코디언       -->
   <div style="height:5000px;"></div>
   <div id="acc">
     <h2>세부카테고리1</h2>
@@ -87,6 +109,8 @@
         </ul>
     </div>
     </div>
+
+    <!-- footer  --------------------------------- -->
     <footer>
     <div>
        <h3>in PLACE</h3>

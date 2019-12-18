@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    /*컨텐츠박스*/
+    $('.box_m>')
+
+
+    /*---------+---------------+----------*/
+
+    /*아코디언*/
     $('h2+div').css({
         'padding':'20px 0px'
         ,'width':'80%'
@@ -16,6 +23,7 @@ $(document).ready(function(){
             $this.next('div').slideDown();
         }
     });
+   /* --------+---------------+--------*/
 
 /*    var floatPosition=parseInt($('#background').css('top'));
     $(window).scroll(function(){
@@ -25,12 +33,15 @@ $(document).ready(function(){
         'top':newPosition},600);
     }).scroll();*/
 
+
+    /*slide효과*/
     var footer_floatPosition=parseInt($('footer').css('top'));
     $(window).scroll(function(){
         var footer_scrollTop=$(window).scrollTop();
         var footer_newPosition=footer_scrollTop
                                 +footer_floatPosition+'px';
     $('footer').stop().animate({
-        'top':footer_newPosition},600);
+        'top':footer_newPosition},200);
     }).scroll();
+    /*--------+----------+---------*/
 });
