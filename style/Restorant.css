@@ -9,34 +9,30 @@ img{
 }
 nav{
     margin: 0px auto 50px auto;
-    width : 1062px;
+    width : 1050px;
     text-align: center;
-
 }
 section{
     margin: 0px auto;
-    width: 1045.5px;
+    width: 1050px;
 }
 article{
-    display: inline-block;
     position: relative;
-    width: 350px;
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    padding-top: 48%;
+    border: 1px solid silver;
+    width: 32.5%;
     display: none;
-    margin: -1.7px -2.8px;
 }
-article.kor{
-        background-image: url(/img/Restorant/new_main01_01.jpg);
+img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
 }
-article.cha{
-        background-image: url(/img/Restorant/new_photo-1500217052183-bc01eee1a74e.jpg);
-}
-article.wes{
-        background-image: url(/img/Restorant/new_photo-1543007630-9710e4a00a20.jpg);
-}
+
 article div{
     position: absolute;
     top : 80%;
@@ -44,6 +40,48 @@ article div{
     transform : translate(-50%, -50%);
     color: white;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 200%;
     text-align: center;
+}
+
+@media all and (max-width:639px){
+    .subdiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+    nav{
+        width:100%;
+    }
+    section{
+        width:100%;
+    }
+    article{
+    border: 1px solid silver;
+    width: 49%;
+    }
+    article>div{
+        font-size: 150%;
+    }
+}
+@media all and (min-width:640px) and (max-width:1199px){
+    .subdiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+    nav{
+        width:100%;
+    }
+    section{
+        width:100%;
+    }
+    article>div{
+        font-size: 200%;
+    }
+
+}
+@media all and (min-width:1200px){
+    .subdiv{
+        width: 90%;
+        margin: 0px auto;
+    }
 }
