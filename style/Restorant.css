@@ -27,13 +27,13 @@ article{
     display: none;
 }
 article.kor{
-        background-image: url(../img/Restorant/new_main01_01.jpg);
+        background-image: url(/img/Restorant/new_main01_01.jpg);
 }
 article.cha{
-        background-image: url(../img/Restorant/new_photo-1500217052183-bc01eee1a74e.jpg);
+        background-image: url(/img/Restorant/new_photo-1500217052183-bc01eee1a74e.jpg);
 }
 article.wes{
-        background-image: url(../img/Restorant/new_photo-1543007630-9710e4a00a20.jpg);
+        background-image: url(/img/Restorant/new_photo-1543007630-9710e4a00a20.jpg);
 }
 article div{
     position: absolute;
