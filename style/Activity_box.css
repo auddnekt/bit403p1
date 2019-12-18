@@ -37,13 +37,58 @@ section ul li a {
     width: 100%;
     height: 100%;
 }
-.box_text{
+.box_text_glass{
     color: white;
+    background-color: black;
     position: absolute;
     left: 0px;
-    top: 50%;
+    top: 70%;
     width: 100%;
-    height: 50%;
+    height: 30%;
+}
+.box_text_tree{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 80%; top:0%;
+    width: 20%;
+    height: 100%;
+}
+.box_text_couple{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 70%;
+    width: 100%;
+    height: 30%;
+}
+.box_text_back{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 70%;
+    width: 100%;
+    height: 30%;
+}
+.box_text_leviev{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 70%;
+    width: 100%;
+    height: 30%;
+}
+.box_text_cat{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 0px; bottom: 70%;
+    width: 100%;
+    height: 15%;
 }
 
 

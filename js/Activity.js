@@ -25,13 +25,13 @@ $(document).ready(function(){
     });
    /* --------+---------------+--------*/
 
-/*    var floatPosition=parseInt($('#background').css('top'));
+    var floatPosition=parseInt($('#acc').css('top'));
     $(window).scroll(function(){
         var scrollTop=$(window).scrollTop();
         var newPosition=scrollTop+floatPosition+'px';
-    $('#background').stop().animate({
-        'top':newPosition},600);
-    }).scroll();*/
+    $('#acc').stop().animate({
+        'top':newPosition},200);
+    }).scroll();
 
 
     /*slide효과*/
