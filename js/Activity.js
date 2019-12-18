@@ -17,13 +17,13 @@ $(document).ready(function(){
         }
     });
 
-    var floatPosition=parseInt($('#acc').css('top'));
+/*    var floatPosition=parseInt($('#background').css('top'));
     $(window).scroll(function(){
         var scrollTop=$(window).scrollTop();
         var newPosition=scrollTop+floatPosition+'px';
-    $('#acc').stop().animate({
+    $('#background').stop().animate({
         'top':newPosition},600);
-    }).scroll();
+    }).scroll();*/
 
     var footer_floatPosition=parseInt($('footer').css('top'));
     $(window).scroll(function(){
