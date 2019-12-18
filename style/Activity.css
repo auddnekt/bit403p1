@@ -7,11 +7,21 @@ h2{
     background-color: white;
 }
 #acc{
+    position:absolute;
     border:1px solid silver;
     width:80%;
     text-align: center;
+    left:120px; top:550px;
 }
 div{
     margin: 0 auto;
     border: 2px solid blue;
+}
+ul{
+    padding:0px; margin: 0px;
+}
+ul li{
+    list-style-type: none;
+    font-size: 16px;
+    padding:0px; margin-bottom: 5px;
 }

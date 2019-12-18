@@ -14,7 +14,14 @@ $(document).ready(function(){
                 .hide();
             $this.css('background-color','violet');
             $this.next('div').slideDown();
-
         }
     });
-})
+
+    var floatPosition=parseInt($('#acc').css('top'));
+    $(window).scroll(function(){
+        var scrollTop=$(window).scrollTop();
+        var newPosition=scrollTop+floatPosition+'px';
+    $('#acc').stop().animate({
+        'top':newPosition},600);
+    }).scroll();
+});
