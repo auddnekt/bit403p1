@@ -24,4 +24,13 @@ $(document).ready(function(){
     $('#acc').stop().animate({
         'top':newPosition},600);
     }).scroll();
+
+    var footer_floatPosition=parseInt($('footer').css('top'));
+    $(window).scroll(function(){
+        var footer_scrollTop=$(window).scrollTop();
+        var footer_newPosition=footer_scrollTop
+                                +footer_floatPosition+'px';
+    $('footer').stop().animate({
+        'top':footer_newPosition},600);
+    }).scroll();
 });
