@@ -1,0 +1,20 @@
+/*컨텐츠 박스 640-*/
+.con_box{
+    margin: auto;
+    width: 87%;
+}
+.box_m{
+    border: 1px solid silver;
+    display: inline-block;
+    width: 50%;
+    padding-top:46.35%;
+    float: left;
+}
+
+.li_map{
+    border: 1px solid silver;
+    display: none;
+    width: 66.66666%;
+    padding-top:46.35%;
+    float: left;
+}

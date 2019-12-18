@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style/exhibition.css">
+    <link rel="stylesheet" href="style/exhibition_pc.css" media="all and (min-width:1200px)">
+    <link rel="stylesheet" href="style/exhibition_tablet.css" media="all and (min-width:640px) and (max-width:1199px)">
+    <link rel="stylesheet" href="style/exhibition_phone.css" media="screen and (max-width:639px)">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
    <header>
@@ -34,21 +39,21 @@
 <!--            //컨텐츠 박스-->
             <div class="con_box">
                 <ul>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d">1</div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d">2</div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d">3</div></a></li>
-                    <li class="li_map"><a class="box_link" href="#"><div class="box_map">map</div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d">4</div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d">5</div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d">6</div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d">7</div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d">8</div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d">9</div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d">0</div></a></li>
+                    <li class="box_m"><a class="box_link" href="https://www.naver.com/"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_img_1.png" alt="img1"> <div class="box_text">INSERT TEXT</div> </div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요1.png" alt="img2"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요3.png" alt="img3"></div></a></li>
+                    <li class="li_map"><a class="box_link" href="#"><div class="box_map">m</div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요5.png" alt="img4"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요6.png" alt="img5"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요7.png" alt="img6"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요8.png" alt="img7"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요9.png" alt="img8"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요10.png" alt="img9"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요11.png" alt="img10"></div></a></li>
                 </ul>
             </div>
-<!--
             <br>
+<!--
             //검색
             <div class="search">
                 <form class="search_frm">
@@ -56,15 +61,60 @@
                      <input type="text" class="search_box">
                 </form>
             </div>
--->
             <br>
+-->
             //페이지 넘김
 
         </div>
-   </section>
-   <div id="aa"></div>
+    </section>
+    <!---------------------------X--------------------------박스-----------------------------X----------------------------->
+
+    <!----------------------------모달창----------------------------->
+    <div class="modal" id="modal">
+
+
+        <div class="modal_content">
+            <div class="modal_img_box"><img src="img/exhibition/exhibition_img_1-1.jpg" alt="exhibition1_img" class="modal_inner_img"></div>
+            <div class="modal_text_box">
+                <p>Artist : kim kee tea</p>
+                <p>Title : 2019 5th </p>
+            </div>
+            <div class="modal_text_box2">
+                <p></p>
+            </div>
+            <button type="button" id="modal_link_btn" class="modal_link_btn"><a href="#">공식페이지 바로가기</a></button>
+            <button type="button" id="modal_close_btn" class="modal_close_btn">닫기</button>
+        </div>
+
+        <div class="modal_layer"></div>
+    </div>
+    <!---------------X------------모달창-------------X--------------->
+
+
+
+    <!----------------------------푸터----------------------------->
     <footer>
 
     </footer>
+    <!---------------X------------푸터--------------X-------------->
+
+
+
+<!---------------------------------모달 스크립트------------------------------->
+   <!---.box_link 중에 클릭시 선택된 $this를 가지고 모달창을 선택하도록 구성--->
+    <script>
+        $("#modal_close_btn").click(function(){
+           $("#modal").css("display","none");
+        });
+        $(".box_link").each(function(){
+            $this = $(this);
+            $this.click(function(event){
+                event.preventDefault();
+                $this
+                $("#modal").css("display","block");
+            });
+        });
+    </script>
+<!-------------X--------------------모달 스크립트----------------X------------>
 </body>
 </html>
