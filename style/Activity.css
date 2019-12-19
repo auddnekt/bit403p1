@@ -1,5 +1,4 @@
 body{
-    width: 1280px;
     background-image: url("../img/Activity/snow.jpg");
     background-color:rgb(255,255,255,0.2);
     background-repeat: repeat-y;
@@ -13,7 +12,7 @@ h2{
     width:100%; height:50px;
     position: relative;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 21px;
     font-family: Franklin Gothic;
 }
 #acc{
@@ -71,54 +70,3 @@ h2{
     font-family: Franklin Gothic;
 }
 
-
-/*footer*/
-footer{
-        clear: both;
-        position: absolute;
-        bottom: 0; top:750px;
-        width: 100%;
-        height: 170px;
-        border: 0px;
-        background-color: #535353;
-        color: white;
-    }
-    h3{
-        font-family: impact;
-        font-size: 40px;
-        margin: 20px 0px 0px 40px;
-    }
-    p{
-        font-family: Franklin Gothic;
-        font-size: 13px;
-        margin: 0 0 10px 40px;
-    }
-    .info{
-        font-size: 15px;
-        font-family: Franklin Gothic;
-        margin: 25px 0 10px 40px;
-    }
-    #about, #project, #contact, #qna{
-        display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 30px;
-        font-family: Franklin Gothic;
-        font-size: 20px;
-    }
-    #about{
-        right: 400px;
-    }
-    #project{
-        right: 280px;
-    }
-    #contact{
-        right: 160px;
-    }
-    #qna{
-        right: 80px;
-    }
-    footer div a{
-        text-decoration: none;
-        color: white;
-    }
