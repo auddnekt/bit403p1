@@ -12,11 +12,9 @@
         font-size: 16px;
         padding: 0 5px;
         display: inline-block;
-
         position: absolute;
         bottom: 90px !important;
         right : 80px;
-
     }
     #abc ul{
         padding: 0 !important;
