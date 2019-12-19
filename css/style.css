@@ -1023,15 +1023,13 @@ height: auto;
   }
 
   hr{
-    position: relative;
-    top: -1000px;
-  width: 100%
+    display: none;
   }
 
   div.wrap2 a{padding: 0px;
     padding-left: 10px;
     position: relative;
-    left: -5000px;
+    display: none;
   }
 
   div.wrap1{
@@ -1045,7 +1043,7 @@ height: auto;
   div.wrap3{
     /* display: inline-block; */
     position: absolute;
-    right: -5000px;
+    display: none;
   }
   div.wrap3 a{
     background-color: #D9D9D6;
@@ -1055,7 +1053,7 @@ height: auto;
   width: 150px;
   height: auto;
   }
-#abc{
+#disapear{
   display: none;
 }
 
