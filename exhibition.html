@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/exhibition_pc.css" media="all and (min-width:1200px)">
     <link rel="stylesheet" href="style/exhibition_tablet.css" media="all and (min-width:640px) and (max-width:1199px)">
     <link rel="stylesheet" href="style/exhibition_phone.css" media="screen and (max-width:639px)">
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
@@ -42,7 +43,7 @@
                     <li class="box_m"><a class="box_link" href="https://www.naver.com/"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_img_1.png" alt="img1"> <div class="box_text">INSERT TEXT</div> </div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요1.png" alt="img2"></div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요3.png" alt="img3"></div></a></li>
-                    <li class="li_map"><a class="box_link" href="#"><div class="box_map">m</div></a></li>
+                    <li class="li_map"><div class="box_map"><div class="map" id="map"></div></div></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요5.png" alt="img4"></div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요6.png" alt="img5"></div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요7.png" alt="img6"></div></a></li>
@@ -71,8 +72,6 @@
 
     <!----------------------------모달창----------------------------->
     <div class="modal" id="modal">
-
-
         <div class="modal_content">
             <div class="modal_img_box"><img src="img/exhibition/exhibition_img_1-1.jpg" alt="exhibition1_img" class="modal_inner_img"></div>
             <div class="modal_text_box">
@@ -83,6 +82,7 @@
                 <p></p>
             </div>
             <button type="button" id="modal_link_btn" class="modal_link_btn"><a href="#">공식페이지 바로가기</a></button>
+<!--            <div class="map_container">.map</div>-->
             <button type="button" id="modal_close_btn" class="modal_close_btn">닫기</button>
         </div>
 
@@ -114,6 +114,55 @@
                 $("#modal").css("display","block");
             });
         });
+    </script>
+
+<!----------------------------    google map AIP--------------------------------->
+   <script>
+
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+
+      function initMap() {
+            var center_m = {lat: 37.564280, lng: 126.973779};
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: center_m
+        });
+
+            function addMarker(posit){
+                var marker = new google.maps.Marker({
+                position: posit.pos,
+                map: map
+                });
+
+                if(posit.content){
+                    var infowindow = new google.maps.InfoWindow({
+                        content: posit.content
+                    });
+                    marker.addListener('click', function() {
+                        infowindow.open(map, marker);
+                    });
+                }
+            }
+
+          var markers=[];
+          function append_markers(la,ln,con){
+              markers.push({pos:{lat:la,lng:ln},content:'<div>'+con+'</div>'});
+          }
+
+          append_markers(37.579528,126.980315,'현대미술관 경복궁');
+          append_markers(37.564280,126.973779,'서울시립미술관');
+
+          for(let i=0; i<markers.length;i++) {
+              addMarker(markers[i]);
+          }
+//          markers.push();  매개변수로 pos:{lat: ,lng:  }, content:'설명' 형식으로 주면 자동으로 마커와 설명이 추가된다.
+
+
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy2Z0I3uHelbWqA71c1GX_jTFGcFqMhNw&callback=initMap">
     </script>
 <!-------------X--------------------모달 스크립트----------------X------------>
 </body>
