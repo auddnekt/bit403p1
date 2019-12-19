@@ -1055,7 +1055,9 @@ height: auto;
   width: 150px;
   height: auto;
   }
-
+#abc{
+  display: none;
+}
 
   .wrap {
 		width:80%;
