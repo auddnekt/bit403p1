@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/login_phone.css" media="screen and (min-width:360px) and (max-width:639px)">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="logo">
+            <a id="login_logo_link" href="#"><img id="logoin_logo" src="images/logo_2.jpg" alt="to_main"></a>
+        </div>
+        <div class="login_box">
+           <form>
+           <div class="login_id">
+              <label for="name" class="name">ID</label>
+              <br>
+               <input type="text" id="name" class="name">
+           </div>
+           <div class="login_pw">
+               <label for="pw" class="pw">PASSWORD</label>
+               <br>
+               <input type="text" id="pw" class="pw">
+           </div>
+           <input type="submit" value="로그인">
+           </form>
+           <button type="button" id="find_pw">패스워드 찾기</button>
+           <a href="#" class="signup_btn">회원가입</a>
+        </div>
+    </div>
+    <script>
+        $("#login_logo").on("mouseover",function(){
+            $(this).attr("src","images/logo_1.jpg");
+        })
+    </script>
+</body>
+</html>

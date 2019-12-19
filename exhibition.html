@@ -9,11 +9,57 @@
     <link rel="stylesheet" href="style/exhibition_tablet.css" media="all and (min-width:640px) and (max-width:1199px)">
     <link rel="stylesheet" href="style/exhibition_phone.css" media="screen and (min-width:360px) and (max-width:639px)">
 
+    <!-- @일진 --><link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- @일진 --><script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- @일진 --><link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+	<!-- @일진 --><script type="text/javascript" src="js/jquery.mmenu.js"></script>
+	<!-- @일진 --><script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
    <header>
+<div class="wrap3">
+	    <ul>
+	      <li><a href="test11.html">log in</a></li>
+	      <li><a href="./Signup.html">sign up</a></li>
+	    </ul>
+	  </div>
+	  <div class="wrap1"><a href="page_iljin.html">
+	    <img src="images/logo_1.jpg" alt="logo">
+		</a>
+	  </div>
+	  <hr color="silver">
+	  <div class="wrap2">
+	    <ul>
+	      <li><a href="#">all</a></li>
+	      <li><a href="#">cafe</a></li>
+	      <li><a href="./Restorant.html">restorant</a></li>
+	      <li><a href="./Pub&BAR.html">pub&bar</a></li>
+	      <li><a href="exhibition.html">exhibition</a></li>
+	      <li><a href="#">perform</a></li>
+	      <li><a href="#">activity</a></li>
+	    </ul>
+	  </div>
+	<div id="page">
+		<div id="header"> <!--모바일 왼쪽 메뉴바입니다 @일진 -->
+			<a class="navicon" href="#menu-left"> </a>
+		</div>
 
+		<nav id="menu-left">	<!--모바일 왼쪽 메뉴바입니다 @일진 -->
+			<ul>
+				<li><a href="test11.html"><img src="images/loginIcon.jpg" alt="log in" width="25px" >로그인을 후에 이용해주세요</a></li>
+				<li><a href="index.html">Cafe</a></li>
+				<li><a href="./Restorant.html">Restorant</a></li>
+				<li><a href="Pub&BAR.html">Pub&Bar</a></li>
+				<li><a href="exhibition.html">Exhibit</a></li>
+				<li><a href="about.html">Perform</a></li>
+				<li><a href="about.html">Activity</a></li>
+				<div class="clear"> </div>
+			</ul>
+		</nav>
+	</div>
+	<!--위쪽까지가 바디의 해드부분 끝부분입니다 @일진 -->
    </header>
    <section>
         <div id="wrap">
@@ -40,8 +86,8 @@
 <!--            //컨텐츠 박스-->
             <div class="con_box">
                 <ul>
-                    <li class="box_m"><a class="box_link" href="https://www.naver.com/"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_img_1.png" alt="img1"> <div class="box_text">INSERT TEXT</div> </div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요1.png" alt="img2"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="https://www.naver.com/"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_box_1.jpg" alt="img1"> <div class="box_text"></div> </div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_box_2.gif" alt="img2"></div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요3.png" alt="img3"></div></a></li>
                     <li class="li_map"><div class="box_map"><div class="map" id="map"></div></div></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요5.png" alt="img4"></div></a></li>
@@ -73,20 +119,20 @@
     <!----------------------------모달창----------------------------->
     <div class="modal" id="modal">
         <div class="modal_content">
-            <div class="modal_img_box"><img src="img/exhibition/exhibition_img_1-1.jpg" alt="exhibition1_img" class="modal_inner_img"></div>
+            <div class="modal_img_box"><img src="img/exhibition/exhibition_1.jpg" alt="exhibition1_img" class="modal_inner_img" id="modal_inner_img"></div>
             <div class="modal_text_box">
-                <p>Artist : kim kee tea</p>
-                <p>Title : 2019 5th </p>
+                <p>Artist : <span id="modal_artist_name">KIM KEE TEA</span></p>
+                <p>Title : <span id="modal_exhibition_title">UNKNOWN ARTIST &#45; DEX 5TH 19</span></p>
                 <p>Comment : </p>
-                <p>작자미상 &#40;UNKOWN ARTIST&#41; &#45; 이 글과 작품들은 언제 어디서 누구에 의해 제작되었는지 알려져 있지 않다.
+                <p id="modal_content_detail">작자미상 &#40;UNKOWN ARTIST&#41; &#45; 이 글과 작품들은 언제 어디서 누구에 의해 제작되었는지 알려져 있지 않다.
   나는 종종 박물관에서 어느 유물을 보며 '이것이 정말 알려진 그 용도였을까 어쩌면 알려진 바와는 전혀 다른 어떤 것은 아니었을까' 하는 호기심이 일기도 한다. </p>
             </div>
             <div class="modal_text_box2">
-                <div class="text_box2_con"><p>Dec 5. 2019  - Jan 4. 2020</p></div>
-                <div class="text_box2_con"><p>Monday-Saturday 10:00 am – 6:00 pm</p></div>
-                <div class="text_box2_con"><p> 3, Sapyeong-daero 20-gil, Seocho-gu , Seoul, Korea 06576</p></div>
+                <div class="text_box2_con"><p class="modal_text_t">Day.</p><p id="modal_day_begin">Dec 5. 2019</p><p id="modal_day_end">&#45; Jan 4. 2020</p></div>
+                <div class="text_box2_con"><p class="modal_text_t">Time.</p><p id="modal_time_begin">Monday&#45;Saturday </p> <p id="modal_time_end">10:00 am &#45; 6:00 pm</p></div>
+                <div class="text_box2_con_addr"><p class="modal_text_t">Place.</p><p id="modal_addr"> 3, Sapyeong&#45;daero 20&#45;gil, Seocho&#45;gu , Seoul, Korea 06576</p></div>
             </div>
-            <a href="#" id="modal_link_btn" class="modal_link_btn">공식페이지 바로가기</a>
+            <a href="http://www.gallerymark.kr/pages/current.php" id="modal_link_btn" class="modal_link_btn">공식페이지 바로가기</a>
 <!--            <div class="map_container">.map</div>-->
             <button type="button" id="modal_close_btn" class="modal_close_btn">닫기</button>
         </div>
@@ -122,6 +168,7 @@
                 $("#modal").css("display","block");
             });
         });
+
     </script>
 
 <!----------------------------    google map AIP--------------------------------->
@@ -158,7 +205,9 @@
               markers.push({pos:{lat:la,lng:ln},content:'<div>'+con+'</div>'});
           }
 
+          append_markers(37.499100, 126.997199,'김기태 전');
           append_markers(37.579528,126.980315,'현대미술관 경복궁');
+          append_markers(37.532877, 126.963419,'백악기 공룡의전설')
           append_markers(37.564280,126.973779,'서울시립미술관');
 
           for(let i=0; i<markers.length;i++) {

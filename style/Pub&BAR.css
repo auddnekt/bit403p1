@@ -14,16 +14,29 @@
             margin: 0px auto;
             text-align: center;
         }
-        article{
+        #art1 article, #art2 article{
             position: relative;
             display: inline-block;
             float: left;
             padding-top: 50%;
-
             width: 32.5%;
 
         }
-        img{
+        #art1 img, #art2 img{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        #M4 article, #M5 article, #M6 article{
+            position: relative;
+            display: inline-block;
+            float: left;
+            padding-top: 50%;
+            width: 97%;
+        }
+        #M4 img, #M5 img, #M6 img{
             position: absolute;
             left: 0px;
             top: 0px;
@@ -31,7 +44,7 @@
             height: 100%;
         }
 
-        article div{
+        #art1 div, #art2 div{
             position: absolute;
             top : 80%;
             left: 50%;
@@ -40,6 +53,15 @@
             font-weight: bolder;
             font-size: 2em;
             text-align: center;
+        }
+        #M4 div{
+            position: absolute;
+            top : 50%;
+            left: 20%;
+            color: black;
+            font-weight: bolder;
+            font-size: 120%;
+            transform : translate(-50%, -50%);
         }
     a, a:link, a:visited {
         text-decoration:none;
@@ -141,9 +163,9 @@
     .buttonList li a {
         color: black;
         }
-#M1, #M2, #M3{
+    #art2, #M1, #M2, #M3, #M4, #M5, #M6{
     display: none;
-}
+    }
 
 @media all and (max-width:639px){
     .subdiv{
