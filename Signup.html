@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style/Signup.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/Activity_footerM.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/Signup.js"></script>
 </head>
 <body>
-    <div id="logo"><img src="images/logo_2.jpg" alt="logo"></div>
-
         <div class="sign">
+        <div id="logo">in PLACE</div>
         <section>
         <label for="id">아이디</label><br>
         <input type="text" id="id" name="sign" maxlength="8">
         <input type="button" id="id_check" name="sign" value="중복확인"><br>
         <label for="pw">비밀번호</label><br>
-        <input type="pw" id="pw" name="sign" maxlength="12"><br>
-        <label for="chpw">비밀번호 재확인</label><br>
-        <input type="text" id="chpw" name="sign"><br>
+        <input type="pw" id="pw" class="pw_class" name="sign" maxlength="12"><br>
+        <label for="pw_check">비밀번호 재확인</label><br>
+        <input type="text" id="pw_check" class="pw_class" name="sign"><br>
+        <div id="pw_mismatched">비밀번호가 일치하지 않습니다</div>
         <label for="name">이름</label><br>
         <input type="text" id="name" name="sign"><br>
         <label>생년월일</label><br>
@@ -39,20 +43,37 @@
         <input type="text" id="day" name="sign" value="일"><br>
         <div id="gender">
         <label>성별</label>
-        <input type="radio" id="male" value="남자" checked="checked">남자
-        <input type="radio" id="female" value="여자">여자
-        <input type="radio" id="others" value="기타">기타<br>
+        <input type="radio" id="male" name="gender" value="남자" checked="checked">남자
+        <input type="radio" id="female" name="gender" value="여자">여자
+        <input type="radio" id="others" name="gender" value="기타">기타<br>
         </div>
         <label>전화번호</label><br>
         <input type="text" id="phone" name="sign">
         <input type="button" id="phone_check" value="인증번호받기"><br>
         <input type="text" id="input_check" value="인증번호를 입력하세요">
 
-        <div id="div_sign"><a href="#"><img src="img/img6.jpg" alt="회원가입" id="img_sign"></a><br></div>
-
+        <div id="div_sign"><a href="page_iljin.html">회원가입</a></div>
         </section>
         </div>
 
+    <!--<footer>
+    <div>
+       <h3>in PLACE</h3>
+       <p>ⓒ 2019 BITCAMP</p>
+   </div>
+   <div class="info">
+     Tel. 000-0000-0000  |  Fax. 0000-0000-0000  |  bitcamp403@bitcamp.com<br>
+     Gangnamdaero 459, Seocho-gu, Seoul, Korea  |  business license number. 000-00-00000
+   </div>
+    <div id="abc">
+    <ul>
+        <li id="about"><a href="#">ABOUT</a></li>
+        <li id="project"><a href="#">PROJECT</a></li>
+        <li id="contact"><a href="#">CONTACT</a></li>
+        <li  id="qna"><a href="#">Q&A</a></li>
+    </ul>
+    </div>
+    </footer>-->
 
 
 

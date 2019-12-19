@@ -1,10 +1,16 @@
-body{
+@font-face{
+    font-family:'Franklin Gothic';
+}
+/*body{
     background-image: url("../img/Activity/snow.jpg");
     background-color:rgb(255,255,255,0.2);
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size:cover;
     background-position: center 40%;
+}*/
+body{
+    font-family: franklin gothic;
 }
 /*아코디언*/
 h2{
@@ -69,7 +75,7 @@ h2{
 }
 .sub_c p{
     padding: 0px;
-    margin: 50px;
+    margin: 20px;
     font-size: 15px;
     font-family: Franklin Gothic;
 }
