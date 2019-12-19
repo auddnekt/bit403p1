@@ -1,0 +1,184 @@
+    html {
+        width:100%; height: 100%; overflow-y: scroll;
+    }
+#wrap{
+
+        }
+        .subdiv{
+            width: 1200px;
+            margin: 0px auto;
+        }
+
+        nav{
+            width: 1062px;
+            margin: 0px auto;
+            text-align: center;
+        }
+        article{
+            position: relative;
+            display: inline-block;
+            float: left;
+            padding-top: 50%;
+
+            width: 32.5%;
+
+        }
+        img{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        article div{
+            position: absolute;
+            top : 80%;
+            left: 50%;
+            transform : translate(-50%, -50%);
+            color: white;
+            font-weight: bolder;
+            font-size: 2em;
+            text-align: center;
+        }
+    a, a:link, a:visited {
+        text-decoration:none;
+        }
+    ul {
+        list-style-type: none;
+        }
+
+    .brandVisual{
+                position: relative; width: 800px;
+                margin: 0 auto;
+                overflow:hidden;
+                height: 500px;
+                }
+    .brandVisual ul {
+                    position: relative; float: left;
+                    width: 100%; height: 500px;
+                    }
+    .brandVisual li {
+                    position: absolute; width: 100%;
+                    height: 600px;
+                    }
+    .brandVisual li a {
+        display:block;
+        }
+    #M1 .brandVisual .visual_0 {
+        left: 0px ;
+        background: url('../img/POB&BAR/background/photo-1487088678257-3a541e6e3922.jpg')50% 0 no-repeat;
+        }
+
+    #M1 .brandVisual .visual_1 {
+        left: 100% ; background: url('../img/POB&BAR/background/photo-1495195129352-aeb325a55b65.jpg') 50% 0 no-repeat;
+        }
+
+    #M1 .brandVisual .visual_2 {
+        left: 200% ; background: url('../img/POB&BAR/background/photo-1513151233558-d860c5398176.jpg') 50% 0 no-repeat;
+        }
+    #M1 .brandVisual .visual_3 {
+        left: 300% ; background: url('../img/POB&BAR/background/photo-1558980664-4d79c6e77b93.jpg') 50% 0 no-repeat;
+        }
+    #M2 .brandVisual .visual_0 {
+        left: 0px ; background: url('../img/POB&BAR/background/photo-1558981806-ec527fa84c39.jpg') 50% 0 no-repeat;
+        }
+
+    #M2 .brandVisual .visual_1 {
+        left: 100% ; background: url('../img/POB&BAR/background/photo-1495195129352-aeb325a55b65.jpg') 50% 0 no-repeat;
+        }
+
+    #M2 .brandVisual .visual_2 {
+        left: 200% ; background: url('../img/POB&BAR/background/photo-1513151233558-d860c5398176.jpg') 50% 0 no-repeat;
+        }
+    #M2.brandVisual .visual_3 {
+        left: 300% ; background: url('../img/POB&BAR/background/photo-1558980664-4d79c6e77b93.jpg') 50% 0 no-repeat;
+        }
+    #M3 >.brandVisual .visual_0 {
+        left: 0px ; background: url('../img/POB&BAR/background/photo-1495195129352-aeb325a55b65.jpg') 50% 0 no-repeat;
+        }
+
+    #M3 .brandVisual .visual_1 {
+        left: 100% ; background: url('../img/POB&BAR/background/photo-1487088678257-3a541e6e3922.jpg') 50% 0 no-repeat;
+        }
+
+    #M3 .brandVisual .visual_2 {
+        left: 200% ; background: url('../img/POB&BAR/background/photo-1513151233558-d860c5398176.jpg') 50% 0 no-repeat;
+        }
+    #M3 .brandVisual .visual_3 {
+        left: 300% ; background: url('../img/POB&BAR/background/photo-1558980664-4d79c6e77b93.jpg') 50% 0 no-repeat;
+        }
+
+
+    .buttonList:after {
+        content:"";
+        display: block; clear: both;
+        }
+
+    .buttonList li {
+        cursor:pointer;
+        }
+
+    .buttonList{
+        position: relative;
+        width: 800px;
+        margin: 0px auto;
+        }
+        .buttonList li{
+            background-color: rgba(0,0,0,0.3);
+            width: 195px;
+            float: left;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bolder;
+            position: relative;
+            bottom: 33px
+        }
+    .buttonList li.on {
+        background-position: 0 0 ;
+        }
+
+    .buttonList li a {
+        color: black;
+        }
+#M1, #M2, #M3{
+    display: none;
+}
+
+@media all and (max-width:639px){
+    .subdiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+    nav{
+        width:100%;
+    }
+    section{
+        width:100%;
+    }
+    article>div{
+        font-size: 150%;
+    }
+}
+@media all and (min-width:640px) and (max-width:1199px){
+    .subdiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+    nav{
+        width:100%;
+    }
+    section{
+        width:100%;
+    }
+    article>div{
+        font-size: 200%;
+    }
+
+}
+@media all and (min-width:1200px){
+    .subdiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+}
