@@ -89,7 +89,7 @@ html.mm-blocking #mm-blocker {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 0; }
+  z-index: 4; }
   .mm-menu > .mm-panel {
     background: inherit;
     -webkit-overflow-scrolling: touch;
@@ -102,13 +102,13 @@ html.mm-blocking #mm-blocker {
     position: absolute;
     top: 0;
     left: 100%;
-    z-index: 0; }
+    z-index: 4; }
     .mm-menu > .mm-panel.mm-opened {
       left: 0%; }
     .mm-menu > .mm-panel.mm-subopened {
       left: -40%; }
     .mm-menu > .mm-panel.mm-highest {
-      z-index: 1; }
+      z-index: 5; }
     .mm-menu > .mm-panel.mm-hidden {
       display: block;
       visibility: hidden; }
@@ -180,7 +180,7 @@ html.mm-blocking #mm-blocker {
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 2; }
+    z-index: 6; }
     .mm-list a.mm-subopen::before {
       content: '';
       border-left-width: 1px;
@@ -405,7 +405,7 @@ html.mm-opened.mm-dragging #mm-blocker {
   height: 60px;
   padding: 30px 40px 0 40px;
   position: absolute;
-  z-index: 2;
+  z-index: 6;
   top: 0;
   left: 0; }
   .mm-header .mm-title {
@@ -415,7 +415,7 @@ html.mm-opened.mm-dragging #mm-blocker {
     display: inline-block;
     width: 100%;
     position: relative;
-    z-index: 1; }
+    z-index: 5; }
   .mm-header .mm-prev,
   .mm-header .mm-next {
     -webkit-box-sizing: border-box;
@@ -494,7 +494,7 @@ html.mm-opened.mm-dragging #mm-blocker {
     height: 25px;
     overflow: visible;
     position: relative;
-    z-index: 1; }
+    z-index: 5; }
     .mm-menu.mm-fixedlabels .mm-list > li.mm-label > div {
       background: inherit;
       width: 100%;
@@ -543,7 +543,7 @@ html.mm-opened.mm-dragging #mm-blocker {
   padding: 10px;
   position: relative;
   top: 0;
-  z-index: 2; }
+  z-index: 6; }
   .mm-search input {
     border: none;
     border-radius: 15px;
@@ -1146,10 +1146,10 @@ html.mm-front.mm-opened .mm-page {
 
 html.mm-front .mm-page,
 html.mm-front #mm-blocker {
-  z-index: 0; }
+  z-index: 4; }
 
 .mm-menu.mm-front {
-  z-index: 1;
+  z-index: 5;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
 
 html.mm-opened.mm-next .mm-page {

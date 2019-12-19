@@ -47,20 +47,47 @@ $(document).ready(function(){
 		nextEl.css({left:'100%'}).stop().animate({left:0});
 		current = i ;
 	}
-    $('.no1').on('click', function(){
+    $('#art1 .no1').on('click', function(){
         $('#M1').show();
         $('#M2').hide();
         $('#M3').hide();
     });
-    $('.no2').on('click', function(){
+    $('#art1 .no2').on('click', function(){
         $('#M2').show();
         $('#M1').hide();
         $('#M3').hide();
     });
-    $('.no3').on('click', function(){
+    $('#art1 .no3').on('click', function(){
         $('#M3').show();
         $('#M2').hide();
         $('#M1').hide();
     });
+
+
+     $('#art2 .no1').on('click', function(){
+        $('#M4').show();
+        $('#M5').hide();
+        $('#M6').hide();
+    });
+    $('#art2 .no2').on('click', function(){
+        $('#M5').show();
+        $('#M4').hide();
+        $('#M6').hide();
+    });
+    $('#art2 .no3').on('click', function(){
+        $('#M6').show();
+        $('#M4').hide();
+        $('#M5').hide();
+    });
+
+   $(window).resize(function(){
+       if($(window).width()<640){
+           $('#art1').hide();
+           $('#art2').show();
+       }else{
+           $('#art2').hide();
+           $('#art1').show();
+       }
+   });
 
 });
