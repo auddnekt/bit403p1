@@ -25,9 +25,9 @@
                <br>
                <input type="text" id="pw" class="pw">
            </div>
-           <input class="login_bt" type="submit" value="로그인">
+           <input type="button" id="login_submit" class="login_bt" value="로그인">
+<!--           <input id="login_bt" class="login_bt" type="submit" value="로그인">-->
            </form>
-           <a href="#" id="find_pw" class="login_bt">패스워드 찾기</a>
            <a href="#" id="signup_btn" class="login_bt">회원가입</a>
         </div>
     </div>
@@ -39,14 +39,6 @@
             $('#login_logo').attr({"src" : "images/logo_2.jpg"});
         });
 
-        $(".login_bt").each(function(){
-            $(this).mouseover(function(){
-                $this.css('background-color','rgba(93,44,211,0.3)');
-            });
-            $(this).mouseleave(function(){
-                $this.css('background-color','white');
-            });
-        });
     </script>
 </body>
 </html>
