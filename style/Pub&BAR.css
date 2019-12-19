@@ -102,33 +102,33 @@
     #M1 .brandVisual .visual_3 {
         left: 300% ; background: url('../img/POB&BAR/background/photo-1558980664-4d79c6e77b93.jpg') 50% 0 no-repeat;
         }
-    #M2 .brandVisual .visual_0 {
+    #M1 .brandVisual .visual_4 {
         left: 0px ; background: url('../img/POB&BAR/background/photo-1558981806-ec527fa84c39.jpg') 50% 0 no-repeat;
         }
 
-    #M2 .brandVisual .visual_1 {
+    #M1 .brandVisual .visual_5 {
         left: 100% ; background: url('../img/POB&BAR/background/photo-1495195129352-aeb325a55b65.jpg') 50% 0 no-repeat;
         }
 
-    #M2 .brandVisual .visual_2 {
+    #M1 .brandVisual .visual_6 {
         left: 200% ; background: url('../img/POB&BAR/background/photo-1513151233558-d860c5398176.jpg') 50% 0 no-repeat;
         }
-    #M2.brandVisual .visual_3 {
+    #M1. brandVisual .visual_7 {
         left: 300% ; background: url('../img/POB&BAR/background/photo-1558980664-4d79c6e77b93.jpg') 50% 0 no-repeat;
         }
-    #M3 >.brandVisual .visual_0 {
+    #M1 >.brandVisual .visual_8 {
         left: 0px ; background: url('../img/POB&BAR/background/photo-1495195129352-aeb325a55b65.jpg') 50% 0 no-repeat;
         }
 
-    #M3 .brandVisual .visual_1 {
+    #M1 .brandVisual .visual_9 {
         left: 100% ; background: url('../img/POB&BAR/background/photo-1487088678257-3a541e6e3922.jpg') 50% 0 no-repeat;
         }
 
-    #M3 .brandVisual .visual_2 {
-        left: 200% ; background: url('../img/POB&BAR/background/photo-1513151233558-d860c5398176.jpg') 50% 0 no-repeat;
+    #M1 .brandVisual .visual_10 {
+        left: 200% ; background: url('../img/POB&BAR/background/photo-1558980664-4d79c6e77b93.jpg') 50% 0 no-repeat;
         }
-    #M3 .brandVisual .visual_3 {
-        left: 300% ; background: url('../img/POB&BAR/background/photo-1558980664-4d79c6e77b93.jpg') 50% 0 no-repeat;
+    #M1 .brandVisual .visual_11 {
+        left: 300% ; background: url('../img/POB&BAR/background/photo-1558981806-ec527fa84c39.jpg') 50% 0 no-repeat;
         }
 
 
@@ -163,7 +163,7 @@
     .buttonList li a {
         color: black;
         }
-    #art2, #M1, #M2, #M3, #M4, #M5, #M6{
+    #art2, #M1, #M4, #M5, #M6{
     display: none;
     }
 
