@@ -1,4 +1,9 @@
 /*컨텐츠 박스 640-*/
+
+#wrap{
+    position: relative;
+    top: 10px;
+}
 .con_box{
     margin: auto;
     width: 100%;

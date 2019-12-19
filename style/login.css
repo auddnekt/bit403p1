@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    background-color: rgba(93,44,211,0.3);
+}
+#wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.logo{
+    width: 500px;
+    display: block;
+    position: relative;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.login_box {
+    position: relative;
+    width: 350px;
+    height: 430px;
+    border: 40px solid rgb(93,44,211);
+    display: inline-block;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.login_id {
+    width: 100%;
+    height: 100px;
+    border: 1px solid silver;
+}
+.login_pw {
+    width: 100%;
+    height: 100px;
+    border: 1px solid silver;
+}
+input[type='submit'] {
+    float: left;
+    margin: 10% 1% 10% 10%;
+    display: inline-block;
+    border: 5px solid rgb(93,44,211);
+/*    background-color: white;*/
+}
+.login_box #find_pw{
+    float: right;
+    margin: 10% 10% 10% 4%;
+    display: inline-block;
+    border: 5px solid rgb(93,44,211);
+/*    background-color: white;*/
+}
+#signup_btn {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    border: 5px solid rgb(93,44,211);
+    padding: 0 10px;
+    top: 83%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.name {
+    position: relative;
+    top: 20px;
+    left: 10%;
+}
+.pw {
+    position: relative;
+    top: 20px;
+    left: 10%;
+}

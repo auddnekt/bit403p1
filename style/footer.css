@@ -1,6 +1,6 @@
-body{
+/*body{
         width: 1280px;
-    }
+    }*/
     footer{
         position: absolute;
         bottom: 0;
@@ -15,7 +15,7 @@ body{
         font-size: 48px;
         margin: 30px 0px 0px 40px;
     }
-    p{
+    footer div p{
         font-family: Franklin Gothic;
         font-size: 13px;
         margin: 0 0 10px 40px;
@@ -34,7 +34,7 @@ body{
         position: relative;
         bottom: 180px;
     }
-    ul li{
+    #abc ul li{
 
         list-style: none;
         display: inline-block;
@@ -53,7 +53,7 @@ body{
     #qna{
         right: 80px;
     }
-    div a{
+    #abc ul li a{
         text-decoration: none;
         color: white;
     }

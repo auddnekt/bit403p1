@@ -9,11 +9,57 @@
     <link rel="stylesheet" href="style/exhibition_tablet.css" media="all and (min-width:640px) and (max-width:1199px)">
     <link rel="stylesheet" href="style/exhibition_phone.css" media="screen and (min-width:360px) and (max-width:639px)">
 
+    <!-- @일진 --><link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- @일진 --><script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- @일진 --><link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+	<!-- @일진 --><script type="text/javascript" src="js/jquery.mmenu.js"></script>
+	<!-- @일진 --><script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
    <header>
+<div class="wrap3">
+	    <ul>
+	      <li><a href="test11.html">log in</a></li>
+	      <li><a href="./Signup.html">sign up</a></li>
+	    </ul>
+	  </div>
+	  <div class="wrap1"><a href="page_iljin.html">
+	    <img src="images/logo_1.jpg" alt="logo">
+		</a>
+	  </div>
+	  <hr color="silver">
+	  <div class="wrap2">
+	    <ul>
+	      <li><a href="#">all</a></li>
+	      <li><a href="#">cafe</a></li>
+	      <li><a href="./Restorant.html">restorant</a></li>
+	      <li><a href="./Pub&BAR.html">pub&bar</a></li>
+	      <li><a href="exhibition.html">exhibition</a></li>
+	      <li><a href="#">perform</a></li>
+	      <li><a href="#">activity</a></li>
+	    </ul>
+	  </div>
+	<div id="page">
+		<div id="header"> <!--모바일 왼쪽 메뉴바입니다 @일진 -->
+			<a class="navicon" href="#menu-left"> </a>
+		</div>
 
+		<nav id="menu-left">	<!--모바일 왼쪽 메뉴바입니다 @일진 -->
+			<ul>
+				<li><a href="test11.html"><img src="images/loginIcon.jpg" alt="log in" width="25px" >로그인을 후에 이용해주세요</a></li>
+				<li><a href="index.html">Cafe</a></li>
+				<li><a href="./Restorant.html">Restorant</a></li>
+				<li><a href="Pub&BAR.html">Pub&Bar</a></li>
+				<li><a href="exhibition.html">Exhibit</a></li>
+				<li><a href="about.html">Perform</a></li>
+				<li><a href="about.html">Activity</a></li>
+				<div class="clear"> </div>
+			</ul>
+		</nav>
+	</div>
+	<!--위쪽까지가 바디의 해드부분 끝부분입니다 @일진 -->
    </header>
    <section>
         <div id="wrap">
@@ -41,7 +87,7 @@
             <div class="con_box">
                 <ul>
                     <li class="box_m"><a class="box_link" href="https://www.naver.com/"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_box_1.jpg" alt="img1"> <div class="box_text"></div> </div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요1.png" alt="img2"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_box_2.gif" alt="img2"></div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요3.png" alt="img3"></div></a></li>
                     <li class="li_map"><div class="box_map"><div class="map" id="map"></div></div></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요5.png" alt="img4"></div></a></li>
@@ -159,7 +205,9 @@
               markers.push({pos:{lat:la,lng:ln},content:'<div>'+con+'</div>'});
           }
 
+          append_markers(37.499100, 126.997199,'김기태 전');
           append_markers(37.579528,126.980315,'현대미술관 경복궁');
+          append_markers(37.532877, 126.963419,'백악기 공룡의전설')
           append_markers(37.564280,126.973779,'서울시립미술관');
 
           for(let i=0; i<markers.length;i++) {

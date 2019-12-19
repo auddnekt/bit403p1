@@ -17,12 +17,11 @@
         right : 80px;
 
     }
-    ul{
+    #abc ul{
         padding: 0 !important;
         margin: 0 !important;
     }
-    ul li{
-
+    #abc ul li{
         list-style: none;
         display: inline-block;
         padding: 0px 5px;

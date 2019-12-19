@@ -1,0 +1,17 @@
+/*컨텐츠 박스 1200+*/
+
+.con_box{
+    margin: auto;
+    width: 87%;
+}
+h6{
+    font-size: 15px;
+}
+h5{
+    font-size: 17px;
+}
+h4{
+    font-size: 11px;
+    font-style: italic;
+}
+

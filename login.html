@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/login_phone.css" media="screen and (min-width:360px) and (max-width:639px)">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="logo">
+            <a id="login_logo_link" href="#"><img id="login_logo" src="images/logo_2.jpg" alt="to_main"></a>
+        </div>
+        <div class="login_box">
+           <form>
+           <div class="login_id">
+              <label for="name" class="name">ID</label>
+              <br>
+               <input type="text" id="name" class="name">
+           </div>
+           <div class="login_pw">
+               <label for="pw" class="pw">PASSWORD</label>
+               <br>
+               <input type="text" id="pw" class="pw">
+           </div>
+           <input class="login_bt" type="submit" value="로그인">
+           </form>
+           <a href="#" id="find_pw" class="login_bt">패스워드 찾기</a>
+           <a href="#" id="signup_btn" class="login_bt">회원가입</a>
+        </div>
+    </div>
+    <script>
+        $("#login_logo_link").mouseover(function(){
+            $('#login_logo').attr({"src" : "images/logo_1.jpg"});
+        });
+        $("#login_logo_link").mouseleave(function(){
+            $('#login_logo').attr({"src" : "images/logo_2.jpg"});
+        });
+
+        $(".login_bt").each(function(){
+            $(this).mouseover(function(){
+                $this.css('background-color','rgba(93,44,211,0.3)');
+            });
+            $(this).mouseleave(function(){
+                $this.css('background-color','white');
+            });
+        });
+    </script>
+</body>
+</html>
