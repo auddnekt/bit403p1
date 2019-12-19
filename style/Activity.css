@@ -63,8 +63,12 @@ h2{
     margin: 10px 10%;
     background-color: rgb(100,200,100,0.2);
 }
+.sub_c h2{
+    margin-top: 70px;
+
+}
 .sub_c p{
-    padding: 70px;
+    padding: 0px;
     margin: 50px;
     font-size: 15px;
     font-family: Franklin Gothic;
