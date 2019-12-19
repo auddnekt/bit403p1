@@ -11,7 +11,7 @@
 <body>
     <div id="wrap">
         <div class="logo">
-            <a id="login_logo_link" href="#"><img id="logoin_logo" src="images/logo_2.jpg" alt="to_main"></a>
+            <a id="login_logo_link" href="#"><img id="login_logo" src="images/logo_2.jpg" alt="to_main"></a>
         </div>
         <div class="login_box">
            <form>
@@ -25,16 +25,28 @@
                <br>
                <input type="text" id="pw" class="pw">
            </div>
-           <input type="submit" value="로그인">
+           <input class="login_bt" type="submit" value="로그인">
            </form>
-           <button type="button" id="find_pw">패스워드 찾기</button>
-           <a href="#" class="signup_btn">회원가입</a>
+           <a href="#" id="find_pw" class="login_bt">패스워드 찾기</a>
+           <a href="#" id="signup_btn" class="login_bt">회원가입</a>
         </div>
     </div>
     <script>
-        $("#login_logo").on("mouseover",function(){
-            $(this).attr("src","images/logo_1.jpg");
-        })
+        $("#login_logo_link").mouseover(function(){
+            $('#login_logo').attr({"src" : "images/logo_1.jpg"});
+        });
+        $("#login_logo_link").mouseleave(function(){
+            $('#login_logo').attr({"src" : "images/logo_2.jpg"});
+        });
+
+        $(".login_bt").each(function(){
+            $(this).mouseover(function(){
+                $this.css('background-color','rgba(93,44,211,0.3)');
+            });
+            $(this).mouseleave(function(){
+                $this.css('background-color','white');
+            });
+        });
     </script>
 </body>
 </html>
