@@ -20,3 +20,5 @@ background: linear-gradient( to right, rgb(12,255,57), rgb(17,255,255) 50%);
                 -webkit-text-fill-color: transparent;
                  font-family: impact;
                  font-size: 20px;
+
+640px이하가 모바일입니다.
