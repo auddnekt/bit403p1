@@ -4,27 +4,65 @@
 <head>
   <meta charset="utf-8">
   <title>hello!I'm in place </title>
+  <style media="screen">
+  * {margin:0px;padding:0px;}
+body {width:100%;background:#444;}
+ul,li {list-style:none;}
+
+nav {width:100%;padding:50px 0;background:#fff;z-index:10;transition:all 0.5s;}
+nav .nav-area {width:1000px;margin:0 auto;}
+nav .nav-area h1 {float:left;font-size:30px;}
+nav .nav-area ul {width:1000px;margin:0 auto;text-align:right;}
+nav .nav-area ul li {display:inline-block;margin-left:40px;line-height:40px;}
+nav .nav-area ul li a {color:#333;text-decoration:none;cursor:pointer;}
+
+.fixed-header {position:fixed;top:0;left:0;width:100%;padding:20px 0;animation:slide-down 0.7s;opacity:0.9;}
+@keyframes slide-down {
+  0% {
+      opacity: 0;
+      transform: translateY(-100%);
+  }
+  100% {
+      opacity: 0.9;
+      transform: translateY(0);
+  }
+}
+
+.content {width:1000px;margin:0 auto;padding:30px;}
+  </style>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
 </head>
 
-<body>
-  <form class="" action="index.html" method="post">
+<body><header>
+<nav>
+    <div class="nav-area">
+        <h1>LOGO</h1>
+        <ul>
+            <li><a href="">menu01</a></li>
+            <li><a href="">menu02</a></li>
+            <li><a href="">menu03</a></li>
+            <li><a href="">menu04</a></li>
+        </ul>
+    </div>
+</nav>
+</header>
 
-  </form>
-  <div>
-    <label for="name">아이디</label>
-    <input type="text" name="name" id="name" size="5" maxlength="5">
-  </div>
-  <div>
-    <label for="pw">패스워드</label>
-    <input type="text" name="pw" id="pw">
-  </div>
-  <div>
-    <label for="btn1"></label>
-    <input type="button" name="btn1" value="전송">
-    <label for="btn2"></label>
-    <input type="button" name="btn2" value="취소">
-  </div>
+<div class="content">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
 
+
+<script type="text/javascript">
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= 100) {
+     $('nav').addClass('fixed-header');
+  }
+  else {
+     $('nav').removeClass('fixed-header');
+  }
+});
+</script>
 </body>
 
 </html>
