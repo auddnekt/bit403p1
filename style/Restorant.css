@@ -1,5 +1,6 @@
 {margin: 0px auto};
 
+
 img{
     padding: 0px;
 }
@@ -40,7 +41,7 @@ article div{
     transform : translate(-50%, -50%);
     color: white;
     font-weight: bolder;
-    font-size: 200%;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -60,7 +61,7 @@ article div{
     width: 49%;
     }
     article>div{
-        font-size: 150%;
+        font-size: 1.5rem;
     }
 }
 @media all and (min-width:640px) and (max-width:1199px){
@@ -75,7 +76,7 @@ article div{
         width:100%;
     }
     article>div{
-        font-size: 200%;
+        font-size: 1.5rem;
     }
 
 }
