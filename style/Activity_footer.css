@@ -3,7 +3,7 @@
     }*/
     footer{
         position: absolute;
-        bottom: 0;
+        top:4890px; bottom: 0;
         width: 100%;
         height: 216px !important;
         border: 0px;
@@ -31,10 +31,11 @@
         font-size: 20px;
         padding: 0 15px;
         display: inline-block;
+
         position: relative;
         bottom: 180px;
     }
-    ul li{
+    #abc ul li{
 
         list-style: none;
         display: inline-block;
@@ -53,7 +54,7 @@
     #qna{
         right: 80px;
     }
-    ul li a{
+    #abc ul li a{
         text-decoration: none;
         color: white;
     }

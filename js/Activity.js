@@ -19,7 +19,7 @@ $(document).ready(function(){
             $('h2').css('background-color','rgb(255,255,255,0.0)')
                 .next()
                 .hide();
-            $this.css('background-color','rgb(110,44,211,0.4)');
+            $this.css('background-color','rgb(150,44,211,0.4)');
             $this.next('div').slideDown();
         }
     });
