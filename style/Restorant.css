@@ -13,6 +13,11 @@ nav{
     width : 1050px;
     text-align: center;
 }
+nav>a{
+    color : black;
+    text-decoration: none;
+    font-weight: bolder;
+}
 section{
     margin: 0px auto;
     width: 1050px;
