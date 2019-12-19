@@ -26,13 +26,13 @@ $(document).ready(function(){
     });
    /* --------+---------------+--------*/
 
-    var floatPosition=parseInt($('#acc').css('top'));
+    /*var floatPosition=parseInt($('#acc').css('top'));
     $(window).scroll(function(){
         var scrollTop=$(window).scrollTop();
         var newPosition=scrollTop+floatPosition+'px';
     $('#acc').stop().animate({
         'top':newPosition},500);
-    }).scroll();
+    }).scroll();*/
 
 
     /*slide효과*/
@@ -46,7 +46,7 @@ $(document).ready(function(){
     }).scroll();
     /*--------+----------+---------*/
 
-    $(window).scroll( function(){
+   /* $(window).scroll( function(){
         $('#acc').each( function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -55,7 +55,7 @@ $(document).ready(function(){
             }
         });
     });
-
+*/
 
 
 });
