@@ -5,3 +5,14 @@
     margin: auto;
     width: 87%;
 }
+
+.modal .modal_content{
+    width: 66.6666%;
+    height: 650px;
+    padding: 0px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+}

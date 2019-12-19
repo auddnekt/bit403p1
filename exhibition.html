@@ -81,7 +81,7 @@
             <div class="modal_text_box2">
                 <p></p>
             </div>
-            <button type="button" id="modal_link_btn" class="modal_link_btn"><a href="#">공식페이지 바로가기</a></button>
+            <a href="#" id="modal_link_btn" class="modal_link_btn">공식페이지 바로가기</a>
 <!--            <div class="map_container">.map</div>-->
             <button type="button" id="modal_close_btn" class="modal_close_btn">닫기</button>
         </div>
@@ -104,6 +104,9 @@
    <!---.box_link 중에 클릭시 선택된 $this를 가지고 모달창을 선택하도록 구성--->
     <script>
         $("#modal_close_btn").click(function(){
+           $("#modal").css("display","none");
+        });
+        $(".modal_layer").click(function(){
            $("#modal").css("display","none");
         });
         $(".box_link").each(function(){
