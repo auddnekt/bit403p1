@@ -1,3 +1,5 @@
+/****************이하 box css***************/
+
 *{
     padding: 0px;
     margin: 0px;
@@ -25,28 +27,9 @@ section ul li a {
     float: left;
 }
 
-.li_map{
-    position: relative;
-    border: 1px solid silver;
-    display: inline-block;
-    width: 66.66666%;
-    padding-top:46.35%;
-    float: left;
-}
 .box_d {
     display: inline-block;
     width: 100%; height: 100%;
-}
-.box_map{
-    display: inline-block;
-    width: 100%; height: 100%;
-}
-.map{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .box_link{
@@ -79,7 +62,30 @@ section ul li a {
     font-size: 1.2rem;
     font-weight: 400
 }
+/*****************************박스 css 끝*****************************/
+/**********************이하 map************************************/
+.li_map{
+    position: relative;
+    border: 1px solid silver;
+    display: inline-block;
+    width: 66.66666%;
+    padding-top:46.35%;
+    float: left;
+}
+.box_map{
+    display: inline-block;
+    width: 100%; height: 100%;
+}
+.map{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
+/**********************map 끝************************************/
+/*****************************이하 modal*****************************/
 .modal{
     position: relative;
     display: none;
@@ -220,7 +226,7 @@ section ul li a {
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
-
+/*****************************modal 끝*****************************/
 /*
 .nav_over_wrap {
     box-sizing: 40%;
