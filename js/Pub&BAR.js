@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+       if($(window).width()<640){
+           $('#art1').hide();
+           $('#art2').show();
+       }else{
+           $('#art2').hide();
+           $('#art1').show();
+       }
+
 	let visual = $('.brandVisual > ul > li');
 	let button = $('.buttonList > li');
 

@@ -1,6 +1,5 @@
 $(document).ready(function(){
     /*컨텐츠박스*/
-    $('.box_m>')
 
 
     /*---------+---------------+----------*/
@@ -36,14 +35,14 @@ $(document).ready(function(){
 
 
     /*slide효과*/
-    var footer_floatPosition=parseInt($('footer').css('top'));
+    /*var footer_floatPosition=parseInt($('footer').css('top'));
     $(window).scroll(function(){
         var footer_scrollTop=$(window).scrollTop();
         var footer_newPosition=footer_scrollTop
                                 +footer_floatPosition+'px';
     $('footer').stop().animate({
         'top':footer_newPosition},500);
-    }).scroll();
+    }).scroll();*/
     /*--------+----------+---------*/
 
    /* $(window).scroll( function(){

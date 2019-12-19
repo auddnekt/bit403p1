@@ -1,0 +1,12 @@
+/*컨텐츠 박스 640-*/
+.con_box{
+    margin: auto;
+    width: 100%;
+}
+.box_m{
+    border: 1px solid silver;
+    display: inline-block;
+    width: 50%;
+    padding-top:46.35%;
+    float: left;
+}
