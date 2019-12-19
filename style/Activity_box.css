@@ -42,35 +42,41 @@ section ul li a {
     background-color: black;
     position: absolute;
     left: 0px;
-    top: 70%;
+    top: 72%;
     width: 100%;
-    height: 30%;
+    height: 28%;
+    text-align: center;
 }
 .box_text_tree{
     color: white;
     background-color: black;
     position: absolute;
-    left: 80%; top:0%;
-    width: 20%;
-    height: 100%;
+    left: 0%;
+    top:78%;
+    width: 100%;
+    height: 22%;
+    text-align: center;
 }
+
 .box_text_couple{
     color: white;
     background-color: black;
     position: absolute;
     left: 0px;
-    top: 70%;
+    top: 72%;
     width: 100%;
-    height: 30%;
+    height: 28%;
+    text-align: center;
 }
 .box_text_back{
     color: white;
     background-color: black;
     position: absolute;
     left: 0px;
-    top: 70%;
+    top: 75%;
     width: 100%;
-    height: 30%;
+    height: 25%;
+    text-align: center;
 }
 .box_text_leviev{
     color: white;
@@ -80,15 +86,25 @@ section ul li a {
     top: 70%;
     width: 100%;
     height: 30%;
+    text-align: center;
 }
 .box_text_cat{
     color: white;
     background-color: black;
     position: absolute;
     left: 0px;
-    top: 0px; bottom: 70%;
+    top: 78%;
     width: 100%;
-    height: 15%;
+    height: 22%;
+    text-align: center;
 }
-
-
+h6{
+    font-size: 25px;
+}
+h5{
+    font-size: 30px;
+}
+h4{
+    font-size: 10px;
+    font-style: italic;
+}
