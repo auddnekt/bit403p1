@@ -3,12 +3,27 @@ padding: 0px;
 margin: 0px;
 box-sizing: border-box;
 }
+#activity_nav{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    padding:0px; margin:0px;
+}
+#activity_nav h6{
+    padding:3px; margin-bottom:5px;
+    font-size:20px; color:blue;
+}
+#activity_nav li{
+    /*border: 1px solid blue;*/
+    margin: 0;
+    padding: 3px 50px;
+}
 .box_m a{
     text-decoration: none;
 }
 #wrap{
     position: relative;
-    top: 150px;
+    top: 100px;
 }
 section ul li a {
     color: black;
