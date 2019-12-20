@@ -47,8 +47,11 @@ section ul li a {
 }
 .box_img:hover{
     border: 18px solid transparent;
-    border-image: linear-gradient(50deg,rgb(255,0,0),rgb(65,57,255));
+/*    border-image: red;*/
+/*
+    border-image: linear-gradient(0deg,rgb(255,0,0),rgb(65,57,255));
     border-image-slice: 1;
+*/
 }
 .box_text{
     color: white;
@@ -227,18 +230,30 @@ section ul li a {
     z-index: -1;
 }
 /*****************************modal 끝*****************************/
-/*
-.nav_over_wrap {
-    box-sizing: 40%;
-    width:50%;
-    border: 1px solid silver;
-
+.boxmodel_nav_wrap {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width:70%;
+    max-width: 1200px;
 }
-.nav_over_wrap>div {
+.boxmodel_nav_wrap .boxmodel_nav_title {
     text-align: center;
+    font-size: 2rem;
+    padding: 3% 0 5% 0;
 }
-.nav_over_wrap ul {
+/*
+.boxmodel_nav_list_div {
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box_nav_li {
     display: inline-block;
+    width: 18%;
+    margin: 0px;
+    text-align: center;
 }
 */
 /*

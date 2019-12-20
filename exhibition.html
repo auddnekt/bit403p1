@@ -12,39 +12,73 @@
     <!--------------X-------------box model 끝----------------X-------------->
 
  <!-- -- -- -- -- --header 이부분을 붙여주세요. 이용하세요! @일진 -- -- -- -- -- -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link href="css/style.css" rel='stylesheet' type='text/css' />
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
-    <script type="text/javascript" src="js/jquery.mmenu.js"></script>
-    <script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><link href="css/style.css" rel='stylesheet' type='text/css' /><script type="text/javascript" src="js/jquery.min.js"></script><link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" /><script type="text/javascript" src="js/jquery.mmenu.js"></script><script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>
  <!--footer-->
+<!--
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/footerM.css">
+-->
 
 </head>
+
+
 <body>
-<!---- -- -- -- --아래는 바디의 해드부분 시작부분 @일진-- -- -- -- -- -->
+
+  <script type="text/javascript">
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 100) {
+       $('header nav').addClass('fixed-header');
+    }
+    else {
+       $('header nav').removeClass('fixed-header');
+    }
+  });
+  </script>
+  <header>
+<nav>
+  <div class="wrap4">
+
+  <a href="main_iljin.html">
+      <img src="images/logo_2.jpg" alt="logo"></a>
+    </div>
+    <div class="wrap5">
+      <ul>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li><a href="main_iljin.html">cafe</a></li>
+        <li><a href="./Restorant.html">restorant</a></li>
+        <li><a href="./Pub&BAR.html">pub&bar</a></li>
+        <li><a href="exhibition.html">exhibition</a></li>
+        <li><a href="#">perform</a></li>
+        <li><a href="Activity.html">activity</a></li>
+      </ul>
+    </div>
+</nav>
+</header>
+<!-- 위의 해더부분을 fixed header로 사용했습니다. -->
+
   <div class="wrap3">
     <ul>
-      <li><a href="login.html">log in</a></li>
+      <li><a href="login.html">log in / </a></li>
       <li><a href="./Signup.html">sign up</a></li>
     </ul>
   </div>
-  <div class="wrap1"><a href="page_iljin.html">
+  <div class="wrap1"><a href="main_iljin.html">
       <img src="images/logo_2.jpg" alt="logo">
     </a>
   </div>
   <hr color="silver">
   <div class="wrap2">
     <ul>
-      <li><a href="#">all</a></li>
-      <li><a href="#">cafe</a></li>
+      <li><a href="main_iljin.html">all</a></li>
+      <li><a href="main_iljin.html">cafe</a></li>
       <li><a href="./Restorant.html">restorant</a></li>
       <li><a href="./Pub&BAR.html">pub&bar</a></li>
       <li><a href="exhibition.html">exhibition</a></li>
       <li><a href="#">perform</a></li>
-      <li><a href="#">activity</a></li>
+      <li><a href="Activity.html">activity</a></li>
     </ul>
   </div>
   <div id="page">
@@ -56,45 +90,52 @@
     <nav id="menu-left">
       <!--모바일 왼쪽 메뉴바입니다 @일진 -->
       <ul>
-        <li><a href="test11.html"><img src="images/loginIcon.jpg" alt="log in" width="25px">로그인을 후에 이용해주세요</a></li>
-        <li><a href="index.html">Cafe</a></li>
+        <li><a href="login.html"><img src="images/loginIcon.jpg" alt="log in" width="25px">로그인을 후에 이용해주세요</a></li>
+        <li><a href="main_iljin.html">Cafe</a></li>
         <li><a href="./Restorant.html">Restorant</a></li>
         <li><a href="Pub&BAR.html">Pub&Bar</a></li>
         <li><a href="exhibition.html">Exhibit</a></li>
         <li><a href="about.html">Perform</a></li>
-        <li><a href="about.html">Activity</a></li>
+        <li><a href="Activity.html">Activity</a></li>
         <div class="clear"> </div>
       </ul>
     </nav>
   </div>
   <!---- -- -- -- --위쪽까지가 바디의 해드부분 끝부분입니다 @일진-- -- -- -- -- -->
 
+
    <section>
         <div id="wrap">
+            <div class="boxmodel_nav_wrap">
+                <div class="boxmodel_nav_title"><span>EXHIBITION</span></div> <br>
+            </div>
 <!--            //소분류 nav 박스-->
 <!--
-            <div class="nav_over_wrap">
-               <div><span>EXHIBITION</span></div>
-                <nav>
+            <div class="boxmodel_nav_wrap">
+               <div class="boxmodel_nav_list_div">
                 <ul>
-                    <li class="nav_li"><a class="nav_a" href="#"><span class="nav_span">전체보기</span></a></li>
-                    <li class="nav_li"><a class="nav_a" href="#"><span class="nav_span">회화 &#8226; 사진</span></a></li>
-                    <li class="nav_li"><a class="nav_a" href="#"><span class="nav_span">상품 &#8226; 기술 &#8226; IT</span></a></li>
-                    <li class="nav_li"><a class="nav_a" href="#"><span class="nav_span">설치 &#8226; 오브젯</span></a></li>
-                    <li class="nav_li"><a class="nav_a" href="#"><span class="nav_span">박람회</span></a></li>
+                    <li class="box_nav_li"><a class="box_nav_li_a" href="#"><span class="box_nav_li_a_spen">전체보기</span></a></li>
+                    <li class="box_nav_li"><a class="box_nav_li_a" href="#"><span class="box_nav_li_a_spen">회화 &#8226; 사진</span></a></li>
+                    <li class="box_nav_li"><a class="box_nav_li_a" href="#"><span class="box_nav_li_a_spen">상품 &#8226; 기술 &#8226; IT</span></a></li>
+                    <li class="box_nav_li"><a class="box_nav_li_a" href="#"><span class="box_nav_li_a_spen">설치 &#8226; 오브젯</span></a></li>
+                    <li class="box_nav_li"><a class="box_nav_li_a" href="#"><span class="box_nav_li_a_spen">박람회</span></a></li>
                 </ul>
-                </nav>
+                </div>
             </div>
-            <br>
 -->
 
+<!--
+        <div id="box_header_text">
+           <h2>EXHIBITION</h2>
+        </div>
+-->
 
 
 
 <!--            //컨텐츠 박스-->
             <div class="con_box">
                 <ul>
-                    <li class="box_m"><a class="box_link" href="https://www.naver.com/"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_box_1.jpg" alt="img1"> <div class="box_text"></div> </div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_box_1.jpg" alt="img1"> </div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_2.jpg" alt="img2"></div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요3.png" alt="img3"></div></a></li>
                     <li class="li_map"><div class="box_map"><div class="map" id="map"></div></div></li>
@@ -152,6 +193,7 @@
 
 
     <!----------------------------푸터----------------------------->
+<!--
     <footer style="top: 1700px">
         <div>
            <h3>in PLACE</h3>
@@ -170,6 +212,7 @@
         </ul>
         </div>
     </footer>
+-->
     <!---------------X------------푸터--------------X-------------->
 
 
