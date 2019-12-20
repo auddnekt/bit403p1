@@ -3,12 +3,27 @@ padding: 0px;
 margin: 0px;
 box-sizing: border-box;
 }
+#activity_nav{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    padding:0px; margin:0px;
+}
+#activity_nav h6{
+    padding:3px; margin-bottom:5px;
+    font-size:20px; color:blue;
+}
+#activity_nav li{
+    /*border: 1px solid blue;*/
+    margin: 0;
+    padding: 3px 50px;
+}
 .box_m a{
     text-decoration: none;
 }
 #wrap{
     position: relative;
-    top: 150px;
+    top: 100px;
 }
 section ul li a {
     color: black;
@@ -34,8 +49,13 @@ section ul li a {
 }
 
 .box_d {
+    position: absolute;
     display: inline-block;
     width: 100%; height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: border 0.3s linear;
 }
 
 .box_link{
@@ -44,86 +64,51 @@ section ul li a {
 
 .box_img{
     position: absolute;
-    left: 50px;
-    top: 50px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    transition: border 0.3s linear;
-    /*transform: translate(-50%,-50%);*/
 }
-.box_img:hover{
+
+.box_d:hover{
     border: 18px solid transparent;
-    border-image-slice: 1;
 }
 
-.box_text_glass{
+/*여기서부터 컨텐츠 박스 안 텍스트*/
+.box_inner_text{
     color: white;
     background-color: black;
     position: absolute;
-    left: 50px;
-    top: 350px;
-    width: 100%;
-    height: 28%;
-    text-align: center;
-}
-.box_text_tree{
-    color: white;
-    background-color: black;
-    position: absolute;
-    left: 50px;
-    top:78%;
-    width: 100%;
-    height: 22%;
-    text-align: center;
-}
-
-.box_text_couple{
-    color: white;
-    background-color: black;
-    position: absolute;
-    left: 50px;
-    top: 72%;
-    width: 100%;
-    height: 28%;
-    text-align: center;
-}
-.box_text_back{
-    color: white;
-    background-color: black;
-    position: absolute;
-    left: 50px;
-    top: 75%;
-    width: 100%;
-    height: 25%;
-    text-align: center;
-}
-.box_text_leviev{
-    color: white;
-    background-color: black;
-    position: absolute;
-    left: 50px;
     top: 70%;
     width: 100%;
     height: 30%;
     text-align: center;
+    font-size: 1.6rem;
+    padding: 3%;
 }
-.box_text_cat{
-    color: white;
-    background-color: black;
-    position: absolute;
-    left: 50px;
+#box_text_glass{
+    top: 75%;
+    height: 25%;
+}
+#box_text_tree{
     top: 78%;
-    width: 100%;
     height: 22%;
-    text-align: center;
 }
-h6{
-    font-size: 25px;
+#box_text_couple{
+    top: 72%;
+    height: 28%;
 }
-h5{
-    font-size: 30px;
+#box_text_back{
+    top: 75%;
+    height: 25%;
 }
-h4{
-    font-size: 10px;
-    font-style: italic;
+#box_text_leviev{
+    top: 70%;
+    height: 30%;
 }
+#box_text_cat{
+    top: 78%;
+    height: 22%;
+}
+
+
