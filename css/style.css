@@ -993,10 +993,22 @@ a{
 
 }
 div.wrap2 a{padding: 0px;
-  padding-left: 10px;
+  padding-left: 20px;
   text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.2em;
 }
-
+div.wrap5 a{padding: 0px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.0em;
+}
+div.wrap2 a:hover{
+  color: #F93822
+}
+div.wrap5 a:hover{
+color: #F93822}
 div.wrap1{
   width: 390px;
   text-align: center;
@@ -1025,8 +1037,9 @@ div.wrap2{
   margin: 0 auto;
   top: 50px;
 }
-ul {
-  padding: 0px;
+div.wrap2 ul {
+  padding: 35px 10px 25px;
+  /* padding: 0px; */
 
 }
 div.wrap1 img{
@@ -1046,13 +1059,75 @@ div.wrap5{
   padding: 0;
   text-align: center;
   position: relative;
+
   margin: 0 auto;
   top: -17px;
 }
 .wrap5 ul li{
   padding: 0 30px 0 0 ;
 }
-
+/* cafe.html 보정합니다. */
+.text001{
+  color : red;
+  font-size: 1.2em;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  font-weight: lighter;
+}
+.text002{
+  font-size: 2.6em;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: 450;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+.text003{
+  font-size: 1.0em;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: 100;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+.text004{
+  font-size: 1.0em;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: 600;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+.text005{
+  line-height: 200%;
+  font-size: 1.12em;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: lighter;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+.text000{
+  margin: 0 auto;
+  width: 70%;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+/* cafe.html 보정합니다. */
 
 @media only screen and (max-width:639px) and (min-width:320px) {
   nav {width:100%;padding:0px 0;background:#fff;z-index:10;transition:all 0.5s; display: none;}
@@ -1079,7 +1154,11 @@ div.wrap5{
     position: relative;
     display: none;
   }
+  div.wrap2 ul {
+    /* padding: 35px 10px 25px; */
+    padding: 0px;
 
+  }
   div.wrap1{
     width: 250px;
     text-align: center;
