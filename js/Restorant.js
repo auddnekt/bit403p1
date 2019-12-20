@@ -1,4 +1,8 @@
         $(document).ready(function(){
+
+
+
+
             $('.km').on('click', function(){
                     $('.kor').show().css('display','inline-block');
                     $('.cha').hide();
@@ -14,4 +18,12 @@
                     $('.cha').hide();
                     $('.wes').show().css('display','inline-block');
                 });
+            $('.am').on('click', function(){
+                    $("article").hide();
+                    let img = $("article").get().sort(function(){
+                    return Math.round(Math.random())-0.4;
+                    }).slice(0,12);
+                $(img).show();
+                });
         });
+
