@@ -14,48 +14,38 @@
  <!-- -- -- -- -- --header 이부분을 붙여주세요. 이용하세요! @일진 -- -- -- -- -- -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><link href="css/style.css" rel='stylesheet' type='text/css' /><script type="text/javascript" src="js/jquery.min.js"></script><link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" /><script type="text/javascript" src="js/jquery.mmenu.js"></script><script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>
  <!--footer-->
-<!--
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/footerM.css">
--->
 
 </head>
 
 
+<!-------------------------------------------------body---------------------------------------------------------->
+
 <body>
-
-  <script type="text/javascript">
-  $(window).scroll(function(){
-    if ($(window).scrollTop() >= 100) {
-       $('header nav').addClass('fixed-header');
-    }
-    else {
-       $('header nav').removeClass('fixed-header');
-    }
-  });
-  </script>
+  <div id="container">
   <header>
-<nav>
-  <div class="wrap4">
+    <nav>
+      <div class="wrap4">
 
-  <a href="main_iljin.html">
-      <img src="images/logo_2.jpg" alt="logo"></a>
-    </div>
-    <div class="wrap5">
-      <ul>
-        <li> </li>
-        <li> </li>
-        <li> </li>
-        <li> </li>
-        <li><a href="main_iljin.html">cafe</a></li>
-        <li><a href="./Restorant.html">restorant</a></li>
-        <li><a href="./Pub&BAR.html">pub&bar</a></li>
-        <li><a href="exhibition.html">exhibition</a></li>
-        <li><a href="#">perform</a></li>
-        <li><a href="Activity.html">activity</a></li>
-      </ul>
-    </div>
-</nav>
+      <a href="main_iljin.html">
+          <img src="images/logo_2.jpg" alt="logo"></a>
+        </div>
+        <div class="wrap5">
+          <ul>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li><a href="main_iljin.html">cafe</a></li>
+            <li><a href="./Restorant.html">restorant</a></li>
+            <li><a href="./Pub&BAR.html">pub&bar</a></li>
+            <li><a href="exhibition.html">exhibition</a></li>
+            <li><a href="#">perform</a></li>
+            <li><a href="Activity.html">activity</a></li>
+          </ul>
+        </div>
+    </nav>
 </header>
 <!-- 위의 해더부분을 fixed header로 사용했습니다. -->
 
@@ -133,19 +123,22 @@
 
 
 <!--            //컨텐츠 박스-->
+<!--           박스 이너 테스트 (검은박스 + 흰폰트)
+           <div class="box_inner_text"><h1>EXHIBITION1</h1></div> -->
+
             <div class="con_box">
                 <ul>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_box_1.jpg" alt="img1"> </div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_2.jpg" alt="img2"></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요3.png" alt="img3"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_box_1.jpg" alt="img1"> <div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition_2.jpg" alt="img2"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요3.png" alt="img3"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
                     <li class="li_map"><div class="box_map"><div class="map" id="map"></div></div></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요5.png" alt="img4"></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요6.png" alt="img5"></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요7.png" alt="img6"></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요8.png" alt="img7"></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요9.png" alt="img8"></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요10.png" alt="img9"></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요11.png" alt="img10"></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요5.png" alt="img4"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요6.png" alt="img5"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요7.png" alt="img6"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요8.png" alt="img7"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요9.png" alt="img8"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요10.png" alt="img9"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요11.png" alt="img10"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
                 </ul>
             </div>
             <br>
@@ -194,29 +187,29 @@
 
     <!----------------------------푸터----------------------------->
 <!--
-    <footer style="top: 1700px">
-        <div>
-           <h3>in PLACE</h3>
-           <p>ⓒ 2019 BITCAMP</p>
-        </div>
-        <div class="info">
-         Tel. 000-0000-0000  |  Fax. 0000-0000-0000  |  bitcamp403@bitcamp.com<br>
-         Gangnamdaero 459, Seocho-gu, Seoul, Korea  |  business license number. 000-00-00000
-        </div>
-        <div id="abc">
-        <ul>
-            <li id="about"><a href="#">ABOUT</a></li>
-            <li id="project"><a href="#">PROJECT</a></li>
-            <li id="contact"><a href="#">CONTACT</a></li>
-            <li  id="qna"><a href="#">Q&A</a></li>
-        </ul>
-        </div>
+        <footer>
+    <div>
+       <h3>in PLACE</h3>
+       <p>ⓒ 2019 BITCAMP</p>
+   </div>
+   <div class="info">
+     Tel. 000-0000-0000  |  Fax. 0000-0000-0000  |  bitcamp403@bitcamp.com<br>
+     Gangnamdaero 459, Seocho-gu, Seoul, Korea  |  business license number. 000-00-00000
+   </div>
+    <div id="abc">
+    <ul>
+        <li id="about"><a href="#">ABOUT</a></li>
+        <li id="project"><a href="#">PROJECT</a></li>
+        <li id="contact"><a href="#">CONTACT</a></li>
+        <li  id="qna"><a href="#">Q&A</a></li>
+    </ul>
+    </div>
     </footer>
 -->
     <!---------------X------------푸터--------------X-------------->
 
 
-
+<!------------------------------------------------이하 script----------------------------------------------------->
 <!---------------------------------모달 스크립트------------------------------->
    <!---.box_link 중에 클릭시 선택된 $this를 가지고 모달창을 선택하도록 구성--->
     <script>
@@ -288,5 +281,19 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy2Z0I3uHelbWqA71c1GX_jTFGcFqMhNw&callback=initMap">
     </script>
 <!-------------X--------------------모달 스크립트----------------X------------>
+
+<!-----------------------------헤더 네이바 스크립트---------------------------->
+     <script type="text/javascript">
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 100) {
+       $('header nav').addClass('fixed-header');
+    }
+    else {
+       $('header nav').removeClass('fixed-header');
+    }
+  });
+  </script>
+<!---------------X-------------헤더 네이바 스크립트-------------X-------------->
+    </div>
 </body>
 </html>
