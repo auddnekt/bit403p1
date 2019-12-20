@@ -66,9 +66,18 @@
 	</div>
 
   <!-- ------------------------------------------------- 본문 시작 ------------------------------------------- -->
-      <div id="activity_nav">
+      <div id="act_nav">
           <h6>ACTIVITY</h6>
-          <li>PARTY</li> <li>SHOPPING</li> <li>PHOTO</li>
+          <ul>
+          <li id="act_nav_party">PARTY</li>
+          <li id="act_nav_shopping">SHOPPING</li>
+          <li id="act_nav_photo">PHOTO</li>
+          </ul>
+          <select onchange="if(this.value)window.location.href=this.value;">
+              <option value="#">PARTY</option>
+              <option value="#">SHOPPING</option>
+              <option value="#">PHOTO</option>
+          </select>
       </div>
    <section>
         <div id="wrap">
@@ -91,7 +100,7 @@
                     <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/Activity/cat.jpg" alt="하단3"><div class="box_inner_text"><h6>WORLD BEST PICTURE</h6><h5>PET STUDIO</h5><h4>memory new year</h4></div></div></a></li>
 
                     <!--    아코디언    -->
-                    <li class="box_m_acc"><div class="box_d"><img class="box_img" src="img/Activity/snow.jpg" alt="아코디언배경">
+                    <li class="box_m_acc"><div class="box_d_acc"><img class="box_img" src="img/Activity/snow.jpg" alt="아코디언배경">
                       <div id="acc">
                         <h2>Le Parti avec INPLACE</h2>
                         <div>
