@@ -8,7 +8,7 @@
 header{
         position: absolute;
         top: 50%; left: 40%;
-        background: red;
+        background: linear-gradient(to bottom, rgb(93,44,211) 15%, rgb(29,266,217));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-family: impact;
@@ -16,18 +16,13 @@ header{
       }
 body,ul,li {margin:0; padding:0;}
 ul,li {list-style:none;}
-html, body, #wrap01, #wrap02 {height:100%;}
-body > #wrap01 {height: 100%;min-height:100%;}
-body > #wrap02 {height: 100%;min-height:100%;}
+
 .slideshow01:after {
     position: fixed;
     width: 50%;
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: 1;
-}
-.slideshow01:after {
     content: '';
 }
 
@@ -80,15 +75,15 @@ body > #wrap02 {height: 100%;min-height:100%;}
     animation-delay: 24s;
 }
 
+
+
 /*-----------------------------------------------------------*/
 
 .slideshow02:after {
     position: fixed;
     width: 50%;
     height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 0;
+
 }
 .slideshow02:after {
     content: '';
@@ -156,8 +151,25 @@ body > #wrap02 {height: 100%;min-height:100%;}
     50% { opacity: 1; animation-timing-function: ease-out; }
     100% { opacity: 0; }
 }
+
+    /*-----------------------------------------------------------*/
+
+
 </style>
 
+<!--<script>
+    $(document).ready(function(){
+
+        $("#wrap01").hover(function(){
+            $(this).css({
+                'border': '20px'
+               , 'border-image': 'linear-gradient(to right, #ff0000, #4139ff)'
+            });
+        });
+
+
+    });
+</script>-->
 
 <body>
 <header>
