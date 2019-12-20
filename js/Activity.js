@@ -5,7 +5,7 @@ $(document).ready(function(){
     /*---------+---------------+----------*/
 
     /*아코디언*/
-    $('h2+div').css({
+    $('#acc div').css({
         'padding':'20px 0px'
         ,'width':'80%'
         ,'display':'none'

@@ -4,7 +4,7 @@ margin: 0px;
 box-sizing: border-box;
 font-family: Franklin Gothic;
 }
-a{
+.box_m a{
     text-decoration: none;
 }
 #wrap{
@@ -24,7 +24,7 @@ section ul li a {
     padding-top:46.35%;
     float: left;
 }
-.box_m_aco{
+.box_m_acc{
     position: relative;
     display: inline-block;
     width: 100%;
@@ -54,6 +54,7 @@ section ul li a {
     border-image: white;
     border-image-slice: 1;
 }
+
 .box_text_glass{
     color: white;
     background-color: black;
