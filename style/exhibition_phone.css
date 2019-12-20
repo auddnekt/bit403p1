@@ -2,11 +2,12 @@
 
 #wrap{
     position: relative;
-    top: 10px;
+    top: 80px;
 }
 .con_box{
     margin: auto;
     width: 100%;
+    min-width: 300px;
 }
 .box_m{
     border: 1px solid silver;
