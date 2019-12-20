@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -21,13 +20,49 @@
 
 <body>
   <!---- -- -- -- --아래는 바디의 해드부분 시작부분 @일진-- -- -- -- -- -->
+
+  <script type="text/javascript">
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 100) {
+       $('header nav').addClass('fixed-header');
+    }
+    else {
+       $('header nav').removeClass('fixed-header');
+    }
+  });
+  </script>
+  <header>
+<nav>
+  <div class="wrap4">
+
+  <a href="main_iljin.html">
+      <img src="images/logo_2.jpg" alt="logo"></a>
+    </div>
+    <div class="wrap5">
+      <ul>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li><a href="main_iljin.html">cafe</a></li>
+        <li><a href="./Restorant.html">restorant</a></li>
+        <li><a href="./Pub&BAR.html">pub&bar</a></li>
+        <li><a href="exhibition.html">exhibition</a></li>
+        <li><a href="#">perform</a></li>
+        <li><a href="Activity.html">activity</a></li>
+      </ul>
+    </div>
+</nav>
+</header>
+<!-- 위의 해더부분을 fixed header로 사용했습니다. -->
+
   <div class="wrap3">
     <ul>
-      <li><a href="login.html">log in</a></li>
+      <li><a href="login.html">log in / </a></li>
       <li><a href="./Signup.html">sign up</a></li>
     </ul>
   </div>
-  <div class="wrap1"><a href="page_iljin.html">
+  <div class="wrap1"><a href="main_iljin.html">
       <img src="images/logo_2.jpg" alt="logo">
     </a>
   </div>

@@ -1,0 +1,40 @@
+@media screen and (max-width: 640px){
+    html,body{
+    height:100%; margin:0; padding:0;
+    }
+    #container{
+    min-height: 100%;
+    position: relative;
+    }
+    footer{
+        width: 100%;
+        height: 300px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    #abc{
+
+        font-family: Franklin Gothic;
+        font-size: 16px;
+        padding: 0 5px;
+        display: inline-block;
+
+        position: absolute;
+        bottom: 90px !important;
+        right : 80px;
+    }
+    #abc ul{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    #abc ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 0px 5px;
+
+    }
+    .info{
+        font-size: 13px;
+    }
+}

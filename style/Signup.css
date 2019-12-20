@@ -1,15 +1,29 @@
+/*@font-face{
+    font-family:franklin gothic;
+    src: url("");
+}*/
 body{
     background-color:white;
+    font-family:franklin gothic;
+}
+.sign{
+    margin-bottom:150px;
+}
+#logo{
+    background: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+                font-family: impact;
+                font-size: 60px;
+    text-align: center;
 }
 label{
     font-size:13px;
 }
 section{
     width:340px; height: 900px;
-    /*border: 2px solid blue;*/
-}
-.sign section{
     margin: 0 auto;
+    /*border: 2px solid blue;*/
 }
 #id{
     letter-spacing:5px;
@@ -35,13 +49,21 @@ section{
     color:white;
     font-size:25px;
 }
-#chpw{
+#pw_check{
     letter-spacing:5px;
     width:330px; height:30px;
-    margin-bottom:30px;
+    margin-bottom:10px;
     background-color:dimgrey;
     color:white;
     font-size:25px;
+}
+#pw_mismatched{
+    border: 1px solid silver;
+    width:330px; height:30px;
+    margin-bottom:30px;
+    font-size:15px;
+    background-color: rgb(255,0,0,0.6);
+    padding-top: 7px;
 }
 #name{
     letter-spacing:5px;
@@ -94,14 +116,18 @@ select{
     font-size:13px;
 }
 #div_sign{
-    border: 1px solid silver;
-    width:330px; height:70px;
+    border: 2px solid silver;
+    width:330px; height:50px;
     padding: 0px;
+    /*margin: 0 auto;*/
+    background: linear-gradient(to top, rgb(93,44,211,0.7) 8%, rgb(29,266,217,0.7));
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    box-shadow: 4px 4px silver;
+}
 
-}
-#img_sign{
-    width:330px; height:70px;
-}
 
 
 

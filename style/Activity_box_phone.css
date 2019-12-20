@@ -10,13 +10,21 @@
     padding-top:46.35%;
     float: left;
 }
-h6{
+.box_m_acc{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-top:46.35%;
+    float: left;
+}
+.box_m h6{
     font-size: 15px;
 }
-h5{
+.box_m h5{
     font-size: 17px;
 }
-h4{
+.box_m h4{
     font-size: 11px;
     font-style: italic;
 }
+

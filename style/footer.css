@@ -1,6 +1,14 @@
-/*body{
-        width: 1280px;
-    }*/
+/*
+각자 바디부분 콘테이너로 감싸주세요~!
+<body><div id="container"> html코드들+footer </div></body>*/
+    html,body{
+    height:100%; margin:0; padding:0;
+    }
+    #container{
+    min-height: 100%;
+    position: relative;
+    border: 0.1px solid rgb(255,255,255,0.0);
+    }
     footer{
         position: absolute;
         bottom: 0;
@@ -10,7 +18,7 @@
         background-color: #535353;
         color: white;
     }
-    h3{
+    footer h3{
         font-family: impact;
         font-size: 48px;
         margin: 30px 0px 0px 40px;
@@ -34,7 +42,7 @@
         position: relative;
         bottom: 180px;
     }
-    #abc ul li{
+    footer ul li{
 
         list-style: none;
         display: inline-block;
@@ -53,7 +61,7 @@
     #qna{
         right: 80px;
     }
-    #abc ul li a{
+    footer ul li a{
         text-decoration: none;
         color: white;
     }

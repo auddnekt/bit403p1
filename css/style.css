@@ -954,7 +954,25 @@ input:focus {
 /*----//End-content---*/
 /*---//End-wrap-----*/
 /*---start-responsive-design----*/
+
 @media only screen and (max-width:2440px) and (min-width:640px) {
+
+
+  nav {width:100%;padding:0px 0;background:#fff;z-index:10;transition:all 0.5s; display: none;}
+
+
+  .fixed-header {display: block; position:fixed;top:0;left:0;width:100%;padding:0px 0;animation:slide-down 0.01s;opacity:1.0;}
+  @keyframes slide-down {
+    0% {
+        opacity: 0;
+        /* transform: translateY(-100%); */
+    }
+    100% {
+        opacity: 1.0;
+        /* transform: translateY(0); */
+    }
+  }
+
 	.wrap {
 		width: 75%;
 	}
@@ -976,10 +994,11 @@ a{
 }
 div.wrap2 a{padding: 0px;
   padding-left: 10px;
+  text-transform: uppercase;
 }
 
 div.wrap1{
-  width: 250px;
+  width: 390px;
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -993,8 +1012,9 @@ div.wrap3{
   top: 20px;
 }
 div.wrap3 a{
-  background-color: #D9D9D6;
-  border-radius: 5px;
+  /* background-color: #EFEBE7;
+  border-radius: 5px; */
+  color: #82867E;
 }
 
 div.wrap2{
@@ -1010,12 +1030,40 @@ ul {
 
 }
 div.wrap1 img{
-width: 240px;
+width: 390px;
 height: auto;
+}
+.wrap4{
+  position: relative;
+  top: 10px;
+  width: 150px;
+  height: auto;
+  padding: 0 0 0 20px;
+
+}
+div.wrap5{
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  top: -17px;
+}
+.wrap5 ul li{
+  padding: 0 30px 0 0 ;
 }
 
 
 @media only screen and (max-width:639px) and (min-width:320px) {
+  nav {width:100%;padding:0px 0;background:#fff;z-index:10;transition:all 0.5s; display: none;}
+  /* .fixed-header {display: block; position:fixed;top:0;left:0;width:100%;padding:0px 0;animation:slide-down 0.01s;opacity:1.0;} */
+  .mm-page{
+    width:100%;
+    background:#fff;
+    position:fixed; top:0;left:0;
+    z-index: 99;
+    padding: 0 0 10px 0;
+  }
   /*컨텐츠 박스 640-*/
   li{
   list-style: none;
@@ -1037,7 +1085,7 @@ height: auto;
     text-align: center;
     margin: 0 auto;
     position: relative;
-    top: 25px;
+    top: 15px;
   }
 
   div.wrap3{
@@ -1150,7 +1198,7 @@ height: auto;
 		width: 32px;
 		height: 32px;
 		position: absolute;
-		top: 32px;
+		top: 22px;
 		left: 11px;
 		background: url(../images/nav-icon.png) no-repeat;
 	}

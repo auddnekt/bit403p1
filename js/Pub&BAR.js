@@ -58,18 +58,30 @@ $(document).ready(function(){
 	}
     $('#art1 .no1').on('click', function(){
         $('#M1').show();
-        $('#M2').hide();
-        $('#M3').hide();
+        $('.sel1').show();
+        $('.sel2').hide();
+        $('.sel3').hide();
+        $('.bt1').show();
+        $('.bt2').hide();
+        $('.bt3').hide();
     });
     $('#art1 .no2').on('click', function(){
-        $('#M2').show();
-        $('#M1').hide();
-        $('#M3').hide();
+        $('#M1').show();
+        $('.sel2').show();
+        $('.sel1').hide();
+        $('.sel3').hide();
+        $('.bt2').show();
+        $('.bt1').hide();
+        $('.bt3').hide();
     });
     $('#art1 .no3').on('click', function(){
-        $('#M3').show();
-        $('#M2').hide();
-        $('#M1').hide();
+        $('#M1').show();
+        $('.sel3').show();
+        $('.sel1').hide();
+        $('.sel2').hide();
+        $('.bt3').show();
+        $('.bt1').hide();
+        $('.bt2').hide();
     });
 
 
