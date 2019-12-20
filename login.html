@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style/login.css">
     <link rel="stylesheet" href="style/login_phone.css" media="screen and (min-width:360px) and (max-width:639px)">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/footerM.css">
 </head>
 <body>
+   <div id="container">
     <div id="wrap">
         <div class="logo">
             <a id="login_logo_link" href="#"><img id="login_logo" src="images/logo_2.jpg" alt="to_main"></a>
@@ -18,12 +21,12 @@
            <div class="login_id">
               <label for="name" class="name">ID</label>
               <br>
-               <input type="text" id="name" class="name">
+               <input type="text" id="name" class="name" size="16">
            </div>
            <div class="login_pw">
                <label for="pw" class="pw">PASSWORD</label>
                <br>
-               <input type="text" id="pw" class="pw">
+               <input type="password" id="pw" class="pw" size="16">
            </div>
            <input type="button" id="login_submit" class="login_bt" value="로그인">
 <!--           <input id="login_bt" class="login_bt" type="submit" value="로그인">-->
@@ -40,5 +43,24 @@
         });
 
     </script>
+            <footer style="top: 1000px">
+    <div>
+       <h3>in PLACE</h3>
+       <p>ⓒ 2019 BITCAMP</p>
+   </div>
+   <div class="info">
+     Tel. 000-0000-0000  |  Fax. 0000-0000-0000  |  bitcamp403@bitcamp.com<br>
+     Gangnamdaero 459, Seocho-gu, Seoul, Korea  |  business license number. 000-00-00000
+   </div>
+    <div id="abc">
+    <ul>
+        <li id="about"><a href="#">ABOUT</a></li>
+        <li id="project"><a href="#">PROJECT</a></li>
+        <li id="contact"><a href="#">CONTACT</a></li>
+        <li  id="qna"><a href="#">Q&A</a></li>
+    </ul>
+    </div>
+    </footer>
+    </div>
 </body>
 </html>
