@@ -7,81 +7,46 @@ $(document).ready(function(){
            $('#art2').hide();
            $('#art1').show();
        }
+       $(window).resize(function(){
+           if($(window).width()<640){
+                $('#M1').hide();
+           }else{
+               $('#M4').hide();
+               $('#M5').hide();
+               $('#M6').hide();
+               }
+       });
 
-	let visual = $('.brandVisual > ul > li');
-	let button = $('.buttonList > li');
 
-	let current = 0;
-	let setIntervalId ;
 
-	button.on({click:function(){
-				let tg = $(this);
-				let i = tg.index();
-
-				button.removeClass('on');
-				tg.addClass('on');
-				move(i);
-				}
-			});
-
-	$('#wrap').on({
-					mouseover:function(){
-						clearInterval(setIntervalId);
-				    },
-					mouseout:function(){
-							timer();
-					}
-			   });
-
-	timer();
-
-	function timer(){
-		setIntervalId = setInterval(function(){
-			let n = current + 1 ;
-			if ( n == visual.size()){
-					n = 0;
-			}
-			button.eq(n).trigger('click');
-		}, 100000);
-
-	}
-
-	function move(i){
-		if(current == i) return ;
-
-		let currentEl = visual.eq(current);
-		let nextEl = visual.eq(i);
-
-		currentEl.css({left:0}).stop().animate({left:'-100%'});
-		nextEl.css({left:'100%'}).stop().animate({left:0});
-		current = i ;
-	}
     $('#art1 .no1').on('click', function(){
         $('#M1').show();
-        $('.sel1').show();
-        $('.sel2').hide();
-        $('.sel3').hide();
-        $('.bt1').show();
-        $('.bt2').hide();
-        $('.bt3').hide();
+        $('.btn1').show();
+        $('.btn2').hide();
+        $('.btn3').hide();
+        $('#mainSlider>#sel1').show();
+        $('#mainSlider>#sel2').hide();
+        $('#mainSlider>#sel3').hide();
     });
     $('#art1 .no2').on('click', function(){
         $('#M1').show();
-        $('.sel2').show();
-        $('.sel1').hide();
-        $('.sel3').hide();
-        $('.bt2').show();
-        $('.bt1').hide();
-        $('.bt3').hide();
+        $('.btn2').show();
+        $('.btn1').hide();
+        $('.btn3').hide();
+        $('#mainSlider>#sel2').show();
+        $('#mainSlider>#sel1').hide();
+        $('#mainSlider>#sel3').hide();
+
+
     });
     $('#art1 .no3').on('click', function(){
         $('#M1').show();
-        $('.sel3').show();
-        $('.sel1').hide();
-        $('.sel2').hide();
-        $('.bt3').show();
-        $('.bt1').hide();
-        $('.bt2').hide();
+        $('.btn3').show();
+        $('.btn1').hide();
+        $('.btn2').hide();
+        $('#mainSlider>#sel3').show();
+        $('#mainSlider>#sel2').hide();
+        $('#mainSlider>#sel1').hide();
     });
 
 
