@@ -94,7 +94,7 @@
   <!---- -- -- -- --위쪽까지가 바디의 해드부분 끝부분입니다 @일진-- -- -- -- -- -->
 
 
-   <section>
+   <div>
         <div id="wrap">
             <div class="boxmodel_nav_wrap">
                 <div class="boxmodel_nav_title"><span>EXHIBITION</span></div> <br>
@@ -132,7 +132,9 @@ Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> 
             </div>
             <br>
         </div>
-    </section>
+
+    </div>
+
     <!---------------------------X--------------------------박스 끝-----------------------------X----------------------------->
 
     <!----------------------------모달창----------------------------->
@@ -156,37 +158,61 @@ Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> 
 
         <div class="modal_layer"></div>
     </div>
+<!----------------X------------모달창-------------X----------------->
+<!----------------------------입력창-------------------------------->
+    <div class="insert_box_overwrap">
+        <div class="insert_box_wrap">
+                  <label for="box_num_sle">Box Number </label>
+            <select name="box_num_sle" id="box_num_sle">
+                <option value="box_1">Box1</option>
+                <option value="box_2">Box2</option>
+                <option value="box_3">Box3</option>
+                <option value="box_4">Box4</option>
+                <option value="box_5">Box5</option>
+                <option value="box_6">Box6</option>
+                <option value="box_7">Box7</option>
+                <option value="box_8">Box8</option>
+                <option value="box_9">Box9</option>
+                <option value="box_10">Box10</option>
+            </select>
+            <label for="insert_box_b_img">Image</label>
+            <input type="text" id="insert_box_b_img">
+            <label for="insert_box_b_artist">Artist</label>
+            <input type="text" id="insert_box_b_artist">
+            <label for="insert_box_b_title">Title</label>
+            <input type="text" id="insert_box_b_title">
+            <label for="insert_box_b_comment">Comment</label>
+            <input type="text" id="insert_box_b_comment">
+            <label for="insert_box_b_day_begin">Begin date</label>
+            <input type="text" id="insert_box_b_day_begin">
+            <label for="insert_box_b_day_end">End date</label>
+            <input type="text" id="insert_box_b_day_end">
 
+            <button type="button" id="box_insert_btn"> 입력 </button>
 
-<!--
-    <div class="modal" id="modal">
-        <div class="modal_content">
-            <div class="modal_img_box"><img src="img/exhibition/exhibition1.jpg" alt="exhibition1_img" class="modal_inner_img" id="modal_inner_img"></div>
-            <div class="modal_text_box">
-                <p>Artist : <span id="modal_artist_name">KIM KEE TEA</span></p>
-                <p>Title : <span id="modal_exhibition_title">UNKNOWN ARTIST &#45; DEX 5TH 19</span></p>
-                <p>Comment : </p>
-                <p id="modal_content_detail">작자미상 &#40;UNKOWN ARTIST&#41; &#45; 이 글과 작품들은 언제 어디서 누구에 의해 제작되었는지 알려져 있지 않다.
-  나는 종종 박물관에서 어느 유물을 보며 '이것이 정말 알려진 그 용도였을까 어쩌면 알려진 바와는 전혀 다른 어떤 것은 아니었을까' 하는 호기심이 일기도 한다. </p>
-            </div>
-            <div class="modal_text_box2">
-                <div class="text_box2_con"><p class="modal_text_t">Day.</p><p id="modal_day_begin">Dec 5. 2019</p><p id="modal_day_end">&#45; Jan 4. 2020</p></div>
-                <div class="text_box2_con"><p class="modal_text_t">Time.</p><p id="modal_time_begin">Monday&#45;Saturday </p> <p id="modal_time_end">10:00 am &#45; 6:00 pm</p></div>
-                <div class="text_box2_con_addr"><p class="modal_text_t">Place.</p><p id="modal_addr"> 3, Sapyeong&#45;daero 20&#45;gil, Seocho&#45;gu , Seoul, Korea 06576</p></div>
-            </div>
-            <a href="http://www.gallerymark.kr/pages/current.php" id="modal_link_btn" class="modal_link_btn">공식페이지 바로가기</a>
-            <button type="button" id="modal_close_btn" class="modal_close_btn">닫기</button>
+            <label for="insert_box_b_time_begin">Open time</label>
+            <input type="text" id="insert_box_b_time_begin">
+            <label for="insert_box_b_time_end">Close time</label>
+            <input type="text" id="insert_box_b_time_end">
+            <label for="insert_box_b_addr">Addr</label>
+            <input type="text" id="insert_box_b_addr">
+            <label for="insert_box_b_link">Web Link</label>
+            <input type="text" id="insert_box_b_link">
+            <label for="insert_box_b_la">Lat</label>
+            <input type="text" id="insert_box_b_la">
+            <label for="insert_box_b_ln">Lng</label>
+            <input type="text" id="insert_box_b_ln">
+            <label for="insert_box_b_map_con">Map comment</label>
+            <input type="text" id="insert_box_b_map_con">
         </div>
-
-        <div class="modal_layer"></div>
     </div>
--->
-    <!---------------X------------모달창-------------X--------------->
+
+    <div class="hidden_console">
+        <button type="button">입력창 콘솔</button>
+    </div>
+<!---------------X------------입력창-----------------X-------------->
 
 
-
-    <!----------------------------푸터----------------------------->
-<!--
         <footer>
     <div>
        <h3>in PLACE</h3>
@@ -205,13 +231,25 @@ Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> 
     </ul>
     </div>
     </footer>
--->
     <!---------------X------------푸터--------------X-------------->
  </div>
 
 <!------------------------------------------------이하 script----------------------------------------------------->
 <!---------------------------------box_dom script------------------------------->
    <script>
+       var hidden_btn = false;
+       $('.hidden_console').click(function(){
+           if(!hidden_btn){
+                $('.insert_box_wrap').css('display','block');
+               hidden_btn = true;
+           }
+           else {
+               $('.insert_box_wrap').css('display','none');
+               hidden_btn = false;
+           }
+       });
+
+
         var exhibition_list = [];
 
         function box_dom(b_num, b_img, b_artist, b_title, b_comment, b_day_begin, b_day_end, b_time_begin, b_time_end, b_addr, b_link, b_la, b_ln, b_map_con) {
@@ -231,22 +269,12 @@ Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> 
           this.b_map_con = b_map_con;
         };
 
-//<li class="box_m"><a class="box_link" href="#"><div id="box_3"  class="box_d"><img id="img_sampp" class="box_img" src="img/exhibition/exhibition3.jpg" alt="box_img3"><div class="box_inner_text"><h1>MAGNUM IN PARIS <br> <span>Sep 25. 2019  &#45; Feb 9. 2020</span> <br> Gaudi so.</h1></div></div></a></li>
-//                    <li class="li_map"><div class="box_map"><div class="map" id="map"></div></div></li>
-//       ${
-//       function inert_box_con(b_num, b_img, b_title, b_day_begin ,b_day_end ){
-//           $('.box_d').filter
-//           var box_in = '#'+b_num+'>img';
-//           var box_in_t = '#'+b_num+' .box_inner_text h1';
-//
-//       }
-//        }
-
        function insert_box_con(b_num, b_img, b_title, b_day_begin ,b_day_end,b_artist) {
            var box_in = '#'+b_num;
            $(box_in).find('img').attr('src',b_img);
            $(box_in).find('h1').html(b_title + '<br><span>'+b_day_begin+b_day_end+'</span><br>'+b_artist);
        }
+
 //<!-----------------X---------------box_dom script--------------X---------------->
 
 //<!---------------------------------모달 스크립트------------------------------->
@@ -341,8 +369,6 @@ Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> 
                 append_markers(Number(box_domodel.b_la), Number(box_domodel.b_ln),box_domodel.b_map_con);
                 insert_box_con(b_num, b_img, b_title, b_day_begin ,b_day_end, b_artist);
             }
-          append_exhibition();
-          append_exhibition();
 
             append_exhibition(
                 "box_3"
@@ -361,17 +387,25 @@ Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> 
                ,'bb'
            );
 
-          append_exhibition(
 
-          );
-          append_exhibition();
-          append_exhibition();
-          append_exhibition();
-          append_exhibition();
-          append_exhibition();
-          append_exhibition();
+          $('#box_insert_btn').click(function(){
+              var bn = $('#box_num_sle option:selected').val();
+              var bi = $('#insert_box_b_img').val();
+              var ba = $('#insert_box_b_artist').val();
+              var bt = $('#insert_box_b_title').val();
+              var bc = $('#insert_box_b_comment').val();
+              var bdb = $('#insert_box_b_day_begin').val();
+              var bde = $('#insert_box_b_day_end').val();
+              var btb = $('#insert_box_b_time_begin').val();
+              var bte = $('#insert_box_b_time_end').val();
+              var baddr = $('#insert_box_b_addr').val();
+              var blink = $('#insert_box_b_link').val();
+              var blat = $('#insert_box_b_la').val();
+              var blng = $('#insert_box_b_ln').val();
+              var bmcon = $('#insert_box_b_map_con').val();
 
-
+              append_exhibition(bn,bi,ba,bt,bc,bdb,bde,btb,bte,baddr,blink,blat,blng,bmcon);
+          });
 
 //          append_markers(37.499100, 126.997199,'Mordern Rose : UM Gallery');
 //          append_markers(37.579528,126.980315,'Square Thinking Triangle : 현대미술관');
@@ -408,13 +442,6 @@ Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> 
   });
   </script>
 <!---------------X-------------헤더 네이바 스크립트-------------X-------------->
-
-   <!---------------------------------------box 객체 스크립트---------------------------------------->
-<!--   <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/etc/모아봐요3.png" alt="img3"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
- -->
-<!--
--->
- <!------------------X--------------------box 객체 스크립트-----------------X---------------------->
 
 </body>
 </html>
