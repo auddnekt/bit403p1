@@ -15,7 +15,6 @@ a {
     width: 500px;
     display: block;
     position: relative;
-    top: 100px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -24,8 +23,15 @@ a {
                -webkit-background-clip: text;
                -webkit-text-fill-color: transparent;
                 font-family: impact;
-                font-size: 100px;
+    margin: 0;
+    padding: 0;
     text-align: center;
+}
+#logo p{
+    font-size: 100px;
+}
+#logo p:hover {
+    box-shadow: 5px 5px 5px 5px  rgb(93,44,211);
 }
 .login_box {
     position: relative;
@@ -35,7 +41,7 @@ a {
     border-image: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
     border-image-slice: 1;
     display: inline-block;
-    top: 240px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
 }
