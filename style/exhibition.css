@@ -10,13 +10,27 @@ a{
 }
 #wrap{
     position: relative;
-    top: 100px;
+    top: 60px;
 }
 section ul li a {
     color: black;
     text-decoration: none;
 }
 /*컨텐츠 박스 640-1200*/
+.boxmodel_nav_wrap {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width:70%;
+    max-width: 1200px;
+}
+.boxmodel_nav_wrap .boxmodel_nav_title {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 3% 0 5% 0;
+    font-family: Copperplate Gothic;
+    font-weight: 900;
+}
 
 .box_m{
     position: relative;
@@ -255,18 +269,7 @@ section ul li a {
     z-index: -1;
 }
 /*****************************modal 끝*****************************/
-.boxmodel_nav_wrap {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width:70%;
-    max-width: 1200px;
-}
-.boxmodel_nav_wrap .boxmodel_nav_title {
-    text-align: center;
-    font-size: 2rem;
-    padding: 3% 0 5% 0;
-}
+
 /*
 .boxmodel_nav_list_div {
     position: relative;
