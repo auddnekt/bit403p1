@@ -1,4 +1,4 @@
-/*@font-face{
+ /*@font-face{
     font-family:franklin gothic;
     src: url("");
 }*/
@@ -9,13 +9,25 @@ body{
 .sign{
     margin-bottom:150px;
 }
-#logo{
+/*#logo{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}*/
+#logo {
     background: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
                -webkit-background-clip: text;
                -webkit-text-fill-color: transparent;
                 font-family: impact;
-                font-size: 60px;
-    text-align: center;
+                font-size: 100px;
+                transition: all .9s;
+                text-align: center;
+                width: 480px;
+                margin: 0 auto;
+                transition: all ease 2s 0s;
+}
+#logo :hover{
+    box-shadow: 5px 5px 5px 5px rgb(93,44,211,0.8);
 }
 label{
     font-size:13px;
