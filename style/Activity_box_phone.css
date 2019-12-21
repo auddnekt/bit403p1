@@ -17,13 +17,16 @@
     padding-top:46.35%;
     float: left;
 }
-h6{
-    font-size: 15px;
+.box_m h6{
+    font-size: 12px;
 }
-h5{
-    font-size: 17px;
+.box_m h5{
+    font-size: 14px;
 }
-h4{
+.box_m h4{
     font-size: 11px;
     font-style: italic;
 }
+
+
+

@@ -1,10 +1,13 @@
-@font-face{
+/*@font-face{
     font-family:franklin gothic;
     src: url("");
-}
+}*/
 body{
     background-color:white;
     font-family:franklin gothic;
+}
+.sign{
+    margin-bottom:150px;
 }
 #logo{
     background: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
@@ -116,7 +119,7 @@ select{
     border: 2px solid silver;
     width:330px; height:50px;
     padding: 0px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     background: linear-gradient(to top, rgb(93,44,211,0.7) 8%, rgb(29,266,217,0.7));
     text-align: center;
     padding: 15px 0px 0px 0px;
@@ -124,6 +127,7 @@ select{
     letter-spacing: 3px;
     box-shadow: 4px 4px silver;
 }
+
 
 
 
