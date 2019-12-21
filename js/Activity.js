@@ -25,6 +25,15 @@ $(document).ready(function(){
     });
    /* --------+---------------+--------*/
 
+    /* 모바일 반응시 마지막 박스 삭제쿼리 */
+    /*$('#box_m_fade').click(function(){
+
+        if(){
+           ('this').fadeOut;
+           }
+    });*/
+
+
     /*var floatPosition=parseInt($('#acc').css('top'));
     $(window).scroll(function(){
         var scrollTop=$(window).scrollTop();

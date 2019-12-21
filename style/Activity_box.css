@@ -7,13 +7,13 @@ box-sizing: border-box;
 /*여기서부터 서브 네비게이션*/
 #act_nav{
     position: relative;
-    top: 50px;
+    top: 90px;
     text-align: center;
     padding:0px; margin:0px;
 }
 #act_nav h6{
-    padding:3px; margin-bottom:5px;
-    font-size:20px; color:blue;
+    padding:3px; margin-bottom:10px;
+    font-size:50px; color:blue;
 }
 #act_nav ul{
     margin:0px; padding:0px;
@@ -23,6 +23,7 @@ box-sizing: border-box;
     /*border: 1px solid blue;*/
     margin: 0;
     padding: 3px 50px;
+    font-size: 19px;
 }
 #act_nav select{
     display: none;
@@ -43,7 +44,7 @@ box-sizing: border-box;
 }
 #wrap{
     position: relative;
-    top: 100px;
+    top: 130px;
 }
 section ul li a {
     color: black;
