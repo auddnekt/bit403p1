@@ -1,3 +1,12 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
 /*
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -38,6 +47,7 @@ img{max-width:100%;}
          url('../fonts/opensans_light_macroman/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 	/*-----regular-font----*/
 @font-face {
@@ -118,6 +128,7 @@ body{
 .sign-ligin-btns ul li{
 	display:inline-block;
 	margin-left: 1em;
+
 }
 .sign-ligin-btns ul li a.signup span,.sign-ligin-btns ul li a.login span{
 	padding: 0.5em 1.8em 0.55em 1.8em;
@@ -954,6 +965,17 @@ input:focus {
 /*----//End-content---*/
 /*---//End-wrap-----*/
 /*---start-responsive-design----*/
+.vimeo video{
+  margin-bottom: -5px;
+  /* margin-right: -2px; */
+  width:100%;
+  height:auto;
+position: relative;
+left: -1px;
+}
+.vimeo{
+  width: 99.5%;
+}
 
 @media only screen and (max-width:2440px) and (min-width:640px) {
 
@@ -961,7 +983,7 @@ input:focus {
   nav {width:100%;padding:0px 0;background:#fff;z-index:10;transition:all 0.5s; display: none;}
 
 
-  .fixed-header {display: block; position:fixed;top:0;left:0;width:100%;padding:0px 0;animation:slide-down 0.01s;opacity:1.0;}
+  .fixed-header {display: block; position:fixed;top:0;left:0;width:100%;padding:0px 0;animation:slide-down 0.01s;opacity:1.0;  box-shadow: 0px 10px 3px -10px #111;    }
   @keyframes slide-down {
     0% {
         opacity: 0;
@@ -975,6 +997,9 @@ input:focus {
 
 	.wrap {
 		width: 75%;
+    position: relative;
+    top: 100px;
+    font-family: Copperplate Gothic;
 	}
 }
 li{
@@ -986,6 +1011,10 @@ hr{
   position: relative;
   top: 50px;
 width: 100%
+}
+#hr1{
+  position: relative;
+  top: -33px;
 }
 a{
   color: black;
@@ -1052,6 +1081,7 @@ height: auto;
   width: 150px;
   height: auto;
   padding: 0 0 0 20px;
+  z-index: 100;
 
 }
 div.wrap5{
@@ -1150,7 +1180,9 @@ div.wrap5{
   hr{
     display: none;
   }
-
+box_link{
+  margin: 0 100px 0 0;
+}
   div.wrap2 a{padding: 0px;
     padding-left: 10px;
     position: relative;
