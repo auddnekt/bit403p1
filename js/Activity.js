@@ -1,6 +1,13 @@
 $(document).ready(function(){
     /*컨텐츠박스*/
-
+    
+    /*클릭시 박스 정렬*/
+    $('#array1').click(function(){
+        $('#box4').insertAfter('#box1');
+        $('#box7').insertAfter('#box4');
+        $('#box5').insertAfter('#box2');
+        $('#box8').insertAfter('#box5');
+    });
 
     /*---------+---------------+----------*/
 
@@ -26,32 +33,23 @@ $(document).ready(function(){
    /* --------+---------------+--------*/
 
     /* 모바일 반응시 마지막 박스 삭제쿼리 */
-    /*$('#box_m_fade').click(function(){
+    /*$('#box9').function(){
 
-        if(){
+        if('width'<'640px'){
            ('this').fadeOut;
            }
-    });*/
+    };*/
 
-
-    /*var floatPosition=parseInt($('#acc').css('top'));
+    /*  슬라이드바   */
+    var floatPosition=parseInt($('#slidebar').css('top'));
     $(window).scroll(function(){
         var scrollTop=$(window).scrollTop();
         var newPosition=scrollTop+floatPosition+'px';
-    $('#acc').stop().animate({
+    $('#slidebar').stop().animate({
         'top':newPosition},500);
-    }).scroll();*/
+    }).scroll();
 
 
-    /*slide효과*/
-    /*var footer_floatPosition=parseInt($('footer').css('top'));
-    $(window).scroll(function(){
-        var footer_scrollTop=$(window).scrollTop();
-        var footer_newPosition=footer_scrollTop
-                                +footer_floatPosition+'px';
-    $('footer').stop().animate({
-        'top':footer_newPosition},500);
-    }).scroll();*/
     /*--------+----------+---------*/
 
    /* $(window).scroll( function(){
