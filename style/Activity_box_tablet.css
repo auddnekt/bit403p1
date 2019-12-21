@@ -4,6 +4,13 @@
     margin: auto;
     width: 87%;
 }
+.box_m_acc{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-top:69.53%;
+    float: left;
+}
 .box_m h6{
     font-size: 15px;
 }

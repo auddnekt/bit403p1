@@ -1,18 +1,123 @@
-@font-face{
-    font-family:'Franklin Gothic';
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
 }
-/*body{
-    background-image: url("../img/Activity/snow.jpg");
-    background-color:rgb(255,255,255,0.2);
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    background-size:cover;
-    background-position: center 40%;
-}*/
-body{
-    font-family: franklin gothic;
+
+/*여기서부터 서브 네비게이션*/
+#act_nav{
+    position: relative;
+    top: 90px;
+    text-align: center;
+    padding:0px; margin:0px;
 }
-/*아코디언*/
+#act_nav h6{
+    padding:3px; margin-bottom:10px;
+    font-size:50px; color:blue;
+    font-family: Copperplate Gothic;
+}
+#act_nav ul{
+    margin:0px; padding:0px;
+    list-style: none;
+}
+#act_nav ul li{
+    margin: 0;
+    padding: 3px 50px;
+    font-size: 19px;
+}
+#act_nav select{
+    display: none;
+}
+@media screen and (min-width:360px) and (max-width:639px)
+{
+    #act_nav ul li{display:none;}
+    #act_nav select{
+        display:block;
+        width:60%; height:30px;
+        margin: 0 auto;
+    }
+}
+
+/*여기서부터 컨텐츠박스~~*/
+.box_m a{
+    text-decoration: none;
+}
+#wrap{
+    position: relative;
+    top: 130px;
+}
+section ul li a {
+    color: black;
+    text-decoration: none;
+}
+/*컨텐츠 박스 640-1200*/
+
+.box_m{
+    position: relative;
+    display: inline-block;
+    width: 33.33333%;
+    padding-top:46.35%;
+    float: left;
+    margin: -1px;
+}
+.box_m_acc{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-top:46.35%;
+    float: left;
+    margin: -1px;
+}
+
+.box_d {
+    position: absolute;
+    display: inline-block;
+    width: 100%; height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: border 0.3s linear;
+}
+.box_d_acc {
+    position: absolute;
+    display: inline-block;
+    width: 100%; height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: border 0.3s linear;
+}
+
+.box_link{
+    width: 100%; height: 100%;
+}
+
+.box_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box_d:hover{
+    border: 18px solid transparent;
+}
+
+.box_d_acc:hover{
+    border: 18px solid transparent;
+    border-image: black;
+    border-image-slice: 1;
+}
+
+/* 여기서부터 아코디언*/
+#acc{
+    position:absolute;
+    width:100%;
+    top:25%;
+    text-align: center;
+    /*margin: 0 auto;*/
+}
 h2{
     padding:10px;
     width:100%; height:50px;
@@ -20,14 +125,6 @@ h2{
     margin: 0 auto;
     font-size: 21px;
     font-family: Franklin Gothic;
-}
-#acc{
-    border: 1px solid silver;
-    position:absolute;
-    width:100%;
-    text-align: center;
-    left:120px; top:120px;
-    /*opacity: 0;*/
 }
 #acc div{
     margin: 0 auto;
@@ -43,7 +140,41 @@ h2{
     padding:0px; margin:30px 0px;
 }
 
-
-/*sub contents*/
+/*여기서부터 컨텐츠 박스 안 텍스트*/
+.box_inner_text{
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 3%;
+}
+#box_text_glass{
+    top: 75%;
+    height: 25%;
+}
+#box_text_tree{
+    top: 78%;
+    height: 22%;
+}
+#box_text_couple{
+    top: 72%;
+    height: 28%;
+}
+#box_text_back{
+    top: 75%;
+    height: 25%;
+}
+#box_text_leviev{
+    top: 70%;
+    height: 30%;
+}
+#box_text_cat{
+    top: 78%;
+    height: 22%;
+}
 
 
