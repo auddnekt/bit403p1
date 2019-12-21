@@ -16,7 +16,7 @@ $(document).ready(function(){
             var pw2=$('#pw_check').val();
             if(pw1!=''||pw2!=''){
             if(pw1==pw2){
-                $('#pw').css({'backgroundColor':'rgb(0,0,255,0.5)'});
+                $('#pw').css({'backgroundColor':'rgb(0,0,200,0.5)'});
                 $('#pw_check').css({'backgroundColor':'rgb(0,0,255,0.5)'});
                 $('#pw_mismatched').slideUp(500);
             }else{

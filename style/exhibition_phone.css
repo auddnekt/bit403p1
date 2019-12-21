@@ -4,6 +4,13 @@
     position: relative;
     top: 80px;
 }
+.boxmodel_nav_wrap .boxmodel_nav_title {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 3% 0 5% 0;
+    font-family: Copperplate Gothic;
+    font-weight: 600;
+}
 .con_box{
     margin: auto;
     width: 100%;

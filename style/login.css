@@ -83,6 +83,12 @@ a {
     top: 30px;
     left: 10%;
 }
+#name {
+    background-color: lightgray;
+}
+#pw{
+    background-color: lightgray;
+}
 .pw {
     position: relative;
     top: 30px;
