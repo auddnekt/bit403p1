@@ -46,13 +46,6 @@ $(document).ready(function(){
     });
    /* --------+---------------+--------*/
 
-    /* 모바일 반응시 마지막 박스 삭제쿼리 */
-    /*$('#box9').function(){
-
-        if('width'<'640px'){
-           ('this').fadeOut;
-           }
-    };*/
 
     /*  슬라이드바   */
     var floatPosition=parseInt($('#slidebar').css('top'));
@@ -66,16 +59,8 @@ $(document).ready(function(){
 
     /*--------+----------+---------*/
 
-   /* $(window).scroll( function(){
-        $('#acc').each( function(i){
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_object/2 ){
-                $(this).animate({'opacity':'1'},500);
-            }
-        });
-    });
-*/
+    
+
 
 
 });

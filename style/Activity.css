@@ -12,9 +12,13 @@ box-sizing: border-box;
     padding:0px; margin:0px;
 }
 #act_nav h6{
+    width:20%; margin: 0 auto;
     padding:3px; margin-bottom:10px;
     font-size:50px; color:blue;
     font-family: Copperplate Gothic;
+}
+#act_nav a h6:hover{
+    color: red;
 }
 #act_nav ul{
     margin:0px; padding:0px;
