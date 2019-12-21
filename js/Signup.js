@@ -40,12 +40,15 @@ $(document).ready(function(){
     });
 
 
-    $('#div_sign').click(function(){
+    $('.btn_sign').click(function(){
        if($('#id').val()==$('#pw').val()){
             alert('아이디와 비밀번호는 달라야 합니다');
            $('#pw').val('');
            $('#pw_check').val('');
           }//아이디와 비밀번호가 같은지 확인
+        else{
+            alert('어서오세요 bit403 님');
+        }
         var nameCheck = RegExp(/^[가-힣]{2,6}$/);
        if(!nameCheck.test($('#name').val())){
             alert('이름은 2~6글자의 한글이어야 합니다.')
