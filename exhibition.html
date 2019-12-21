@@ -128,17 +128,18 @@
 
             <div class="con_box">
                 <ul>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition1.jpg" alt="img1"> <div class="box_inner_text"><h1>EXHIBITION1 <br> </h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition2.jpg" alt="img2"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition3.jpg" alt="img3"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition1.jpg" alt="box_img1"> <div class="box_inner_text"><h1>Mordern Rose <br> <span>Dec 5. 2019  &#45; Jan 4. 2020</span> <br> Go Jae Wook</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition2.jpg" alt="box_img2"><div class="box_inner_text"><h1>
+Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> Seo Kyung Kang</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img id="img_sampp" class="box_img" src="img/exhibition/exhibition3.jpg" alt="box_img3"><div class="box_inner_text"><h1>MAGNUM IN PARIS <br> <span>Sep 25. 2019  &#45; Feb 9. 2020</span> <br> Gaudi so.</h1></div></div></a></li>
                     <li class="li_map"><div class="box_map"><div class="map" id="map"></div></div></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition4.jpg" alt="img4"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition5.jpg" alt="img5"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition6.jpg" alt="img6"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition7.jpg" alt="img7"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition8.jpg" alt="img8"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition9.jpg" alt="img9"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition10.jpg" alt="img10"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition4.jpg" alt="box_img4"><div class="box_inner_text"><h1>영원한 나르시시스트 <br> <span>Dec 26. 2019 - Dec 26. 2020</span> <br>천경자</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition5.jpg" alt="box_img5"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition6.jpg" alt="box_img6"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition7.jpg" alt="box_img7"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition8.jpg" alt="box_img8"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition9.jpg" alt="box_img9"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+                    <li class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/exhibition/exhibition10.jpg" alt="box_img10"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
                 </ul>
             </div>
             <br>
@@ -210,9 +211,42 @@
  </div>
 
 <!------------------------------------------------이하 script----------------------------------------------------->
+<!---------------------------------DOM script------------------------------->
+   <script>
+        var exhibition_list = [];
+
+        function box_dom(b_img, b_artist, b_title, b_comment, b_day_begin, b_day_end, b_time_begin, b_time_end, b_addr, b_link, b_la, b_ln, b_map_con) {
+          this.b_img = b_img;
+          this.b_artist = b_artist;
+          this.b_title = b_title;
+          this.b_comment = b_comment;
+          this.b_day_begin = b_day_begin;
+          this.b_day_end = b_day_end;
+          this.b_time_begin = b_time_begin;
+          this.b_time_end = b_time_end;
+          this.b_addr = b_addr;
+          this.b_link = b_link;
+          this.b_la = b_la;
+          this.b_ln = b_ln;
+          this.b_map_con = b_map_con;
+        };
+
+
+
+        function append_exhibition(b_img, b_artist, b_title, b_comment, b_day_begin, b_day_end, b_time_begin, b_time_end, b_addr, b_link, b_la, b_ln, b_map_con){
+            var box_domodel =
+                new box_dom(b_img, b_artist, b_title, b_comment, b_day_begin, b_day_end, b_time_begin, b_time_end, b_addr, b_link, b_la, b_ln, b_map_con);
+
+//                new box_dom('b_img','b_artist','b_title','b_comment','b_day_begin','b_day_end','b_time_begin','b_time_end','b_addr','b_link','b_la','b_ln','b_map_con');
+
+            exhibition_list.push(box_domodel);
+        }
+
+       append_exhibition("img/exhibition/exhibition3.jpg","aaa","B",'C','D','E','F','G','h','q','37.564280','126.973779','bb');
+
+<!-----------------X---------------DOM script--------------X---------------->
 <!---------------------------------모달 스크립트------------------------------->
    <!---.box_link 중에 클릭시 선택된 $this를 가지고 모달창을 선택하도록 구성--->
-    <script>
         $("#modal_close_btn").click(function(){
            $("#modal").css("display","none");
         });
@@ -220,24 +254,71 @@
            $("#modal").css("display","none");
         });
         $(".box_link").each(function(){
-            $this = $(this);
-            $this.on({
+            $(this).on({
                 'click' : function(event){
                     event.preventDefault();
-                    $("#modal").css("display","block")}
+                    var box_src = "";
+                    box_src = $(this).find('img').attr('src');
+//                    box_src = $('#img_sampp').attr("src");
+
+                    console.log($(this).find('img').attr('src'));
+                    console.log(exhibition_list[0].b_img);
+
+                    var box_obj;
+                    for(let i=0; i<exhibition_list.length; i++) {
+                        if(box_src == exhibition_list[i].b_img) {
+                            box_obj=exhibition_list[i];
+                        }
+                    }
+
+                    $('#modal_inner_img').prop('src',box_obj.b_img);
+                    $('#modal_artist_name').text(box_obj.b_artist);
+                    $('#modal_exhibition_title').text(box_obj.b_title);
+                    $('#modal_content_detail').text(box_obj.b_comment);
+                    $('#modal_day_begin').text(box_obj.b_day_begin);
+                    $('#modal_day_end').text(box_obj.b_day_end);
+                    $('#modal_time_begin').text(box_obj.b_time_begin);
+                    $('#modal_time_end').text(box_obj.b_time_end);
+                    $('#modal_addr').text(box_obj.b_addr);
+                    $('#modal_link_btn').prop('href',box_obj.b_link);
+
+//                    $('#modal_inner_img').prop('src','img/exhibition/exhibition2.jpg');
+//                    $('#modal_artist_name').text('천경자');
+//                    $('#modal_exhibition_title').text('영원한 나르시시스트');
+//                    $('#modal_content_detail').text('천경자전입니다');
+//                    $('#modal_day_begin').text('Dec 5. 2019');
+//                    $('#modal_day_end').text(' Jan 4. 2020');
+//                    $('#modal_time_begin').text('feb');
+//                    $('#modal_time_end').text('jan');
+//                    $('#modal_addr').text('seoul');
+//                    $('#modal_link_btn').prop('href','https://www.naver.com/');
+
+                    $("#modal").css("display","block");
+                }
             });
         });
-
-    </script>
-
+<!-------------X--------------------모달 스크립트----------------X------------>
+<!---------------------------------------box mouseover event---------------------------------------->
+          $('.box_d').each(function(index){
+              $(this).on({
+                 mouseover : function(){
+                     $(this).css('border','18px solid transparent');
+                     $(this).children('div').stop().fadeIn(300);
+                 }
+                ,mouseout : function(){
+                    $(this).css('border','0');
+                    $(this).children('div').css('display','none');
+                }
+              });
+          });
+<!----------------------X----------------box mouseover eventr-------------------X-------------------->
 <!----------------------------    google map AIP--------------------------------->
-   <script>
 
       // This example displays a marker at the center of Australia.
       // When the user clicks the marker, an info window opens.
 
       function initMap() {
-            var center_m = {lat: 37.564280, lng: 126.973779};
+            var center_m = {lat: 37.543358, lng: 126.983974};
             var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 12,
             center: center_m
@@ -264,10 +345,16 @@
               markers.push({pos:{lat:la,lng:ln},content:'<div>'+con+'</div>'});
           }
 
-          append_markers(37.499100, 126.997199,'김기태 전');
-          append_markers(37.579528,126.980315,'현대미술관 경복궁');
-          append_markers(37.532877, 126.963419,'백악기 공룡의전설')
-          append_markers(37.564280,126.973779,'서울시립미술관');
+          append_markers(37.499100, 126.997199,'Mordern Rose : UM Gallery');
+          append_markers(37.579528,126.980315,'Square Thinking Triangle : 현대미술관');
+          append_markers(37.532877, 126.963419,'MAGNUM IN PARIS : D뮤지엄')
+//          append_markers(37.564280,126.973779,'영원한 나르시시스트 : 서울시립미술관');
+          append_markers(37.529478, 126.968264,'Amore Musium');
+          append_markers(37.564323, 126.990830,': Street Musium');
+          append_markers(37.554704, 126.927970,': ALT SPACE LOOP')
+          append_markers(37.538189, 126.998545,' : Lium');
+          append_markers(37.548219, 127.053434,' : Hello Musium');
+          append_markers(37.546099, 126.912965,' : Gallery Choi');
 
           for(let i=0; i<markers.length;i++) {
               addMarker(markers[i]);
@@ -280,7 +367,6 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy2Z0I3uHelbWqA71c1GX_jTFGcFqMhNw&callback=initMap">
     </script>
-<!-------------X--------------------모달 스크립트----------------X------------>
 
 <!-----------------------------헤더 네이바 스크립트---------------------------->
      <script type="text/javascript">
@@ -301,36 +387,6 @@
 <!--
 -->
  <!------------------X--------------------box 객체 스크립트-----------------X---------------------->
-  <!---------------------------------------box 텍스트 over---------------------------------------->
-  <script>
-          $('.box_d').each(function(index){
-              $(this).on({
-                 mouseover : function(){
-                     $(this).css('border','18px solid transparent');
-                     $(this).children('div').stop().fadeIn(300);
-                 }
-                ,mouseout : function(){
-                    $(this).css('border','0');
-                    $(this).children('div').css('display','none');
-                }
-              });
-          });
-
-
-//        $('.box_d').on({
-//            'mouseover' : function(){
-//                $(this).stop().animate({border: '18px solid white'},400);
-////                $(this).css('border','18px solid transparent');
-//                $(this).children('div').stop().fadeToggle(400);
-//            }
-////           $(this).find('.dox_inner_text').attr('display','block');
-//            ,'mouseout' : function(){
-//                $(this).stop().animate({border: '0'},400);
-//                $(this).children('div').stop().fadeToggle(400);
-//            }
-//        });
-    </script>
-  <!---------------------------------------box 텍스트 over---------------------------------------->
 
 </body>
 </html>
