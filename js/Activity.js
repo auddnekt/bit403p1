@@ -8,6 +8,20 @@ $(document).ready(function(){
         $('#box5').insertAfter('#box2');
         $('#box8').insertAfter('#box5');
     });
+    $('#array2').click(function(){
+        $('#box1').insertAfter('#box3');
+        $('#box5').insertAfter('#box2');
+        $('#box8').insertAfter('#box5');
+        $('#box6').insertAfter('#box3');
+        $('#box9').insertAfter('#box6');
+    });
+    $('#array3').click(function(){
+        $('#box1').insertAfter('#box3');
+        $('#box2').insertAfter('#box7');
+        $('#box6').insertAfter('#box3');
+        $('#box9').insertAfter('#box6');
+        $('#box5').insertAfter('#box2');
+    });
 
     /*---------+---------------+----------*/
 
