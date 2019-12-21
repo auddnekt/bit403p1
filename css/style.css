@@ -14,8 +14,8 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
 /* reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+html,body,div,span,applet,object,iframe,h1,h2,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0px;padding:0px;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
@@ -306,124 +306,6 @@ body{
 	background: url(../images/big-btns.png) no-repeat -182px 0px;
 }
 /*---//End-mid-grids---*/
-/*---start-footer-grids---*/
-.footer-grid{
-	width: 23.33%;
-	float: left;
-	margin-right: 2%;
-}
-.footer-grid:nth-child(3n+1){
-	margin-right:0;
-}
-.footer-grid h3{
-	color:#3D3D3D;
-	font-size:1.2em;
-	font-family: 'open_sanssemibold';
-	margin-bottom: 0.8em;
-}
-.footer-grid ul li{
-}
-.footer-grid ul li a{
-	color: #8C8C8C;
-	font-size: 0.9em;
-	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-}
-.footer-grid ul li a:hover{
-	zoom: 1;
-	filter: alpha(opacity=75);
-	opacity: 0.7;
-	-webkit-transition: opacity .15s ease-in-out;
-	-moz-transition: opacity .15s ease-in-out;
-	-ms-transition: opacity .15s ease-in-out;
-	-o-transition: opacity .15s ease-in-out;
-	transition: opacity .15s ease-in-out;
-}
-.social-icons li{
-	display:inline-block;
-}
-.social-icons li a{
-	width:48px;
-	height:45px;
-	display:block;
-}
-.social-icons li a.facebook{
-	background:url(../images/footer-icons.png) no-repeat 0px 0px;
-}
-.social-icons li a.twitter{
-	background: url(../images/footer-icons.png) no-repeat -56px 0px;
-}
-.social-icons li a.youtube{
-	background: url(../images/footer-icons.png) no-repeat -112px 0px;
-}
-.footer-grid p{
-	color: #A2A2A2;
-	font-size: 0.875em;
-	line-height: 1.5em;
-	padding:0 0 0.4em 0;
-}
-.footer-grid input[type="text"]{
-	width: 84%;
-	margin: 0.4em 0 1em;
-	padding: 0.8em;
-	border: 1px solid #C3C3C3;
-	transition: border-color 0.5s all;
-	-webkit-transition: border-color 0.5s all;
-	-moz-transition: border-color 0.5s all;
-	-o-transition: border-color 0.5s all;
-	font-family: 'open_sanssemibold';
-	color: #3D3D3D;
-	outline: none;
-	border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
-	-o-border-radius: 0.5em;
-}
-.footer-grid input[type="text"]:hover{
-	border:1px solid #999;
-}
-.footer-grid input[type="submit"]{
-	background: #F36EA7;
-	padding: 0.8em;
-	display: block;
-	width: 93%;
-	font-family: 'open_sanssemibold';
-	color: #FFF;
-	border: none;
-	font-size: 1em;
-	border-radius: 0.3em;
-	-webkit-border-radius: 0.3em;
-	-moz-border-radius: 0.3em;
-	-o-border-radius: 0.3em;
-	outline:none;
-	cursor:pointer;
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-	-moz-transition: 0.5s all;
-	-o-transition: 0.5s all;
-}
-.footer-grid input[type="submit"]:hover {
-	background: #EE639F;
-}
-.footer-grids {
-	padding: 3em 0 5em;
-}
-.copy-right{
-	margin-top:1em;
-}
-.copy-right a{
-	color: #A2A2A2;
-	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-}
-.copy-right a:hover{
-	color:#F36EA7;
-}
-/*---//End-footer-grids---*/
 /*---strat-about----*/
 .about h1{
 	color: #3D3D3D;
@@ -974,7 +856,7 @@ position: relative;
 left: -1px;
 }
 .vimeo{
-  width: 99.5%;
+  width: 99.6%;
 }
 
 @media only screen and (max-width:2440px) and (min-width:640px) {
@@ -1160,6 +1042,12 @@ div.wrap5{
   top: 100px;
 }
 /* cafe.html 보정합니다. */
+/* footer 보정합니다.start */
+footer{
+
+
+}
+/* footer 보정합니다.end */
 
 @media only screen and (max-width:639px) and (min-width:320px) {
   nav {width:100%;padding:0px 0;background:#fff;z-index:10;transition:all 0.5s; display: none;}
@@ -1171,6 +1059,12 @@ div.wrap5{
     z-index: 99;
     padding: 0 0 10px 0;
   }
+
+  /* footer 보정합니다.start */
+  footer{
+
+  }
+  /* footer 보정합니다.end */
   /*컨텐츠 박스 640-*/
   li{
   list-style: none;
@@ -1346,36 +1240,8 @@ box_link{
 	.mid-grids-right ul li {
 		display: inline-block;
 	}
-	.footer-grid {
-		width:100%;
-		float: none;
-		margin-right:0%;
-	}
-	.footer-grids {
-		padding: 1em 0 2em;
-	}
-	.footer-grid ul li {
-		display:inline-block;
-		margin-right:0.6em;
-	}
-	.footer-grid h3 {
-		margin-bottom: 0em;
-	}
-	.footer-grid ul{
-		margin:0.5em 0;
-	}
-	.footer-grid p {
-		padding: 0.5em 0;
-	}
 	.copy-right {
 		margin:1em 0 1em 0;
-	}
-	.footer-grid input[type="text"] {
-		width: 94%;
-	}
-	.footer-grid input[type="submit"] {
-		padding: 0.7em 0.8em;
-		width: 100%;
 	}
 	.panel-right p {
 		width:100%;
@@ -1533,38 +1399,9 @@ box_link{
 	.mid-grids-right ul li {
 		display: inline-block;
 	}
-	.footer-grid {
-		width:100%;
-		float: none;
-		margin-right:0%;
-	}
-	.footer-grids {
-		padding: 1em 0 2em;
-	}
-	.footer-grid ul li {
-		display:inline-block;
-		margin-right:0.6em;
-	}
-	.footer-grid h3 {
-		margin-bottom: 0em;
-	}
-	.footer-grid ul{
-		margin:0.5em 0;
-	}
-	.footer-grid p {
-		padding: 0.5em 0;
-	}
+
 	.copy-right {
 		margin:1em 0 1em 0;
-	}
-	.footer-grid input[type="text"] {
-		width: 92%;
-		-webkit-appearance:none;
-	}
-	.footer-grid input[type="submit"] {
-		padding: 0.7em 0.8em;
-		width: 100%;
-		-webkit-appearance:none;
 	}
 	.panel-right p {
 		width:100%;
