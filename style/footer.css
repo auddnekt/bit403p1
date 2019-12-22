@@ -1,13 +1,15 @@
 /*
 각자 바디부분 콘테이너로 감싸주세요~!
 <body><div id="container"> html코드들+footer </div></body>*/
+/*
     html,body{
     height:100%; margin:0; padding:0;
     }
+*/
     #container{
     min-height: 100%;
     position: relative;
-    border: 0.1px solid rgb(255,255,255,0.0);
+/*    border: 0.1px solid rgb(255,255,255,0.0);*/
     }
     footer{
 
