@@ -4,7 +4,7 @@
                     let img = $("article").get().sort(function(){
                     return Math.round(Math.random())-0.4;
                     }).slice(0,12);
-                $(img).show();
+                $(img).slideToggle();
             });
 
             $('.km').on('click', function(){
