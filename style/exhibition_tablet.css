@@ -11,7 +11,7 @@
     height: 650px;
     padding: 0px;
     background-color: white;
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
     top: 200px;

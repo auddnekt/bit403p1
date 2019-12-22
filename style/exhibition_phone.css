@@ -62,10 +62,10 @@
     height: 600px;
     padding: 0px;
     background-color: white;
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    top: -30px;
+    top: 50px;
 }
 
 .modal .modal_img_box {
