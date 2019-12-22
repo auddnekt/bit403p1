@@ -9,6 +9,7 @@
             margin: 0px auto;
         }
         #slider{
+
             width: 70.1%;
             margin : 0px auto;
         }
@@ -25,6 +26,7 @@
             padding-top: 50%;
             width: 33.3%;
             z-index: 10;
+            margin: 30px 0px;
         }
         #art1 img, #art2 img{
             position: absolute;
@@ -43,7 +45,7 @@
             display: inline-block;
             float: left;
             padding-top: 50%;
-            width: 97%;
+            width: 99.1%;
         }
         #M4 img, #M5 img, #M6 img{
             position: absolute;
@@ -79,9 +81,21 @@
      .carousel-control-prev, .carousel-control-next{
            top:50%; transform: translateY(-0%)
       }
+#poster1, #poster2, #poster3{
+    clear: both;
+    padding: 30px;
+    margin: 0px auto;
+    width: 70.1%;
+    white-space: pre-line;
+}
+#poster1 img, #poster2 img, #poster3 img{
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
 
 
-    #art2, #M1, #M4, #M5, #M6{
+    #art2, #M1, #M4, #M5, #M6, #poster1, #poster2, #poster3{
     display: none;
     }
 
@@ -99,6 +113,11 @@
     }
     article>div{
         font-size: 150%;
+    }
+    #poster1, #poster2, #poster3{
+        padding: 30px;
+        width: 100%;
+        font-size : 0.7em;
     }
 }
 @media all and (min-width:640px) and (max-width:1499px){
@@ -120,6 +139,11 @@
     #slider{
         width: 81%;
         margin : 0px auto;
+    }
+    #poster1, #poster2, #poster3{
+        padding: 30px;
+        width: 80%;
+        font-size : 0.85em;
     }
 }
 @media all and (min-width:1500px){

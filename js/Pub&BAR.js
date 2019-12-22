@@ -27,6 +27,9 @@ $(document).ready(function(){
         $('#mainSlider>#sel1').show();
         $('#mainSlider>#sel2').hide();
         $('#mainSlider>#sel3').hide();
+        $('#poster1').show();
+        $('#poster2').hide();
+        $('#poster3').hide();
     });
     $('#art1 .no2').on('click', function(){
         $('#M1').show();
@@ -36,6 +39,9 @@ $(document).ready(function(){
         $('#mainSlider>#sel2').show();
         $('#mainSlider>#sel1').hide();
         $('#mainSlider>#sel3').hide();
+        $('#poster2').show();
+        $('#poster1').hide();
+        $('#poster3').hide();
 
 
     });
@@ -47,6 +53,9 @@ $(document).ready(function(){
         $('#mainSlider>#sel3').show();
         $('#mainSlider>#sel2').hide();
         $('#mainSlider>#sel1').hide();
+        $('#poster3').show();
+        $('#poster1').hide();
+        $('#poster2').hide();
     });
 
 
@@ -54,16 +63,25 @@ $(document).ready(function(){
         $('#M4').show();
         $('#M5').hide();
         $('#M6').hide();
+        $('#poster1').show();
+        $('#poster2').hide();
+        $('#poster3').hide();
     });
     $('#art2 .no2').on('click', function(){
         $('#M5').show();
         $('#M4').hide();
         $('#M6').hide();
+        $('#poster2').show();
+        $('#poster1').hide();
+        $('#poster3').hide();
     });
     $('#art2 .no3').on('click', function(){
         $('#M6').show();
         $('#M4').hide();
         $('#M5').hide();
+        $('#poster3').show();
+        $('#poster1').hide();
+        $('#poster2').hide();
     });
 
    $(window).resize(function(){
