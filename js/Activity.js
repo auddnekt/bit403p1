@@ -3,24 +3,30 @@ $(document).ready(function(){
     
     /*클릭시 박스 정렬*/
     $('#array1').click(function(){
+        $('.box_m').fadeOut('500');
         $('#box4').insertAfter('#box1');
         $('#box7').insertAfter('#box4');
         $('#box5').insertAfter('#box2');
         $('#box8').insertAfter('#box5');
+        $('.box_m').fadeIn('500');
     });
     $('#array2').click(function(){
+        $('.box_m').fadeOut('500');
         $('#box1').insertAfter('#box3');
         $('#box5').insertAfter('#box2');
         $('#box8').insertAfter('#box5');
         $('#box6').insertAfter('#box3');
         $('#box9').insertAfter('#box6');
+        $('.box_m').fadeIn('500');
     });
     $('#array3').click(function(){
+        $('.box_m').fadeOut('500');
         $('#box1').insertAfter('#box3');
         $('#box2').insertAfter('#box7');
         $('#box6').insertAfter('#box3');
         $('#box9').insertAfter('#box6');
         $('#box5').insertAfter('#box2');
+        $('.box_m').fadeIn('500');
     });
 
     /*---------+---------------+----------*/
