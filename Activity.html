@@ -3,12 +3,6 @@
 <head>
    <title>WE'RE inPLACE</title>
 	<meta name="viewport" content="width=device-width">
-	<!-- @일진 --><link href="css/style.css" rel='stylesheet' type='text/css' />
-	<!-- @일진 --><script type="text/javascript" src="js/jquery.min.js"></script>
-	<!-- @일진 --><link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
-	<!-- @일진 --><script type="text/javascript" src="js/jquery.mmenu.js"></script>
-	<!-- @일진 --><!--<script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>-->
-
     <!--<meta charset="UTF-8">
     <title>Document</title>-->
     <link rel="stylesheet" href="style/Activity.css">
@@ -16,53 +10,97 @@
     <link rel="stylesheet" href="style/Activity_box_tablet.css" media="all and (min-width:640px) and (max-width:1199px)">
     <link rel="stylesheet" href="style/Activity_box_phone.css" media="screen and (min-width:360px) and (max-width:639px)">
     <link rel="stylesheet" href="style/Activity_footer.css">
-    <link rel="stylesheet" href="style/Activity_footerM.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style/footerM.css">
+    <!-- -- -- -- -- --header 이부분을 붙여주세요. 이용하세요! @일진 -- -- -- -- -- --><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="css/style.css" rel='stylesheet' type='text/css' /><script type="text/javascript" src="js/jquery.min.js"></script><link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" /><script type="text/javascript" src="js/jquery.mmenu.js"></script><script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>
     <script src="js/Activity.js"></script>
+  <style >
+    .box_map1 {
+      width: 100%;
+      height: auto;
+    }
+    #hr1{position: absolute; top: 100px;}
+  </style>
 </head>
 <body>
  <div id="container">
-  <!--아래는 바디의 해드부분 시작부분 @일진 -->
-	  <div class="wrap3">
-	    <ul>
-	      <li><a href="test11.html">log in</a></li>
-	      <li><a href="./Signup.html">sign up</a></li>
-	    </ul>
-	  </div>
-	  <div class="wrap1"><a href="page_iljin.html">
-	    <img src="images/logo_2.jpg" alt="logo">
-		</a>
-	  </div>
-	  <hr color="silver">
-	  <div class="wrap2">
-	    <ul>
-	      <li><a href="#">all</a></li>
-	      <li><a href="#">cafe</a></li>
-	      <li><a href="./Restorant.html">restorant</a></li>
-	      <li><a href="./Pub&BAR.html">pub&bar</a></li>
-	      <li><a href="exhibition.html">exhibition</a></li>
-	      <li><a href="#">perform</a></li>
-	      <li><a href="#">activity</a></li>
-	    </ul>
-	  </div>
-	<div id="page">
-		<div id="header"> <!--모바일 왼쪽 메뉴바입니다 @일진 -->
-			<a class="navicon" href="#menu-left"> </a>
-		</div>
+ <script type="text/javascript">
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 100) {
+       $('nav').addClass('fixed-header');
+    }
+    else {
+       $('nav').removeClass('fixed-header');
+    }
+  });
+  </script>
+  <header>
+<nav>
+  <div class="wrap4">
+    <a href="main_iljin.html">
+      <img src="images/logo_2.jpg" alt="logo"></a>
+    </div>
 
-		<nav id="menu-left">	<!--모바일 왼쪽 메뉴바입니다 @일진 -->
-			<ul>
-				<li><a href="test11.html"><img src="images/loginIcon.jpg" alt="log in" width="25px" >로그인을 후에 이용해주세요</a></li>
-				<li><a href="index.html">Cafe</a></li>
-				<li><a href="./Restorant.html">Restorant</a></li>
-				<li><a href="Pub&BAR.html">Pub&Bar</a></li>
-				<li><a href="exhibition.html">Exhibit</a></li>
-				<li><a href="about.html">Perform</a></li>
-				<li><a href="about.html">Activity</a></li>
-				<div class="clear"> </div>
-			</ul>
-		</nav>
-	</div>
+    <div class="wrap5">
+      <ul>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li><a href="cafe.html">cafe</a></li>
+        <li><a href="./Restorant.html">restorant</a></li>
+        <li><a href="./Pub&BAR.html">pub&bar</a></li>
+        <li><a href="exhibition.html">exhibition</a></li>
+        <li><a href="#">perform</a></li>
+        <li><a href="Activity.html">activity</a></li>
+      </ul>
+    </div>
+</nav>
+</header>
+<!-- 위의 해더부분을 fixed header로 사용했습니다. -->
+  <div class="wrap3">
+    <ul>
+      <li><a href="login.html">log in / </a></li>
+      <li><a href="./Signup.html">sign up</a></li>
+    </ul>
+  </div>
+  <div class="wrap1"><a href="main_iljin.html">
+      <img src="images/logo_2.jpg" alt="logo">
+    </a>
+  </div>
+     <hr color="silver" id="hr1">
+  <div class="wrap2">
+    <ul>
+      <li><a href="main_iljin.html">all</a></li>
+      <li><a href="cafe.html">cafe</a></li>
+      <li><a href="./Restorant.html">restorant</a></li>
+      <li><a href="./Pub&BAR.html">pub&bar</a></li>
+      <li><a href="exhibition.html">exhibition</a></li>
+      <li><a href="#">perform</a></li>
+      <li><a href="Activity.html">activity</a></li>
+    </ul>
+  </div>
+  <div id="page">
+    <div id="header">
+      <!--모바일 왼쪽 메뉴바입니다 @일진 -->
+      <a class="navicon" href="#menu-left"> </a>
+    </div>
+
+    <nav id="menu-left">
+      <!--모바일 왼쪽 메뉴바입니다 @일진 -->
+      <ul>
+        <li><a href="login.html"><img src="images/loginIcon.jpg" alt="log in" width="25px">로그인을 후에 이용해주세요</a></li>
+        <li><a href="cafe.html">Cafe</a></li>
+        <li><a href="./Restorant.html">Restorant</a></li>
+        <li><a href="Pub&BAR.html">Pub&Bar</a></li>
+        <li><a href="exhibition.html">Exhibit</a></li>
+        <li><a href="#">Perform</a></li>
+        <li><a href="Activity.html">Activity</a></li>
+        <div class="clear"> </div>
+      </ul>
+    </nav>
+  </div>
+  <!---- -- -- -- --위쪽까지가 바디의 해드부분 끝부분입니다 @일진-- -- -- -- -- -->
 
   <!-- ------------------------------------------------- 본문 시작 ------------------------------------------- -->
       <div id="act_nav">
@@ -98,7 +136,7 @@
 
                     <li id="box8" class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/Activity/green.jpg" alt="풍경그림"><div class="box_inner_text" id="box_text_green"><h6>EDITOR REC SHOPPING</h6><h5>DISIGNER YANGYANG</h5><h4>classic, natural, trendy</h4></div></div></a></li>
 
-                    <li id="box9" class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/Activity/film.jpg" alt="필름그림"><div class="box_inner_text" id="box_text_film"><h6>EDITOR REC PHOTO</h6><h5>SPOT FOR FILM</h5><h4>아득한 아름다움을 찾</h4></div></div></a></li>
+                    <li id="box9" class="box_m"><a class="box_link" href="#"><div class="box_d"><img class="box_img" src="img/Activity/film.jpg" alt="필름그림"><div class="box_inner_text" id="box_text_film"><h6>EDITOR REC PHOTO</h6><h5>SPOT FOR FILM</h5><h4>아득한 아름다움을 찾아</h4></div></div></a></li>
 
                     <!--    아코디언    -->
                     <li class="box_m_acc"><div class="box_d_acc"><img class="box_img" src="img/Activity/snow.jpg" alt="아코디언배경">

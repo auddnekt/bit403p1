@@ -14,12 +14,19 @@ nav{
     text-align: center;
     margin-bottom: 50px;
 }
+nav>h3{
+    font-size: 3rem;
+}
 nav>a{
     color : black;
     text-decoration: none;
     font-weight: bolder;
     text-align: center;
     margin: 0px 5%;
+}
+nav>a:hover{
+    text-decoration: none;
+    color: black;
 }
 section{
     margin: 0px auto;
@@ -49,6 +56,8 @@ article div{
     left: 50%;
     transform : translate(-50%, -50%);
     color: white;
+    width: 100%;
+    text-align: center;
     font-weight: bolder;
     font-size: 2rem;
 }
@@ -62,7 +71,8 @@ article div{
         width:100%;
     }
     section{
-        width:100%;
+        margin: 0px auto;
+        width:95%;
     }
     article{
     border: 1px solid silver;
@@ -71,21 +81,53 @@ article div{
     article>div{
         font-size: 1.5rem;
     }
+    nav>a{
+        margin: 0px 2%;
+    }
+    nav>h3{
+    font-size: 2rem;
+    }
 }
-@media all and (min-width:640px) and (max-width:1499px){
+
+
+@media all and (min-width:640px) and (max-width:899px){
     .subdiv{
         width: 90%;
         margin: 0px auto;
     }
     nav{
-        width:81%;
+        width:90%;
     }
     section{
-        width:81%;
+        width:90%;
     }
     article>div{
         font-size: 1.5rem;
     }
+nav>a{
+    margin: 0px 3%;
+}
+
+}
+
+
+@media all and (min-width:900px) and (max-width:1499px){
+    .subdiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+    nav{
+        width:90%;
+    }
+    section{
+        width:90%;
+    }
+    article>div{
+        font-size: 2rem;
+    }
+nav>a{
+    margin: 0px 4%;
+}
 
 }
 @media all and (min-width:1500px){

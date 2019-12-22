@@ -12,7 +12,7 @@ box-sizing: border-box;
     padding:0px; margin:0px;
 }
 #act_nav h6{
-    width:20%; margin: 0 auto;
+    width:50%; margin: 0 auto;
     padding:3px; margin-bottom:10px;
     font-size:50px; color:blue;
     font-family: Copperplate Gothic;
@@ -160,40 +160,40 @@ h2{
     padding: 3%;
 }
 #box_text_glass{
-    top: 75%;
-    height: 25%;
-}
-#box_text_tree{
-    top: 78%;
-    height: 22%;
-}
-#box_text_couple{
-    top: 72%;
-    height: 28%;
-}
-#box_text_back{
-    top: 75%;
-    height: 25%;
-}
-#box_text_leviev{
     top: 70%;
     height: 30%;
 }
+#box_text_tree{
+    top: 73%;
+    height: 27%;
+}
+#box_text_couple{
+    top: 67%;
+    height: 33%;
+}
+#box_text_back{
+    top: 70%;
+    height: 30%;
+}
+#box_text_leviev{
+    top: 65%;
+    height: 35%;
+}
 #box_text_cat{
-    top: 76%;
-    height: 24%;
+    top: 71%;
+    height: 29%;
 }
 #box_text_notebook{
-    top: 75%;
-    height: 25%;
+    top: 70%;
+    height: 30%;
 }
 #box_text_green{
-    top: 76%;
-    height: 24%;
+    top: 71%;
+    height: 29%;
 }
 #box_text_film{
-    top: 72%;
-    height: 28%;
+    top: 67%;
+    height: 33%;
 }
 
 /*여기서부터 배열*/

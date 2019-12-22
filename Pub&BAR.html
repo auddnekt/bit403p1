@@ -6,6 +6,9 @@
     <script src = https://code.jquery.com/jquery-3.4.1.min.js></script>
 <!--    <script type="text/javascript" src="js/jquery.js"></script>-->
     <script type="text/javascript" src="js/Pub&BAR.js"></script>
+
+
+    <!--헤더링크-->
     <link href="css/style.css" rel='stylesheet' type='text/css' />
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
@@ -13,38 +16,106 @@
     <script type="text/javascript">
         $(function() {$('nav#menu-left').mmenu();});
     </script>
+    <!--헤더링크-->
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style/Pub&BAR.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/footerM.css">
 </head>
 <body>
+
+  <!---- -- -- -- --아래는 바디의 해드부분 시작부분 @일진-- -- -- -- -- -->
+<header>
+  <script type="text/javascript">
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 100) {
+       $('header nav').addClass('fixed-header');
+    }
+    else {
+       $('header nav').removeClass('fixed-header');
+    }
+  });
+  </script>
+  <header>
+<nav>
+  <div class="wrap4">
+
+  <a href="main_iljin.html">
+      <img src="images/logo_2.jpg" alt="logo"></a>
+    </div>
+    <div class="wrap5">
+      <ul>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li><a href="cafe.html">cafe</a></li>
+        <li><a href="./Restorant.html">restorant</a></li>
+        <li><a href="./Pub&BAR.html">pub&bar</a></li>
+        <li><a href="exhibition.html">exhibition</a></li>
+        <li><a href="#">perform</a></li>
+        <li><a href="Activity.html">activity</a></li>
+      </ul>
+    </div>
+</nav>
+</header>
+<!-- 위의 해더부분을 fixed header로 사용했습니다. -->
+
+  <div class="wrap3">
+    <ul>
+      <li><a href="login.html">log in / </a></li>
+      <li><a href="./Signup.html">sign up</a></li>
+    </ul>
+  </div>
+  <div class="wrap1"><a href="main_iljin.html">
+      <img src="images/logo_2.jpg" alt="logo">
+    </a>
+  </div>
+  <hr color="silver" id="hr1">
+  <div class="wrap2">
+    <ul>
+      <li><a href="main_iljin.html">all</a></li>
+      <li><a href="cafe.html">cafe</a></li>
+      <li><a href="./Restorant.html">restorant</a></li>
+      <li><a href="./Pub&BAR.html">pub&bar</a></li>
+      <li><a href="exhibition.html">exhibition</a></li>
+      <li><a href="#">perform</a></li>
+      <li><a href="Activity.html">activity</a></li>
+    </ul>
+  </div>
+  <div id="page">
+    <div id="header">
+      <!--모바일 왼쪽 메뉴바입니다 @일진 -->
+      <a class="navicon" href="#menu-left"> </a>
+    </div>
+
+    <nav id="menu-left">
+      <!--모바일 왼쪽 메뉴바입니다 @일진 -->
+      <ul>
+        <li><a href="login.html"><img src="images/loginIcon.jpg" alt="log in" width="25px">로그인을 후에 이용해주세요</a></li>
+        <li><a href="cafe.html">Cafe</a></li>
+        <li><a href="./Restorant.html">Restorant</a></li>
+        <li><a href="Pub&BAR.html">Pub&Bar</a></li>
+        <li><a href="exhibition.html">Exhibit</a></li>
+        <li><a href="about.html">Perform</a></li>
+        <li><a href="Activity.html">Activity</a></li>
+        <div class="clear"> </div>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <!---- -- -- -- --위쪽까지가 바디의 해드부분 끝부분입니다 @일진-- -- -- -- -- -->
    <div id="container">
     <div id = "wrap">
         <div class = 'subdiv'>
-          <header>
-            <nav>
-              <div class="wrap4">
 
-              <a href="main_iljin.html">
-                  <img src="images/logo_2.jpg" alt="logo"></a>
-                </div>
-                <div class="wrap5">
-                  <ul>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li><a href="main_iljin.html">cafe</a></li>
-                    <li><a href="./Restorant.html">restorant</a></li>
-                    <li><a href="./Pub&BAR.html">pub&bar</a></li>
-                    <li><a href="exhibition.html">exhibition</a></li>
-                    <li><a href="#">perform</a></li>
-                    <li><a href="Activity.html">activity</a></li>
-                  </ul>
-                </div>
-            </nav>
-        </header>
+
+
+
+
+
             <nav>
             <h3>POP&BAR</h3>
             <div id = "art1">
@@ -84,12 +155,7 @@
                        <li data-target="#mainSlider" data-slide-to="0" class = "active btn1"></li>
                        <li data-target="#mainSlider" data-slide-to="1" class = "btn1"></li>
                        <li data-target="#mainSlider" data-slide-to="2" class = "btn1"></li>
-                       <li data-target="#mainSlider" data-slide-to="3" class = "btn2"></li>
-                       <li data-target="#mainSlider" data-slide-to="4" class = "btn2"></li>
-                       <li data-target="#mainSlider" data-slide-to="5" class = "btn2"></li>
-                       <li data-target="#mainSlider" data-slide-to="6" class = "btn3"></li>
-                       <li data-target="#mainSlider" data-slide-to="7" class = "btn3"></li>
-                       <li data-target="#mainSlider" data-slide-to="8" class = "btn3"></li>
+
                    </ol>
 
                     <div id = "sel1">
@@ -110,58 +176,6 @@
                         </div>
                         <div class = "carousel-item">
                             <img src = "img/POB&BAR/3.jpg" alt = "" class = "w-100">
-                            <div class = "carousel-caption">
-                                <h3>Slide Three</h3>
-                                <p>This is Slide Three</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-
-
-                    <div id = "sel2">
-                    <div class = "carousel-inner">
-                        <div class = "carousel-item active">
-                            <img src = "img/POB&BAR/4.jpg" alt = "" class = "w-100">
-                            <div class = "carousel-caption">
-                                <h3>Slide One</h3>
-                                <p>This is Slide One</p>
-                            </div>
-                        </div>
-                        <div class = "carousel-item">
-                            <img src = "img/POB&BAR/5.jpg" alt = "" class = "w-100">
-                            <div class = "carousel-caption">
-                                <h3>Slide Two</h3>
-                                <p>This is Slide Two</p>
-                            </div>
-                        </div>
-                        <div class = "carousel-item">
-                            <img src = "img/POB&BAR/6.jpg" alt = "" class = "w-100">
-                            <div class = "carousel-caption">
-                                <h3>Slide Three</h3>
-                                <p>This is Slide Three</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div id = "sel3">
-                    <div class = "carousel-inner">
-                        <div class = "carousel-item active">
-                            <img src = "img/POB&BAR/7.jpg" alt = "" class = "w-100">
-                            <div class = "carousel-caption">
-                                <h3>Slide One</h3>
-                                <p>This is Slide One</p>
-                            </div>
-                        </div>
-                        <div class = "carousel-item">
-                            <img src = "img/POB&BAR/8.jpg" alt = "" class = "w-100">
-                            <div class = "carousel-caption">
-                                <h3>Slide Two</h3>
-                                <p>This is Slide Two</p>
-                            </div>
-                        </div>
-                        <div class = "carousel-item">
-                            <img src = "img/POB&BAR/9.jpg" alt = "" class = "w-100">
                             <div class = "carousel-caption">
                                 <h3>Slide Three</h3>
                                 <p>This is Slide Three</p>
@@ -610,6 +624,9 @@ La cremerie
 
 
 
+
+    </div>
+    </div>
     <footer>
         <div>
            <h3>in PLACE</h3>
@@ -629,8 +646,6 @@ La cremerie
         </div>
 
     </footer>
-    </div>
-    </div>
 </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
