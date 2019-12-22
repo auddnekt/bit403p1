@@ -31,6 +31,17 @@
     display: none;
 }
 
-
+.box_inner_text{
+    color: white;
+    background-color: rgb(0,0,0,0.5);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 30% 0 0 0;
+}
+#box_text_glass,#box_text_tree,#box_text_couple,#box_text_back,#box_text_leviev,#box_text_cat,#box_text_notebook,#box_text_green,#box_text_film{
+    top: 0%; height:100%;
+}
 
 
