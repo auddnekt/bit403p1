@@ -8,24 +8,31 @@ img{
     width: 1500px;
     margin: 0px auto;
 }
-nav{
+#na{
     margin: 0px auto;
     width : 1050px;
     text-align: center;
     margin-bottom: 50px;
 }
-nav>a{
+#na>h3{
+    font-size: 3rem;
+}
+#na>a{
     color : black;
     text-decoration: none;
     font-weight: bolder;
     text-align: center;
     margin: 0px 5%;
 }
-section{
+#na>a:hover{
+    text-decoration: none;
+    color: black;
+}
+#sec{
     margin: 0px auto;
     width: 1200px;
 }
-article{
+#sec>article{
     position: relative;
     display: inline-block;
     float: left;
@@ -35,7 +42,7 @@ article{
     display: none;
     margin: -1px -1.5px
 }
-img{
+#sec img{
     position: absolute;
     left: 0px;
     top: 0px;
@@ -43,12 +50,14 @@ img{
     height: 100%;
 }
 
-article div{
+#sec article div{
     position: absolute;
     top : 80%;
     left: 50%;
     transform : translate(-50%, -50%);
     color: white;
+    width: 100%;
+    text-align: center;
     font-weight: bolder;
     font-size: 2rem;
 }
@@ -58,33 +67,66 @@ article div{
         width: 100%;
         margin: 0px auto;
     }
-    nav{
+    #na{
         width:100%;
     }
-    section{
-        width:100%;
+    #sec{
+        margin: 0px auto;
+        width:95%;
     }
-    article{
+    #sec>article{
     border: 1px solid silver;
     width: 49%;
     }
-    article>div{
+    #sec>article>div{
         font-size: 1.5rem;
     }
+    #na>a{
+        margin: 0px 2%;
+    }
+    #na>h3{
+    font-size: 2rem;
+    }
 }
-@media all and (min-width:640px) and (max-width:1499px){
+
+
+@media all and (min-width:640px) and (max-width:899px){
     .subdiv{
         width: 90%;
         margin: 0px auto;
     }
-    nav{
-        width:81%;
+    #na{
+        width:90%;
     }
-    section{
-        width:81%;
+    #sec{
+        width:90%;
     }
-    article>div{
+    #sec>article>div{
         font-size: 1.5rem;
+    }
+    #na>a{
+        margin: 0px 3%;
+    }
+
+}
+
+
+@media all and (min-width:900px) and (max-width:1499px){
+    .subdiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+    #na{
+        width:90%;
+    }
+    #sec{
+        width:90%;
+    }
+    #sec>article>div{
+        font-size: 2rem;
+    }
+    #na>a{
+        margin: 0px 4%;
     }
 
 }

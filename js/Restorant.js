@@ -8,20 +8,32 @@
             });
 
             $('.km').on('click', function(){
-                    $('.kor').show().css('display','inline-block');
-                    $('.cha').hide();
-                    $('.wes').hide();
+                $('article').hide();
+                let k = $('article').map(function(index, item){
+                    return $('article').filter('.kor');
                 });
+                $(k).each(function(index, item){
+                    $(this).show();
+                });
+            });
             $('.cm').on('click', function(){
-                    $('.kor').hide();
-                    $('.cha').show().css('display','inline-block');
-                    $('.wes').hide();
+                $('article').hide();
+                let c = $('article').map(function(index, item){
+                    return $('article').filter('.cha');
                 });
+                $(c).each(function(index, item){
+                    $(this).show();
+                });
+            });
             $('.wm').on('click', function(){
-                    $('.kor').hide();
-                    $('.cha').hide();
-                    $('.wes').show().css('display','inline-block');
+                $('article').hide();
+                let w = $('article').map(function(index, item){
+                    return $('article').filter('.wes');
                 });
+                $(w).each(function(index, item){
+                    $(this).show();
+                });
+            });
             $('.am').on('click', function(){
                     $("article").hide();
                     let img = $("article").get().sort(function(){

@@ -10,12 +10,12 @@
         }
         #slider{
 
-            width: 70.1%;
+            width: 80.1%;
             margin : 0px auto;
         }
 
         nav{
-            width: 1050px;
+            width: 1200px;
             margin: 0px auto;
             text-align: center;
         }
@@ -64,6 +64,7 @@
             font-weight: bolder;
             font-size: 2em;
             text-align: center;
+            width: 100%;
         }
         #M4 div{
             position: absolute;
@@ -85,7 +86,7 @@
     clear: both;
     padding: 30px;
     margin: 0px auto;
-    width: 70.1%;
+    width: 80.1%;
     white-space: pre-line;
 }
 #poster1 img, #poster2 img, #poster3 img{
@@ -95,7 +96,7 @@
 }
 
 
-    #art2, #M1, #M4, #M5, #M6, #poster1, #poster2, #poster3{
+    #art2, #M4, #M5, #M6, #poster1, #poster2, #poster3{
     display: none;
     }
 
@@ -119,8 +120,11 @@
         width: 100%;
         font-size : 0.7em;
     }
+    #art1 div, #art2 div{
+        font-size: 1em;
+    }
 }
-@media all and (min-width:640px) and (max-width:1499px){
+@media all and (min-width:640px) and (max-width:899px){
     .subdiv{
         width: 90%;
         margin: 0px auto;
@@ -142,8 +146,39 @@
     }
     #poster1, #poster2, #poster3{
         padding: 30px;
-        width: 80%;
+        width: 90%;
         font-size : 0.85em;
+    }
+        #art1 div, #art2 div{
+        font-size: 1.5em;
+    }
+}
+@media all and (min-width:900px) and (max-width:1499px){
+    .subdiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    nav{
+        width:90%;
+    }
+    section{
+        width:90%;
+    }
+    article>div{
+        font-size: 200%;
+    }
+    #slider{
+        width: 90%;
+        margin : 0px auto;
+    }
+    #poster1, #poster2, #poster3{
+        padding: 30px;
+        width: 90%;
+        font-size : 0.85em;
+    }
+        #art1 div, #art2 div{
+        font-size: 2em;
     }
 }
 @media all and (min-width:1500px){
