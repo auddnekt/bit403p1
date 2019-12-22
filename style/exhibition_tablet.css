@@ -17,3 +17,10 @@
     top: 200px;
 }
 
+.box_inner_text{
+    display: inline-block;
+    font-size: 1.1rem;
+}
+.box_inner_text span{
+    font-size: 0.9rem;
+}
