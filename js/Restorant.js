@@ -42,5 +42,14 @@
                 $(img).show();
                 });
 
+            $('article').click(function(){
+                $(this).find('div').slideToggle();
+            });
+/*
+            $('article').mouseleave(function(){
+                $(this).find('div').hide();
+            });
+*/
+
 
         });

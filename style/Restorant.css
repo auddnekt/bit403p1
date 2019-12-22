@@ -1,4 +1,23 @@
-{margin: 0px auto};
+{margin: 0px;}
+header>nav{
+    display: none;
+}
+.wrap4 a, .wrap2 a, .wrap5 a, .wrap1 a, .wrap2 a{
+    color: black;
+    font-weight: 500;
+}
+#hr1{
+    float :left;
+    position: absolute;
+    top: 140px;
+}
+
+
+body {
+    overflow-y: scroll;
+}
+
+
 
 
 img{
@@ -9,22 +28,22 @@ img{
     margin: 0px auto;
 }
 #na{
-    margin: 0px auto;
-    width : 1050px;
+    margin: 50px auto;
+    width : 100%;
     text-align: center;
     margin-bottom: 50px;
 }
 #na>h3{
     font-size: 3rem;
 }
-#na>a{
+#na>.menu{
     color : black;
     text-decoration: none;
     font-weight: bolder;
     text-align: center;
     margin: 0px 5%;
 }
-#na>a:hover{
+a:hover{
     text-decoration: none;
     color: black;
 }
@@ -52,14 +71,20 @@ img{
 
 #sec article div{
     position: absolute;
-    top : 80%;
+    top : 85%;
     left: 50%;
     transform : translate(-50%, -50%);
     color: white;
     width: 100%;
     text-align: center;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    padding: 60px 0px;
+    background-color: rgba(0,0,0,0.5);
+    display:none;
+}
+.cha{
+    font-size: 1.3rem;
 }
 
 @media all and (max-width:639px){
@@ -77,16 +102,22 @@ img{
     #sec>article{
     border: 1px solid silver;
     width: 49%;
+
     }
     #sec>article>div{
-        font-size: 1.5rem;
+        font-size: 0.9rem;
+        padding: 20px 0px;
     }
-    #na>a{
-        margin: 0px 2%;
+    #na>.menu{
+        margin: 0px 1%;
     }
     #na>h3{
     font-size: 2rem;
     }
+/*    #sec{
+        height: 2000px;
+        border: 5px solid black;
+    }*/
 }
 
 
@@ -102,31 +133,44 @@ img{
         width:90%;
     }
     #sec>article>div{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        padding: 30px 0px;
     }
-    #na>a{
+    .cha{
+    font-size: 0.9rem;
+    }
+    #na>.menu{
         margin: 0px 3%;
     }
+    ::-webkit-scrollbar {
+        display: block;
+        width: 15px; }
+    ::-webkit-scrollbar-thumb { background: #a9a9a9; }
 
 }
 
 
 @media all and (min-width:900px) and (max-width:1499px){
+    {margin: 0px;}
     .subdiv{
         width: 90%;
         margin: 0px auto;
     }
     #na{
-        width:90%;
+        width:100%;
     }
     #sec{
         width:90%;
     }
     #sec>article>div{
-        font-size: 2rem;
+        font-size: 1.4rem;
+        padding: 40px 0px;
     }
-    #na>a{
-        margin: 0px 4%;
+    .cha{
+    font-size: 1.3rem;
+    }
+    #na>.menu{
+        margin: 0px 3%;
     }
 
 }

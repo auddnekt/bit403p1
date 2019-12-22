@@ -3,6 +3,7 @@ $(document).ready(function(){
        if($(window).width()<640){
            $('#art1').hide();
            $('#art2').show();
+           $('#M1').hide();
        }else{
            $('#art2').hide();
            $('#art1').show();
