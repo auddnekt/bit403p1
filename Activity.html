@@ -3,53 +3,58 @@
 <head>
    <title>WE'RE inPLACE</title>
 	<meta name="viewport" content="width=device-width">
-	<!-- @일진 --><link href="css/style.css" rel='stylesheet' type='text/css' />
-	<!-- @일진 --><script type="text/javascript" src="js/jquery.min.js"></script>
-	<!-- @일진 --><link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
-	<!-- @일진 --><script type="text/javascript" src="js/jquery.mmenu.js"></script>
-	<!-- @일진 --><!--<script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>-->
-
     <!--<meta charset="UTF-8">
     <title>Document</title>-->
     <link rel="stylesheet" href="style/Activity.css">
     <link rel="stylesheet" href="style/Activity_box_pc.css" media="all and (min-width:1200px)">
     <link rel="stylesheet" href="style/Activity_box_tablet.css" media="all and (min-width:640px) and (max-width:1199px)">
     <link rel="stylesheet" href="style/Activity_box_phone.css" media="screen and (min-width:360px) and (max-width:639px)">
-    <link rel="stylesheet" href="style/Activity_footer.css">
-    <link rel="stylesheet" href="style/Activity_footerM.css">
-    <!--헤더-->
-    <link href="css/style.css" rel='stylesheet' type='text/css' /><script type="text/javascript" src="js/jquery.min.js"></script><link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" /><script type="text/javascript" src="js/jquery.mmenu.js"></script><script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>
-    <!--------->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/Activity.js"></script>
+    <!--<link rel="stylesheet" href="style/Activity_footer.css">
+    <link rel="stylesheet" href="style/footerM.css">-->
+    <!-- -- -- -- -- --header 이부분을 붙여주세요. 이용하세요! @일진 -- -- -- -- -- --><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><link href="css/style.css" rel='stylesheet' type='text/css' /><script type="text/javascript" src="js/jquery.min.js"></script><link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" /><script type="text/javascript" src="js/jquery.mmenu.js"></script><script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>
+  <style >
+    .box_map1 {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
  <div id="container">
+ <script type="text/javascript">
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 100) {
+       $('nav').addClass('fixed-header');
+    }
+    else {
+       $('nav').removeClass('fixed-header');
+    }
+  });
+  </script>
   <header>
-    <nav>
-      <div class="wrap4">
+<nav>
+  <div class="wrap4">
+    <a href="main_iljin.html">
+      <img src="images/logo_2.jpg" alt="logo"></a>
+    </div>
 
-      <a href="main_iljin.html">
-          <img src="images/logo_2.jpg" alt="logo"></a>
-        </div>
-        <div class="wrap5">
-          <ul>
-            <li> </li>
-            <li> </li>
-            <li> </li>
-            <li> </li>
-            <li><a href="main_iljin.html">cafe</a></li>
-            <li><a href="./Restorant.html">restorant</a></li>
-            <li><a href="./Pub&BAR.html">pub&bar</a></li>
-            <li><a href="exhibition.html">exhibition</a></li>
-            <li><a href="#">perform</a></li>
-            <li><a href="Activity.html">activity</a></li>
-          </ul>
-        </div>
-    </nav>
+    <div class="wrap5">
+      <ul>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li><a href="cafe.html">cafe</a></li>
+        <li><a href="./Restorant.html">restorant</a></li>
+        <li><a href="./Pub&BAR.html">pub&bar</a></li>
+        <li><a href="exhibition.html">exhibition</a></li>
+        <li><a href="#">perform</a></li>
+        <li><a href="Activity.html">activity</a></li>
+      </ul>
+    </div>
+</nav>
 </header>
 <!-- 위의 해더부분을 fixed header로 사용했습니다. -->
-
   <div class="wrap3">
     <ul>
       <li><a href="login.html">log in / </a></li>
@@ -60,11 +65,11 @@
       <img src="images/logo_2.jpg" alt="logo">
     </a>
   </div>
-  <hr color="silver">
+     <hr color="silver" id="hr1">
   <div class="wrap2">
     <ul>
       <li><a href="main_iljin.html">all</a></li>
-      <li><a href="main_iljin.html">cafe</a></li>
+      <li><a href="cafe.html">cafe</a></li>
       <li><a href="./Restorant.html">restorant</a></li>
       <li><a href="./Pub&BAR.html">pub&bar</a></li>
       <li><a href="exhibition.html">exhibition</a></li>
@@ -82,11 +87,11 @@
       <!--모바일 왼쪽 메뉴바입니다 @일진 -->
       <ul>
         <li><a href="login.html"><img src="images/loginIcon.jpg" alt="log in" width="25px">로그인을 후에 이용해주세요</a></li>
-        <li><a href="main_iljin.html">Cafe</a></li>
+        <li><a href="cafe.html">Cafe</a></li>
         <li><a href="./Restorant.html">Restorant</a></li>
         <li><a href="Pub&BAR.html">Pub&Bar</a></li>
         <li><a href="exhibition.html">Exhibit</a></li>
-        <li><a href="about.html">Perform</a></li>
+        <li><a href="#">Perform</a></li>
         <li><a href="Activity.html">Activity</a></li>
         <div class="clear"> </div>
       </ul>
