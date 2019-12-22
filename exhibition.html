@@ -113,21 +113,6 @@
                     <li class="box_m"><a class="box_link" href="#"><div id="box_8"  class="box_d"><img class="box_img" src="" alt="box_img8"><div class="box_inner_text"><h1></h1></div></div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div id="box_9"  class="box_d"><img class="box_img" src="" alt="box_img9"><div class="box_inner_text"><h1></h1></div></div></a></li>
                     <li class="box_m"><a class="box_link" href="#"><div id="box_10"  class="box_d"><img class="box_img" src="" alt="box_img10"><div class="box_inner_text"><h1></h1></div></div></a></li>
-
-<!--
-                    <li class="box_m"><a class="box_link" href="#"><div id="box_1" class="box_d"><img class="box_img" src="img/exhibition/exhibition1.jpg" alt="box_img1"> <div class="box_inner_text"><h1>Mordern Rose <br> <span>Dec 5. 2019  &#45; Jan 4. 2020</span> <br> Go Jae Wook</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div id="box_2" class="box_d"><img class="box_img" src="img/exhibition/exhibition2.jpg" alt="box_img2"><div class="box_inner_text"><h1>
-Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> Seo Kyung Kang</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div id="box_3"  class="box_d"><img id="img_sampp" class="box_img" src="img/exhibition/exhibition3.jpg" alt="box_img3"><div class="box_inner_text"><h1>MAGNUM IN PARIS <br> <span>Sep 25. 2019  &#45; Feb 9. 2020</span> <br> Gaudi so.</h1></div></div></a></li>
-                    <li class="li_map"><div class="box_map"><div class="map" id="map"></div></div></li>
-                    <li class="box_m"><a class="box_link" href="#"><div id="box_4"  class="box_d"><img class="box_img" src="img/exhibition/exhibition4.jpg" alt="box_img4"><div class="box_inner_text"><h1>영원한 나르시시스트 <br> <span>Dec 26. 2019 - Dec 26. 2020</span> <br>천경자</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div id="box_5"  class="box_d"><img class="box_img" src="img/exhibition/exhibition5.jpg" alt="box_img5"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div id="box_6" class="box_d"><img class="box_img" src="img/exhibition/exhibition6.jpg" alt="box_img6"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div id="box_7" class="box_d"><img class="box_img" src="img/exhibition/exhibition7.jpg" alt="box_img7"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div id="box_8"  class="box_d"><img class="box_img" src="img/exhibition/exhibition8.jpg" alt="box_img8"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div id="box_9"  class="box_d"><img class="box_img" src="img/exhibition/exhibition9.jpg" alt="box_img9"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-                    <li class="box_m"><a class="box_link" href="#"><div id="box_10"  class="box_d"><img class="box_img" src="img/exhibition/exhibition10.jpg" alt="box_img10"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
--->
                 </ul>
             </div>
             <br>
@@ -278,7 +263,6 @@ Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> 
 //<!-----------------X---------------box_dom script--------------X---------------->
 
 //<!---------------------------------모달 스크립트------------------------------->
-//   <!---.box_link 중에 클릭시 선택된 $this를 가지고 모달창을 선택하도록 구성--->
         $("#modal_close_btn").click(function(){
            $("#modal").css("display","none");
         });
@@ -330,10 +314,8 @@ Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> 
           });
 //<!----------------------X----------------box mouseover eventr-------------------X-------------------->
 //<!----------------------------    google map AIP--------------------------------->
-
-      // This example displays a marker at the center of Australia.
-      // When the user clicks the marker, an info window opens.
-
+       var markers_info=[];
+       var markers = [];
       function initMap() {
             var center_m = {lat: 37.543358, lng: 126.983974};
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -355,21 +337,64 @@ Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> 
                         infowindow.open(map, marker);
                     });
                 }
+                markers.push(marker);
             }
 
-          var markers=[];
+
           function append_markers(la,ln,con){
-              markers.push({pos:{lat:la,lng:ln},content:'<div>'+con+'</div>'});
+              markers_info.push({pos:{lat:la,lng:ln},content:'<div>'+con+'</div>'});
           }
 
             function append_exhibition(b_num, b_img, b_artist, b_title, b_comment, b_day_begin, b_day_end, b_time_begin, b_time_end, b_addr, b_link, b_la, b_ln, b_map_con){
                 var box_domodel =
                     new box_dom(b_num, b_img, b_artist, b_title, b_comment, b_day_begin, b_day_end, b_time_begin, b_time_end, b_addr, b_link, b_la, b_ln, b_map_con);
-                exhibition_list.push(box_domodel);
-                append_markers(Number(box_domodel.b_la), Number(box_domodel.b_ln),box_domodel.b_map_con);
-                insert_box_con(b_num, b_img, b_title, b_day_begin ,b_day_end, b_artist);
+                var check_overlap = -1;
+
+                for(let i=0; i<exhibition_list.length;i++) {
+                    if(b_num == exhibition_list[i].b_num) {
+                        check_overlap =i;
+                    }
+                }
+
+                if(check_overlap==-1) {
+                    exhibition_list.push(box_domodel);
+                    append_markers(Number(box_domodel.b_la), Number(box_domodel.b_ln),box_domodel.b_map_con);
+                    addMarker(markers_info[markers_info.length-1]);
+                    insert_box_con(b_num, b_img, b_title, b_day_begin ,b_day_end, b_artist);
+                } else {
+                    exhibition_list[check_overlap] = box_domodel;
+                    markers_info[check_overlap].content = box_domodel.b_map_con;
+                    markers_info[check_overlap].pos = {lat:Number(box_domodel.b_la) , lng:Number(box_domodel.b_ln)};
+                    markers[check_overlap].setMap(null);
+                    markers[check_overlap] = new google.maps.Marker({position: markers_info[check_overlap].pos, map: map });
+                    insert_box_con(b_num, b_img, b_title, b_day_begin ,b_day_end, b_artist);
+                }
             }
 
+//                    <li class="box_m"><a class="box_link" href="#"><div id="box_1" class="box_d"><img class="box_img" src="img/exhibition/exhibition1.jpg" alt="box_img1"> <div class="box_inner_text"><h1>Mordern Rose <br> <span>Dec 5. 2019  &#45; Jan 4. 2020</span> <br> Go Jae Wook</h1></div></div></a></li>
+//                    <li class="box_m"><a class="box_link" href="#"><div id="box_2" class="box_d"><img class="box_img" src="img/exhibition/exhibition2.jpg" alt="box_img2"><div class="box_inner_text"><h1>
+//Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> Seo Kyung Kang</h1></div></div></a></li>
+//                    <li class="box_m"><a class="box_link" href="#"><div id="box_3"  class="box_d"><img id="img_sampp" class="box_img" src="img/exhibition/exhibition3.jpg" alt="box_img3"><div class="box_inner_text"><h1>MAGNUM IN PARIS <br> <span>Sep 25. 2019  &#45; Feb 9. 2020</span> <br> Gaudi so.</h1></div></div></a></li>
+//                    <li class="li_map"><div class="box_map"><div class="map" id="map"></div></div></li>
+//                    <li class="box_m"><a class="box_link" href="#"><div id="box_4"  class="box_d"><img class="box_img" src="img/exhibition/exhibition4.jpg" alt="box_img4"><div class="box_inner_text"><h1>영원한 나르시시스트 <br> <span>Dec 26. 2019 - Dec 26. 2020</span> <br>천경자</h1></div></div></a></li>
+//                    <li class="box_m"><a class="box_link" href="#"><div id="box_5"  class="box_d"><img class="box_img" src="img/exhibition/exhibition5.jpg" alt="box_img5"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+//                    <li class="box_m"><a class="box_link" href="#"><div id="box_6" class="box_d"><img class="box_img" src="img/exhibition/exhibition6.jpg" alt="box_img6"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+//                    <li class="box_m"><a class="box_link" href="#"><div id="box_7" class="box_d"><img class="box_img" src="img/exhibition/exhibition7.jpg" alt="box_img7"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+//                    <li class="box_m"><a class="box_link" href="#"><div id="box_8"  class="box_d"><img class="box_img" src="img/exhibition/exhibition8.jpg" alt="box_img8"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+//                    <li class="box_m"><a class="box_link" href="#"><div id="box_9"  class="box_d"><img class="box_img" src="img/exhibition/exhibition9.jpg" alt="box_img9"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+//                    <li class="box_m"><a class="box_link" href="#"><div id="box_10"  class="box_d"><img class="box_img" src="img/exhibition/exhibition10.jpg" alt="box_img10"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
+//
+
+//          append_markers(37.499100, 126.997199,'Mordern Rose : UM Gallery');
+//          append_markers(37.579528,126.980315,'Square Thinking Triangle : 현대미술관');
+//          append_markers(37.532877, 126.963419,'MAGNUM IN PARIS : D뮤지엄')
+//          append_markers(37.564280,126.973779,'영원한 나르시시스트 : 서울시립미술관');
+//          append_markers(37.529478, 126.968264,'Amore Musium');
+//          append_markers(37.564323, 126.990830,': Street Musium');
+//          append_markers(37.554704, 126.927970,': ALT SPACE LOOP')
+//          append_markers(37.538189, 126.998545,' : Lium');
+//          append_markers(37.548219, 127.053434,' : Hello Musium');
+//          append_markers(37.546099, 126.912965,' : Gallery Choi');
             append_exhibition(
                 "box_3"
                ,"img/exhibition/exhibition3.jpg"
@@ -403,27 +428,8 @@ Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> 
               var blat = $('#insert_box_b_la').val();
               var blng = $('#insert_box_b_ln').val();
               var bmcon = $('#insert_box_b_map_con').val();
-
               append_exhibition(bn,bi,ba,bt,bc,bdb,bde,btb,bte,baddr,blink,blat,blng,bmcon);
           });
-
-//          append_markers(37.499100, 126.997199,'Mordern Rose : UM Gallery');
-//          append_markers(37.579528,126.980315,'Square Thinking Triangle : 현대미술관');
-//          append_markers(37.532877, 126.963419,'MAGNUM IN PARIS : D뮤지엄')
-//          append_markers(37.564280,126.973779,'영원한 나르시시스트 : 서울시립미술관');
-//          append_markers(37.529478, 126.968264,'Amore Musium');
-//          append_markers(37.564323, 126.990830,': Street Musium');
-//          append_markers(37.554704, 126.927970,': ALT SPACE LOOP')
-//          append_markers(37.538189, 126.998545,' : Lium');
-//          append_markers(37.548219, 127.053434,' : Hello Musium');
-//          append_markers(37.546099, 126.912965,' : Gallery Choi');
-
-          for(let i=0; i<markers.length;i++) {
-              addMarker(markers[i]);
-          }
-//          markers.push();  매개변수로 pos:{lat: ,lng:  }, content:'설명' 형식으로 주면 자동으로 마커와 설명이 추가된다.
-
-
       }
     </script>
     <script async defer
