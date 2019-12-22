@@ -183,13 +183,17 @@ h2{
     top: 76%;
     height: 24%;
 }
-#box_text_7{
+#box_text_notebook{
     top: 75%;
     height: 25%;
 }
-#box_text_8{
-    top: 78%;
-    height: 22%;
+#box_text_green{
+    top: 76%;
+    height: 24%;
+}
+#box_text_film{
+    top: 72%;
+    height: 28%;
 }
 
 /*여기서부터 배열*/

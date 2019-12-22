@@ -28,6 +28,8 @@ $(document).ready(function(){
         $('#box5').insertAfter('#box2');
         $('.box_m').fadeIn('500');
     });
+    
+    
 
     /*---------+---------------+----------*/
 
