@@ -5,13 +5,13 @@ label, input{
     font-size:30px;
 }
 section{
-    width:470px; height: 900px;
+    width:400px; height: 900px;
     margin: 0 auto;
     /*border: 2px solid blue;*/
 }
 #id{
     letter-spacing:5px;
-    width:300px; height:30px;
+    width:270px; height:30px;
     margin:0px 0px 30px 0px;
     background-color:gray;
     color:black;
@@ -19,9 +19,9 @@ section{
 }
 #id_check{
     position: absolute;
-    top:260px;
-    width:140px; height:35px;
-    margin:0px 0px 30px 17px;
+    top:263px;
+    width:120px; height:35px;
+    margin:0px 0px 30px 5px;
     background-color:white;
     font-size:25px;
     text-align: center;
@@ -31,7 +31,7 @@ section{
 }
 #pw{
     letter-spacing:5px;
-    width:460px;
+    width:400px;
     height:30px;
     margin-bottom:30px;
     background-color:gray;
@@ -39,13 +39,13 @@ section{
 }
 #pw_check{
     letter-spacing:5px;
-    width:460px; height:30px;
+    width:400px; height:30px;
     margin-bottom:10px;
     background-color:gray;
     font-size:30px;
 }
 #pw_mismatched{
-    width:460px; height:30px;
+    width:400px; height:30px;
     margin-bottom:30px;
     font-size:25px;
     background-color: rgb(255,0,0,0.6);
@@ -53,37 +53,37 @@ section{
 }
 #name{
     letter-spacing:5px;
-    width:460px; height:30px;
+    width:398px; height:30px;
     margin-bottom:30px;
     font-size:30px;
 }
 #year{
-    width:150px; height:30px;
+    width:120px; height:30px;
     margin:0px 5px 30px 0px;
     font-size:23px;
 }
 select{
-    width:140px; height:36px;
+    width:120px; height:36px;
     margin:0px 5px 30px 5px;
     font-size:23px;
 }
 #day{
-    width:140px; height:30px;
+    width:120px; height:30px;
     margin:0px 0px 30px 5px;
     font-size:23px;
 }
 #gender{
-    width: 530px; height: 30px;
+    width: 400px; height: 30px;
     margin: 15px 0px 30px 0px;
-    font-size: 27px;
+    font-size: 26px;
 }
 #male, #female, #others{
-    margin-left: 46px;
+    margin-left: 35px;
     vertical-align: middle;
 }
 #phone{
     letter-spacing:5px;
-    width:300px; height:30px;
+    width:240px; height:30px;
     margin:0px 5px 30px 0px;
     background-color:gray;
     font-size:30px;
@@ -91,22 +91,22 @@ select{
 #phone_check{
     position: absolute;
     top: 850px;
-    width:150px; height:35px;
+    width:140px; height:35px;
     margin:0px 10px;
     background-color:white;
-    font-size:23px;
+    font-size:22px;
     text-align: center;
     border-image: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
     border-image-slice: 1;
     transform: translateX(-0%);
 }
 #input_check{
-    width:460px; height:30px;
+    width:400px; height:30px;
     font-size:23px;
 }
 .btn_sign{
     position: relative;
-    width:460px; height:50px;
+    width:400px; height:50px;
     padding: 0px;
     background-color: white;
     text-align: center;
