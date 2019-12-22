@@ -97,7 +97,6 @@
   </div>
   <!---- -- -- -- --위쪽까지가 바디의 해드부분 끝부분입니다 @일진-- -- -- -- -- -->
 
-
    <div>
         <div id="wrap">
             <div class="boxmodel_nav_wrap">
@@ -195,10 +194,10 @@
             <input type="text" id="insert_box_b_map_con">
         </div>
     </div>
-
     <div class="hidden_console">
-        <button type="button">입력창 콘솔</button>
+        <button type="button">입력창 열기/닫기</button>
     </div>
+
 <!---------------X------------입력창-----------------X-------------->
 
 
@@ -215,7 +214,7 @@
     <ul>
         <li id="about"><a href="#">ABOUT</a></li>
         <li id="project"><a href="#">PROJECT</a></li>
-        <li id="contact"><a href="#">CONTACT</a></li>
+        <li id="contact"><a href="./contact.html">CONTACT</a></li>
         <li  id="qna"><a href="#">Q&A</a></li>
     </ul>
     </div>
@@ -308,7 +307,7 @@
               $(this).on({
                  mouseover : function(){
                      $(this).css('border','18px solid transparent');
-                     $(this).children('div').stop().fadeIn(300);
+                     $(this).children('div').fadeIn(300);
                  }
                 ,mouseleave : function(){
                     $(this).css('border','0');
@@ -375,189 +374,165 @@
                 }
             }
 
-//                    <li class="box_m"><a class="box_link" href="#"><div id="box_1" class="box_d"><img class="box_img" src="img/exhibition/exhibition1.jpg" alt="box_img1"> <div class="box_inner_text"><h1>Mordern Rose <br> <span>Dec 5. 2019  &#45; Jan 4. 2020</span> <br> Go Jae Wook</h1></div></div></a></li>
-//                    <li class="box_m"><a class="box_link" href="#"><div id="box_2" class="box_d"><img class="box_img" src="img/exhibition/exhibition2.jpg" alt="box_img2"><div class="box_inner_text"><h1>
-//Square Thinking Triangle <br> <span>Nov 21. 2019  &#45; Feb 7. 2020</span> <br> Seo Kyung Kang</h1></div></div></a></li>
-//                    <li class="box_m"><a class="box_link" href="#"><div id="box_3"  class="box_d"><img id="img_sampp" class="box_img" src="img/exhibition/exhibition3.jpg" alt="box_img3"><div class="box_inner_text"><h1>MAGNUM IN PARIS <br> <span>Sep 25. 2019  &#45; Feb 9. 2020</span> <br> Gaudi so.</h1></div></div></a></li>
-//                    <li class="li_map"><div class="box_map"><div class="map" id="map"></div></div></li>
-//                    <li class="box_m"><a class="box_link" href="#"><div id="box_4"  class="box_d"><img class="box_img" src="img/exhibition/exhibition4.jpg" alt="box_img4"><div class="box_inner_text"><h1>영원한 나르시시스트 <br> <span>Dec 26. 2019 - Dec 26. 2020</span> <br>천경자</h1></div></div></a></li>
-//                    <li class="box_m"><a class="box_link" href="#"><div id="box_5"  class="box_d"><img class="box_img" src="img/exhibition/exhibition5.jpg" alt="box_img5"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-//                    <li class="box_m"><a class="box_link" href="#"><div id="box_6" class="box_d"><img class="box_img" src="img/exhibition/exhibition6.jpg" alt="box_img6"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-//                    <li class="box_m"><a class="box_link" href="#"><div id="box_7" class="box_d"><img class="box_img" src="img/exhibition/exhibition7.jpg" alt="box_img7"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-//                    <li class="box_m"><a class="box_link" href="#"><div id="box_8"  class="box_d"><img class="box_img" src="img/exhibition/exhibition8.jpg" alt="box_img8"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-//                    <li class="box_m"><a class="box_link" href="#"><div id="box_9"  class="box_d"><img class="box_img" src="img/exhibition/exhibition9.jpg" alt="box_img9"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-//                    <li class="box_m"><a class="box_link" href="#"><div id="box_10"  class="box_d"><img class="box_img" src="img/exhibition/exhibition10.jpg" alt="box_img10"><div class="box_inner_text"><h1>EXHIBITION1</h1></div></div></a></li>
-//
-
-//          append_markers(37.499100, 126.997199,'Mordern Rose : UM Gallery');
-//          append_markers(37.579528,126.980315,'Square Thinking Triangle : 현대미술관');
-//          append_markers(37.532877, 126.963419,'MAGNUM IN PARIS : D뮤지엄')
-//          append_markers(37.564280,126.973779,'영원한 나르시시스트 : 서울시립미술관');
-//          append_markers(37.529478, 126.968264,'Amore Musium');
-//          append_markers(37.564323, 126.990830,': Street Musium');
-//          append_markers(37.554704, 126.927970,': ALT SPACE LOOP')
-//          append_markers(37.538189, 126.998545,' : Lium');
-//          append_markers(37.548219, 127.053434,' : Hello Musium');
-//          append_markers(37.546099, 126.912965,' : Gallery Choi');
             append_exhibition(
                 "box_1"
-               ,"img/exhibition/exhibition3.jpg"
-               ,"aaa"
-               ,"B"
-               ,'C'
-               ,'D'
-               ,'E'
-               ,'F'
-               ,'G'
-               ,'h'
-               ,'https://www.naver.com/'
-               ,'37.564280'
-               ,'126.973779'
-               ,'bb'
+               ,"img/exhibition/exhibition7.jpg"
+               ,"Alan Fletcher"
+               ,"Welcome Studio"
+               ,'엘런 플레쳐 전시회 영국 디자인의 신화, 앨런플레처 국내 최초 회고전 웰컴 투 마이 스튜디오! 앨런 플레처 - 위키백과, 우리 모두의 백과사전 제2회 위키탐방 참가 신청'
+               ,'Feb 5. 2020 '
+               ,'- Mar 20. 2020'
+               ,'Mon-Fry AM 9:00'
+               ,'PM 7:00'
+               ,'서울시 용산구 이태원로 52길 21 KT&G 상상마당'
+               ,'https://www.sangsangmadang.com/display/detail/1624'
+               ,'37.499100'
+               ,'126.997199'
+               ,'KT&G 상상마당 : 엘런 플레쳐 전시회'
            );
           append_exhibition(
                 "box_2"
-               ,"img/exhibition/exhibition3.jpg"
-               ,"aaa"
-               ,"B"
-               ,'C'
-               ,'D'
-               ,'E'
-               ,'F'
-               ,'G'
-               ,'h'
-               ,'https://www.naver.com/'
-               ,'37.564280'
-               ,'126.973779'
-               ,'bb'
+               ,"img/exhibition/exhibition16.jpg"
+               ,"Elron D. Diana"
+               ,"Mordern Rose"
+               ,'국내에서 활발하게 활동하고 있는 일러스트 작가로, 그녀의 작품에는 주로 여자와 소녀 동물과 식물이 등장합니다. 작가는 작품 속 인물들과 동물들의 평범한 일상을 다양하게 표현합니다.'
+               ,'Dec 4. 2019 '
+               ,'- Jan 22. 2020'
+               ,'Mon-Sat AM 9:00'
+               ,' - PM 8:00'
+               ,'서울 중구 서소문로 116 유원빌딩 1601호 라이크디즈1601'
+               ,'https://likethiz.com/bbs/board.php?bo_table=event&wr_id=55'
+               ,'37.579528'
+               ,'126.980315'
+               ,'Mordern Rose : UM Gallery'
            );
           append_exhibition(
                 "box_3"
-               ,"img/exhibition/exhibition3.jpg"
-               ,"aaa"
-               ,"B"
-               ,'C'
-               ,'D'
-               ,'E'
-               ,'F'
-               ,'G'
-               ,'h'
-               ,'https://www.naver.com/'
-               ,'37.564280'
-               ,'126.973779'
-               ,'bb'
+               ,"img/exhibition/exhibition11.jpg"
+               ,"Frederick Filia"
+               ,"Square Thinking Triangle"
+               ,'뮤지엄 오브 컬러 컬러를 주제로 한 100일간의 팝업 뮤지엄! 이 비현실적이고 아름다운 공간에서 여러분은 가상의 나라를 탐험하는 여행자가 될 것입니다. '
+               ,'Nob 29. 2019 '
+               ,'- Mar 15. 2020'
+               ,'Tue-Sun AM 10:00'
+               ,'PM 8:00'
+               ,'서울 성동구 연무장15길 11 태광산업 에스팩토리A동'
+               ,'https://sema.seoul.go.kr/ex/exDetail?exNo=316555'
+               ,'37.532877'
+               ,'126.963419'
+               ,'Square Thinking Triangle : 에스팩토리A동'
            );
           append_exhibition(
                 "box_4"
-               ,"img/exhibition/exhibition3.jpg"
-               ,"aaa"
-               ,"B"
-               ,'C'
-               ,'D'
-               ,'E'
+               ,"img/exhibition/exhibition5.jpg"
+               ,"이화영 외"
+               ,"MAGNUM IN PARIS"
+               ,'Comment'
+               ,'Deb .10 2019 '
+               ,'- Mey .3 2020'
                ,'F'
                ,'G'
                ,'h'
                ,'https://www.naver.com/'
                ,'37.564280'
                ,'126.973779'
-               ,'bb'
+               ,'MAGNUM IN PARIS : D뮤지엄'
            );
           append_exhibition(
                 "box_5"
-               ,"img/exhibition/exhibition3.jpg"
-               ,"aaa"
-               ,"B"
-               ,'C'
-               ,'D'
-               ,'E'
+               ,"img/exhibition/exhibition4.jpg"
+               ,"Georgia"
+               ,"The Best World Possible"
+               ,'Comment'
+               ,'Jan 15. 2020 '
+               ,'- Apr 14. 2020'
                ,'F'
                ,'G'
                ,'h'
                ,'https://www.naver.com/'
-               ,'37.564280'
-               ,'126.973779'
-               ,'bb'
+               ,'37.529478'
+               ,'126.968264'
+               ,'Amore Musium'
            );
           append_exhibition(
                 "box_6"
-               ,"img/exhibition/exhibition3.jpg"
-               ,"aaa"
-               ,"B"
-               ,'C'
-               ,'D'
-               ,'E'
+               ,"img/exhibition/exhibition12.jpg"
+               ,"천경자"
+               ,"영원한 나르시시스트"
+               ,'Comment'
+               ,'Jan 1. 2019 '
+               ,'Dec 31. 2019'
                ,'F'
                ,'G'
                ,'h'
                ,'https://www.naver.com/'
-               ,'37.564280'
-               ,'126.973779'
-               ,'bb'
+               ,'37.564323'
+               ,'126.990830'
+               ,'영원한 나르시시스트 : 서울시립미술관'
            );
           append_exhibition(
                 "box_7"
-               ,"img/exhibition/exhibition3.jpg"
-               ,"aaa"
-               ,"B"
-               ,'C'
-               ,'D'
-               ,'E'
+               ,"img/exhibition/exhibition1.jpg"
+               ,"Charlotte"
+               ,"LoL INVADE ART"
+               ,'Comment'
+               ,'Dec 20. 2019 '
+               ,'- Jan 19. 2020'
                ,'F'
                ,'G'
                ,'h'
                ,'https://www.naver.com/'
-               ,'37.564280'
-               ,'126.973779'
-               ,'bb'
+               ,'37.554704'
+               ,'126.927970'
+               ,': Street Musium'
            );
           append_exhibition(
                 "box_8"
-               ,"img/exhibition/exhibition3.jpg"
-               ,"aaa"
-               ,"B"
-               ,'C'
-               ,'D'
-               ,'E'
+               ,"img/exhibition/exhibition18.jpg"
+               ,"S. Grania"
+               ,"인간, 물질 그리고 변형"
+               ,'Comment'
+               ,'Dec 21. 2019 '
+               ,'- Apr 5. 2020'
                ,'F'
                ,'G'
                ,'h'
                ,'https://www.naver.com/'
-               ,'37.564280'
-               ,'126.973779'
-               ,'bb'
+               ,'37.538189'
+               ,'126.998545'
+               ,': ALT SPACE LOOP'
            );
           append_exhibition(
                 "box_9"
-               ,"img/exhibition/exhibition3.jpg"
-               ,"aaa"
-               ,"B"
-               ,'C'
-               ,'D'
-               ,'E'
+               ,"img/exhibition/exhibition9.jpg"
+               ,"Bernice"
+               ,"STORYSCAPE"
+               ,'Comment'
+               ,'Dec 5. 2019 '
+               ,'- Jan 11. 2020'
                ,'F'
                ,'G'
                ,'h'
                ,'https://www.naver.com/'
-               ,'37.564280'
-               ,'126.973779'
-               ,'bb'
+               ,'37.548219'
+               ,'127.053434'
+               ,': Lium'
            );
           append_exhibition(
                 "box_10"
-               ,"img/exhibition/exhibition3.jpg"
-               ,"aaa"
-               ,"B"
+               ,"img/exhibition/exhibition10.jpg"
+               ,"The Beatles"
+               ,"All you need is Love"
                ,'C'
-               ,'D'
-               ,'E'
+               ,'Dec 19. 2019 '
+               ,'- Jan 18. 2020'
                ,'F'
                ,'G'
                ,'h'
                ,'https://www.naver.com/'
-               ,'37.564280'
-               ,'126.973779'
-               ,'bb'
+               ,'37.546099'
+               ,'126.912965'
+               ,': Gallery Choi'
            );
 
 
