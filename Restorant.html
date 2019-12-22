@@ -25,36 +25,94 @@
     <link rel="stylesheet" href="style/footerM.css">
 </head>
 <body>
+
     <div id="container">
      <div id = 'wrap'>
          <div class = 'subdiv'>
 
 
 
+  <!---- -- -- -- --아래는 바디의 해드부분 시작부분 @일진-- -- -- -- -- -->
 
-          <header>
-            <nav>
-              <div class="wrap4">
+  <script type="text/javascript">
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 100) {
+       $('header nav').addClass('fixed-header');
+    }
+    else {
+       $('header nav').removeClass('fixed-header');
+    }
+  });
+  </script>
+  <header>
+<nav>
+  <div class="wrap4">
 
-              <a href="main_iljin.html">
-                  <img src="images/logo_2.jpg" alt="logo"></a>
-                </div>
-                <div class="wrap5">
-                  <ul>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li><a href="main_iljin.html">cafe</a></li>
-                    <li><a href="./Restorant.html">restorant</a></li>
-                    <li><a href="./Pub&BAR.html">pub&bar</a></li>
-                    <li><a href="exhibition.html">exhibition</a></li>
-                    <li><a href="#">perform</a></li>
-                    <li><a href="Activity.html">activity</a></li>
-                  </ul>
-                </div>
-            </nav>
-        </header>
+  <a href="main_iljin.html">
+      <img src="images/logo_2.jpg" alt="logo"></a>
+    </div>
+    <div class="wrap5">
+      <ul>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li><a href="cafe.html">cafe</a></li>
+        <li><a href="./Restorant.html">restorant</a></li>
+        <li><a href="./Pub&BAR.html">pub&bar</a></li>
+        <li><a href="exhibition.html">exhibition</a></li>
+        <li><a href="#">perform</a></li>
+        <li><a href="Activity.html">activity</a></li>
+      </ul>
+    </div>
+</nav>
+</header>
+<!-- 위의 해더부분을 fixed header로 사용했습니다. -->
+
+  <div class="wrap3">
+    <ul>
+      <li><a href="login.html">log in / </a></li>
+      <li><a href="./Signup.html">sign up</a></li>
+    </ul>
+  </div>
+  <div class="wrap1"><a href="main_iljin.html">
+      <img src="images/logo_2.jpg" alt="logo">
+    </a>
+  </div>
+  <hr color="silver" id="hr1">
+  <div class="wrap2">
+    <ul>
+      <li><a href="main_iljin.html">all</a></li>
+      <li><a href="cafe.html">cafe</a></li>
+      <li><a href="./Restorant.html">restorant</a></li>
+      <li><a href="./Pub&BAR.html">pub&bar</a></li>
+      <li><a href="exhibition.html">exhibition</a></li>
+      <li><a href="#">perform</a></li>
+      <li><a href="Activity.html">activity</a></li>
+    </ul>
+  </div>
+  <div id="page">
+    <div id="header">
+      <!--모바일 왼쪽 메뉴바입니다 @일진 -->
+      <a class="navicon" href="#menu-left"> </a>
+    </div>
+
+    <nav id="menu-left">
+      <!--모바일 왼쪽 메뉴바입니다 @일진 -->
+      <ul>
+        <li><a href="login.html"><img src="images/loginIcon.jpg" alt="log in" width="25px">로그인을 후에 이용해주세요</a></li>
+        <li><a href="cafe.html">Cafe</a></li>
+        <li><a href="./Restorant.html">Restorant</a></li>
+        <li><a href="Pub&BAR.html">Pub&Bar</a></li>
+        <li><a href="exhibition.html">Exhibit</a></li>
+        <li><a href="about.html">Perform</a></li>
+        <li><a href="Activity.html">Activity</a></li>
+        <div class="clear"> </div>
+      </ul>
+    </nav>
+  </div>
+  <!---- -- -- -- --위쪽까지가 바디의 해드부분 끝부분입니다 @일진-- -- -- -- -- -->
+
 
 
 
