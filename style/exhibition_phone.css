@@ -24,11 +24,20 @@
 }
 
 .box_inner_text{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 0;
 }
 .box_inner_text span{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+}
+@media only screen and (max-width:640px) and (min-width:530px) {
+   .box_inner_text{
+    font-size: 0.9rem;
+    padding: 0;
+    }
+    .box_inner_text span{
+        font-size: 0.8rem;
+    }
 }
 .box_d:hover{
     border: 10px solid transparent;
@@ -141,4 +150,15 @@
 .modal .modal_link_btn:hover {
     box-shadow: 0 0 5px 5px rgb(93,44,211);
     font-size: 0.8rem;
+}
+
+.hidden_console button{
+    display: none;
+    position: relative;
+    width: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid silver;
+    color: black;
+    background-color: transparent;
 }
