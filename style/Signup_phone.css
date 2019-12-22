@@ -1,40 +1,17 @@
- /*@font-face{
-    font-family:franklin gothic;
-    src: url("");
-}*/
-body{
-    background-color:white;
-    font-family:franklin gothic;
-}
 .sign{
     width:100%; position: relative;
 }
-#logo {
-    background: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
-               -webkit-background-clip: text;
-               -webkit-text-fill-color: transparent;
-                font-family: impact;
-                font-size: 100px;
-                transition: all .9s;
-                text-align: center;
-                width: 480px;
-                margin: 0 auto;
-                transition: all ease 2s 0s;
-}
-#logo :hover{
-    box-shadow: 5px 5px 5px 5px rgb(93,44,211,0.8);
-}
-label{
-    font-size:13px;
+label, input{
+    font-size:30px;
 }
 section{
-    width:340px; height: 700px;
+    width:470px; height: 900px;
     margin: 0 auto;
     /*border: 2px solid blue;*/
 }
 #id{
     letter-spacing:5px;
-    width:230px; height:30px;
+    width:300px; height:30px;
     margin:0px 0px 30px 0px;
     background-color:gray;
     color:black;
@@ -42,11 +19,11 @@ section{
 }
 #id_check{
     position: absolute;
-    top:240px;
-    width:80px; height:35px;
+    top:260px;
+    width:140px; height:35px;
     margin:0px 0px 30px 17px;
     background-color:white;
-    font-size:13px;
+    font-size:25px;
     text-align: center;
     border-image: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
     border-image-slice: 1;
@@ -54,51 +31,51 @@ section{
 }
 #pw{
     letter-spacing:5px;
-    width:330px;
+    width:460px;
     height:30px;
     margin-bottom:30px;
     background-color:gray;
-    font-size:25px;
+    font-size:30px;
 }
 #pw_check{
     letter-spacing:5px;
-    width:330px; height:30px;
+    width:460px; height:30px;
     margin-bottom:10px;
     background-color:gray;
-    font-size:25px;
+    font-size:30px;
 }
 #pw_mismatched{
-    width:330px; height:30px;
+    width:460px; height:30px;
     margin-bottom:30px;
-    font-size:15px;
+    font-size:25px;
     background-color: rgb(255,0,0,0.6);
     padding-top: 7px;
 }
 #name{
     letter-spacing:5px;
-    width:330px; height:30px;
+    width:460px; height:30px;
     margin-bottom:30px;
-    font-size:25px;
+    font-size:30px;
 }
 #year{
-    width:99px; height:30px;
+    width:150px; height:30px;
     margin:0px 5px 30px 0px;
-    font-size:13px;
+    font-size:23px;
 }
 select{
-    width:100px; height:36px;
+    width:140px; height:36px;
     margin:0px 5px 30px 5px;
-    font-size:13px;
+    font-size:23px;
 }
 #day{
-    width:99px; height:30px;
+    width:140px; height:30px;
     margin:0px 0px 30px 5px;
-    font-size:13px;
+    font-size:23px;
 }
 #gender{
-    width: 337px; height: 30px;
+    width: 530px; height: 30px;
     margin: 15px 0px 30px 0px;
-    font-size: 16px;
+    font-size: 27px;
 }
 #male, #female, #others{
     margin-left: 46px;
@@ -106,35 +83,34 @@ select{
 }
 #phone{
     letter-spacing:5px;
-    width:215px; height:30px;
+    width:300px; height:30px;
     margin:0px 5px 30px 0px;
     background-color:gray;
-    color:black;
-    font-size:20px;
+    font-size:30px;
 }
 #phone_check{
     position: absolute;
-    top: 715px;
-    width:100px; height:35px;
+    top: 850px;
+    width:150px; height:35px;
     margin:0px 10px;
     background-color:white;
-    font-size:13px;
+    font-size:23px;
     text-align: center;
     border-image: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
     border-image-slice: 1;
     transform: translateX(-0%);
 }
 #input_check{
-    width:330px; height:30px;
-    font-size:13px;
+    width:460px; height:30px;
+    font-size:23px;
 }
 .btn_sign{
     position: relative;
-    width:335px; height:50px;
+    width:460px; height:50px;
     padding: 0px;
     background-color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 3px;
 }
 #signup_btn {
@@ -143,29 +119,10 @@ select{
     border: 5px solid transparent;
     border-image: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
     border-image-slice: 1;
-    top:100%;
+    top:90%;
     left: 50%;
     transform: translateX(-50%);
     padding: 0 19px;
-}
-.btn_sign:hover{
-    background-color: rgba(93,44,211,0.2);
-}
-/*.btn_check{
-    position: relative;
-    border: 2px solid silver;
-    width:60px; height:50px;
-    padding: 0px;
-    background-color: white;
-    text-align: center;
-    font-size: 20px;
-    letter-spacing: 3px;
-}*/
-#id_check:hover{
-    background-color: rgba(93,44,211,0.2);
-}
-#phone_check:hover{
-    background-color: rgba(93,44,211,0.2);
 }
 
 
