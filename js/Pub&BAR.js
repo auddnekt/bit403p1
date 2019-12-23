@@ -3,6 +3,7 @@ $(document).ready(function(){
        if($(window).width()<640){
            $('#art1').hide();
            $('#art2').show();
+           $('#M1').hide();
        }else{
            $('#art2').hide();
            $('#art1').show();
@@ -12,9 +13,6 @@ $(document).ready(function(){
                 $('#M1').hide();
            }else{
                $('#M1').show();
-               $('#M4').hide();
-               $('#M5').hide();
-               $('#M6').hide();
                }
        });
 
@@ -60,15 +58,4 @@ $(document).ready(function(){
         $('#poster1').hide();
         $('#poster2').hide();
     });
-
-   $(window).resize(function(){
-       if($(window).width()<640){
-           $('#art1').hide();
-           $('#art2').show();
-       }else{
-           $('#art2').hide();
-           $('#art1').show();
-       }
-   });
-
 });
