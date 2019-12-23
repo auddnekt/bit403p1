@@ -3,7 +3,14 @@
     margin: auto;
     width: 1050px;
 }
-
+.box_m_acc{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-top:46.35%;
+    float: left;
+    margin: -1px;
+}
 .box_m h6{
     font-size: 25px;
 }

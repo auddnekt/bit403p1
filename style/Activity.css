@@ -22,11 +22,10 @@ h2{
     font-family: Franklin Gothic;
 }
 #acc{
-    border: 1px solid silver;
-    position:absolute;
+    position:relative;
     width:100%;
     text-align: center;
-    left:120px; top:120px;
+    left:0px; top:120px;
     /*opacity: 0;*/
 }
 #acc div{
