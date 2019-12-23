@@ -75,6 +75,7 @@ $(document).ready(function(){
         var id_alert=$('#id').val();
         if(pw_condition==true&&name_condition==true){
             alert('환영합니다 '+id_alert+' 님');
+            location.replace('main+css.html');
         }
     });
 
