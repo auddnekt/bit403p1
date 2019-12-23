@@ -14,6 +14,10 @@ header>nav{
 article>div{
     padding: 23% 0px;
     background-color: rgba(0,0,0,0.5);
+    /*display: none;*/
+}
+
+.img2{
     display: none;
 }
 
