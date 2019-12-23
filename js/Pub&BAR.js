@@ -49,25 +49,16 @@ $(document).ready(function () {
 
 
     $('#art2 .no1').on('click', function () {
-        $('#M4').show();
-        $('#M5').hide();
-        $('#M6').hide();
         $('#poster1').show();
         $('#poster2').hide();
         $('#poster3').hide();
     });
     $('#art2 .no2').on('click', function () {
-        $('#M5').show();
-        $('#M4').hide();
-        $('#M6').hide();
         $('#poster2').show();
         $('#poster1').hide();
         $('#poster3').hide();
     });
     $('#art2 .no3').on('click', function () {
-        $('#M6').show();
-        $('#M4').hide();
-        $('#M5').hide();
         $('#poster3').show();
         $('#poster1').hide();
         $('#poster2').hide();

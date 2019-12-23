@@ -20,7 +20,7 @@
             $(function() {
                 $("article").hide();
                     let img = $("article").get().sort(function(){
-                    return Math.round(Math.random())-0.4;
+                    return Math.round(Math.random())-1;
                     }).slice(0,12);
                 $(img).fadeIn('linear');
             });
