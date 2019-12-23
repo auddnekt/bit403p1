@@ -1,17 +1,22 @@
         $(document).ready(function(){
 
-               if($(window).width()<640){
-                    $(document).off(".disableScroll").import;
-               }else{
 
-               }
-               $(window).resize(function(){
-                   if($(window).width()<640){
-                        $('#M1').hide();
-                   }else{
-                       $('#M1').show();
-                       }
-               });
+        if ($(window).width() < 640) {
+            $('#sec').find('div').show();
+
+        } else {
+            $('#sec').find('div').hide();
+
+        }
+        $(window).resize(function () {
+            if ($(window).width() < 640) {
+                $('#sec').find('div').show();
+            } else {
+                $('#sec').find('div').hide();
+            }
+        });
+
+
             $(function() {
                 $("article").hide();
                     let img = $("article").get().sort(function(){
@@ -22,6 +27,9 @@
 
             $('.km').on('click', function(){
                 $('article').hide();
+                let a = $(this).siblings('a')
+                a.css('color','black');
+                $(this).css('color','red');
                 let k = $('article').map(function(index, item){
                     return $('article').filter('.kor');
                 });
@@ -31,6 +39,9 @@
             });
             $('.cm').on('click', function(){
                 $('article').hide();
+                let a = $(this).siblings('a')
+                a.css('color','black');
+                $(this).css('color','red');
                 let c = $('article').map(function(index, item){
                     return $('article').filter('.cha');
                 });
@@ -40,6 +51,9 @@
             });
             $('.wm').on('click', function(){
                 $('article').hide();
+                let a = $(this).siblings('a')
+                a.css('color','black');
+                $(this).css('color','red');
                 let w = $('article').map(function(index, item){
                     return $('article').filter('.wes');
                 });
@@ -48,18 +62,25 @@
                 });
             });
             $('.am').on('click', function(){
-                    $("article").hide();
-                    let img = $("article").get().sort(function(){
-                    return Math.round(Math.random())-0.4;
-                    }).slice(0,12);
+                $("article").hide();
+                let a = $(this).siblings('a')
+                a.css('color','black');
+                $(this).css('color','red');
+                let img = $("article").get().sort(function(){
+                return Math.round(Math.random())-0.4;
+                }).slice(0,12);
                 $(img).fadeIn();
                 });
 
             $('article').mouseover(function(){
-                $(this).find('div').fadeToggle();
+                $(this).find('.img1').fadeOut();
+                $(this).find('.img2').fadeIn();
+                $(this).find('div').fadeIn();
             });
 
             $('article').mouseleave(function(){
+                $(this).find('.img2').fadeOut();
+                $(this).find('.img1').fadeIn();
                 $(this).find('div').fadeOut();
             });
 
@@ -75,7 +96,6 @@
                 }
               });
           });*/
-
 
 
         });
