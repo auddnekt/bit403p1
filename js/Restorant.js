@@ -63,7 +63,7 @@
                 $(this).find('div').fadeOut();
             });
 
-            $('article').each(function(index){
+/*            $('article').each(function(index){
               $(this).on({
                  mouseover : function(){
                      $(this).css('border','18px solid transparent');
@@ -74,7 +74,7 @@
                     $(this).children('div').css('display','none');
                 }
               });
-          });
+          });*/
 
 
 
