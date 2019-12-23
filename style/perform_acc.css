@@ -1,0 +1,12 @@
+.contents{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.acc{
+    display: none;
+    overflow: hidden;
+    position: relative;
+    left: -5%;
+    width: 100%;
+}

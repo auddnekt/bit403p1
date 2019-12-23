@@ -213,6 +213,7 @@ h2{
     width: 100%;
     text-align: center;
     background-color: black;
+    margin: 0 auto;
 }
 #slidebar ul{
     text-decoration: none;
