@@ -14,7 +14,7 @@
    <div id="container">
     <div id="wrap">
         <div class="logo">
-            <a id="login_logo_link" href="#"><img id="login_logo" src="images/logo_2.jpg" alt="to_main"></a>
+            <a id="login_logo_link" href="./main_iljin.html"><div id="logo"><p>in PLACE</p></div></a>
         </div>
         <div class="login_box">
            <form>
@@ -31,7 +31,7 @@
            <input type="button" id="login_submit" class="login_bt" value="로그인">
 <!--           <input id="login_bt" class="login_bt" type="submit" value="로그인">-->
            </form>
-           <a href="#" id="signup_btn" class="login_bt">회원가입</a>
+           <a href="./Signup.html" id="signup_btn" class="login_bt">회원가입</a>
         </div>
     </div>
     <script>
@@ -43,7 +43,7 @@
         });
 
     </script>
-            <footer style="top: 1000px">
+            <footer>
     <div>
        <h3>in PLACE</h3>
        <p>ⓒ 2019 BITCAMP</p>
@@ -62,5 +62,50 @@
     </div>
     </footer>
     </div>
+
+    <script>
+        $(document).ready(function(){
+            var mem_list = [];
+            function member(name, pw) {
+                this.name = name;
+                this.pw = pw;
+            };
+
+            mem_list.push(new member('jimo','wjdwlah'));
+
+            $('#name').keyup(function(){
+               if($(this).val()!='') {
+                $(this).css('background-color','rgba(0,0,200,0.3)');
+                }
+            });
+            $('#pw').keyup(function(){
+               if($(this).val()!='') {
+                $(this).css('background-color','rgba(0,0,200,0.3)');
+                }
+            });
+
+            $('#login_submit').click(function(){
+                var m_name = $('#name').val();
+                var m_pw = $('#pw').val();
+                var check_info = false;
+                if(m_name=='' || m_pw==''){
+                    alert('아이디와 비밀번호를 입력하세요.')
+                }
+                else {
+                    for(let i=0; i<mem_list.length; i++) {
+                        if((mem_list[i].name==m_name) && (mem_list[i].pw==m_pw)) {
+                            check_info = true;
+                        }
+                    }
+                    if(check_info==false){
+                        alert('일치하는 아이디와 비밀번호가 없습니다.');
+                    }
+                    else {
+                        window.location.href = "./main_iljin.html";
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

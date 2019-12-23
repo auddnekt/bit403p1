@@ -1,0 +1,14 @@
+ul li{
+    list-style: none;
+    text-align: center;
+}
+#rebbeca img{
+    width: 90%;
+    background-size: cover;
+    height: 100vh;
+    z-index: 0;
+}
+#cover{
+    background-color: black;
+    opacity: 0.5;
+}

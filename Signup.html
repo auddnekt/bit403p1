@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style/Signup.css">
+    <link rel="stylesheet" href="style/Signup_phone.css" media="all and (min-width:360px) and (max-width:639px)">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/Activity_footerM.css">
+    <link rel="stylesheet" href="style/footerM.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/Signup.js"></script>
 </head>
 <body>
     <div id="container">
         <div class="sign">
-        <div id="logo">in PLACE</div>
+        <div id="logo"><a href="main_iljin.html"><p>in PLACE</p></a></div>
         <section>
         <label for="id">아이디</label><br>
         <input type="text" id="id" name="sign" maxlength="8">
-        <input type="button" id="id_check" name="sign" value="중복확인"><br>
+        <input type="button" id="id_check" class="btn_check" name="sign" value="중복확인"><br>
         <label for="pw">비밀번호</label><br>
         <input type="pw" id="pw" class="pw_class" name="sign" maxlength="12"><br>
         <label for="pw_check">비밀번호 재확인</label><br>
@@ -50,10 +51,10 @@
         </div>
         <label>전화번호</label><br>
         <input type="text" id="phone" name="sign">
-        <input type="button" id="phone_check" value="인증번호받기"><br>
+        <input type="button" id="phone_check" class="btn_check" value="인증번호받기"><br>
         <input type="text" id="input_check" value="인증번호를 입력하세요">
 
-        <div id="div_sign"><a href="page_iljin.html">회원가입</a></div>
+        <input type="button" id="signup_btn" class="btn_sign" value="회원가입"><a href="page_iljin.html"></a>
         </section>
         </div>
 

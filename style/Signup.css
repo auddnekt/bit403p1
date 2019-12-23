@@ -1,4 +1,4 @@
-/*@font-face{
+ /*@font-face{
     font-family:franklin gothic;
     src: url("");
 }*/
@@ -7,58 +7,67 @@ body{
     font-family:franklin gothic;
 }
 .sign{
-    margin-bottom:150px;
+    width:100%; position: relative;
 }
-#logo{
+#logo {
     background: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
                -webkit-background-clip: text;
                -webkit-text-fill-color: transparent;
                 font-family: impact;
-                font-size: 60px;
-    text-align: center;
+                font-size: 100px;
+                transition: all .9s;
+                text-align: center;
+                width: 480px;
+                margin: 0 auto;
+                transition: all ease 2s 0s;
+}
+#logo :hover{
+    box-shadow: 5px 5px 5px 5px rgb(93,44,211,0.8);
 }
 label{
     font-size:13px;
 }
 section{
-    width:340px; height: 900px;
+    width:340px; height: 700px;
     margin: 0 auto;
     /*border: 2px solid blue;*/
 }
 #id{
     letter-spacing:5px;
     width:230px; height:30px;
-    margin:0px 5px 30px 0px;
-    background-color:dimgrey;
-    color:white;
+    margin:0px 0px 30px 0px;
+    background-color:gray;
+    color:black;
     font-size:25px;
 }
 #id_check{
+    position: absolute;
+    top:240px;
     width:80px; height:35px;
-    margin:0px 0px 30px 5px;
+    margin:0px 0px 30px 17px;
     background-color:white;
     font-size:13px;
     text-align: center;
+    border-image: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
+    border-image-slice: 1;
+    transform: translateX(-0%);
 }
 #pw{
     letter-spacing:5px;
     width:330px;
     height:30px;
     margin-bottom:30px;
-    background-color:dimgrey;
-    color:white;
+    background-color:gray;
     font-size:25px;
 }
 #pw_check{
     letter-spacing:5px;
     width:330px; height:30px;
     margin-bottom:10px;
-    background-color:dimgrey;
-    color:white;
+    background-color:gray;
     font-size:25px;
 }
 #pw_mismatched{
-    border: 1px solid silver;
     width:330px; height:30px;
     margin-bottom:30px;
     font-size:15px;
@@ -99,33 +108,64 @@ select{
     letter-spacing:5px;
     width:215px; height:30px;
     margin:0px 5px 30px 0px;
-    background-color:dimgrey;
-    color:white;
+    background-color:gray;
+    color:black;
     font-size:20px;
 }
 #phone_check{
+    position: absolute;
+    top: 715px;
     width:100px; height:35px;
-    margin:0px 0px 30px 5px;
+    margin:0px 10px;
     background-color:white;
     font-size:13px;
     text-align: center;
+    border-image: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
+    border-image-slice: 1;
+    transform: translateX(-0%);
 }
 #input_check{
     width:330px; height:30px;
-    margin-bottom:50px;
     font-size:13px;
 }
-#div_sign{
-    border: 2px solid silver;
-    width:330px; height:50px;
+.btn_sign{
+    position: relative;
+    width:335px; height:50px;
     padding: 0px;
-    /*margin: 0 auto;*/
-    background: linear-gradient(to top, rgb(93,44,211,0.7) 8%, rgb(29,266,217,0.7));
+    background-color: white;
     text-align: center;
-    padding: 15px 0px 0px 0px;
     font-size: 20px;
     letter-spacing: 3px;
-    box-shadow: 4px 4px silver;
+}
+#signup_btn {
+    position: absolute;
+    text-decoration: none;
+    border: 5px solid transparent;
+    border-image: linear-gradient( to bottom, rgb(93,44,211) 8%, rgb(29,266,217));
+    border-image-slice: 1;
+    top:100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 19px;
+}
+.btn_sign:hover{
+    background-color: rgba(93,44,211,0.2);
+}
+/*.btn_check{
+    position: relative;
+    border: 2px solid silver;
+    width:60px; height:50px;
+    padding: 0px;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+}*/
+#id_check:hover{
+    background-color: rgba(93,44,211,0.2);
+}
+#phone_check:hover{
+    background-color: rgba(93,44,211,0.2);
 }
 
 

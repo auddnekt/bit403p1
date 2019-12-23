@@ -1,37 +1,67 @@
-{margin: 0px auto};
+{margin: 0px;}
+header>nav{
+    display: none;
+}
+.wrap4 a, .wrap2 a, .wrap5 a, .wrap1 a, .wrap2 a{
+    color: black;
+    font-weight: 500;
+}
+#hr1{
+    float :left;
+    position: absolute;
+    top: 140px;
+}
+
+
+body {
+    overflow-y: scroll;
+}
+
+
 
 
 img{
     padding: 0px;
 }
 .subdiv{
-    width: 1200px;
+    width: 1500px;
     margin: 0px auto;
 }
-nav{
-    margin: 0px auto 50px auto;
-    width : 1050px;
+#na{
+    margin: 50px auto;
+    width : 100%;
     text-align: center;
+    margin-bottom: 50px;
 }
-nav>a{
+#na>h3{
+    font-size: 3rem;
+}
+#na>.menu{
     color : black;
     text-decoration: none;
     font-weight: bolder;
+    text-align: center;
+    margin: 0px 5%;
 }
-section{
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+#sec{
     margin: 0px auto;
-    width: 1050px;
+    width: 1200px;
 }
-article{
+#sec>article{
     position: relative;
     display: inline-block;
     float: left;
     padding-top: 50%;
     border: 1px solid silver;
-    width: 32.5%;
+    width: 33.3%;
     display: none;
+    margin: -1px -1.5px
 }
-img{
+#sec img{
     position: absolute;
     left: 0px;
     top: 0px;
@@ -39,55 +69,112 @@ img{
     height: 100%;
 }
 
-article div{
+#sec article div{
     position: absolute;
-    top : 80%;
+    top : 85%;
     left: 50%;
     transform : translate(-50%, -50%);
     color: white;
-    font-weight: bolder;
-    font-size: 2rem;
+    width: 100%;
     text-align: center;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    padding: 60px 0px;
+    background-color: rgba(0,0,0,0.5);
+    display:none;
+}
+.cha{
+    font-size: 1.3rem;
 }
 
 @media all and (max-width:639px){
     .subdiv{
-        width: 90%;
+        width: 100%;
         margin: 0px auto;
     }
-    nav{
+    #na{
         width:100%;
     }
-    section{
-        width:100%;
+    #sec{
+        margin: 0px auto;
+        width:95%;
     }
-    article{
+    #sec>article{
     border: 1px solid silver;
     width: 49%;
+
     }
-    article>div{
-        font-size: 1.5rem;
+    #sec>article>div{
+        font-size: 0.9rem;
+        padding: 20px 0px;
     }
+    #na>.menu{
+        margin: 0px 1%;
+    }
+    #na>h3{
+    font-size: 2rem;
+    }
+/*    #sec{
+        height: 2000px;
+        border: 5px solid black;
+    }*/
 }
-@media all and (min-width:640px) and (max-width:1199px){
+
+
+@media all and (min-width:640px) and (max-width:899px){
     .subdiv{
         width: 90%;
         margin: 0px auto;
     }
-    nav{
+    #na{
+        width:90%;
+    }
+    #sec{
+        width:90%;
+    }
+    #sec>article>div{
+        font-size: 1.1rem;
+        padding: 30px 0px;
+    }
+    .cha{
+    font-size: 0.9rem;
+    }
+    #na>.menu{
+        margin: 0px 3%;
+    }
+    ::-webkit-scrollbar {
+        display: block;
+        width: 15px; }
+    ::-webkit-scrollbar-thumb { background: #a9a9a9; }
+
+}
+
+
+@media all and (min-width:900px) and (max-width:1499px){
+    {margin: 0px;}
+    .subdiv{
+        width: 90%;
+        margin: 0px auto;
+    }
+    #na{
         width:100%;
     }
-    section{
-        width:100%;
+    #sec{
+        width:90%;
     }
-    article>div{
-        font-size: 1.5rem;
+    #sec>article>div{
+        font-size: 1.4rem;
+        padding: 40px 0px;
+    }
+    .cha{
+    font-size: 1.3rem;
+    }
+    #na>.menu{
+        margin: 0px 3%;
     }
 
 }
-@media all and (min-width:1200px){
-    .subdiv{
-        width: 90%;
-        margin: 0px auto;
+@media all and (min-width:1500px){
+
     }
 }
