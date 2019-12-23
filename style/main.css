@@ -1,0 +1,24 @@
+p{
+    position: absolute;
+    top: 50%; left: 40%;
+    background: linear-gradient(to bottom, rgb(93,44,211) 20%, rgb(29,266,217));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: impact;
+    font-size: 150px;
+    z-index: 5;
+ }
+ul li{
+    list-style: none;
+}
+.sildeshow{
+    display: block;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+    transition: 1s opacity;
+}
+.
