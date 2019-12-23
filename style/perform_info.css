@@ -41,7 +41,7 @@ h2{
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -61,6 +61,19 @@ h2{
 }
 #intro, #story{
     font-size: 15px;
+}
+#main_todd #sub #intro, #line{
+    position: relative;
+    left: -2%;
+}
+#main_todd #sub #video{
+    position: relative;
+    left: -2%;
+}
+#main_todd #sub #ticket{
+    position: relative;
+    left: -2%;
+    top: 1%;
 }
 #line{
     font-size: 25px;
