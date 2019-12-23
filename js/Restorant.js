@@ -1,11 +1,20 @@
         $(document).ready(function(){
 
 
-/*               if($(window).width()<640){
-                    $('#sec>article>div').show();
-               }else{
-                    $('#sec>article>div').hide();
-               }*/
+        if ($(window).width() < 640) {
+            $('#sec').find('div').show();
+
+        } else {
+            $('#sec').find('div').hide();
+
+        }
+        $(window).resize(function () {
+            if ($(window).width() < 640) {
+                $('#sec').find('div').show();
+            } else {
+                $('#sec').find('div').hide();
+            }
+        });
 
 
             $(function() {
