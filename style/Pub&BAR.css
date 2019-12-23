@@ -128,7 +128,7 @@ html {
 @media all and (max-width:639px){
 
     #menu-left{
-        display: none; !important;
+        display: none !important;
     }
 
     .subdiv{
