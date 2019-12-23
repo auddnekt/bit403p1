@@ -1,0 +1,63 @@
+#wrap{
+    margin: auto;
+    width: 100%;
+}
+#wrap2{
+    display: block;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 230px;
+}
+#line, #intro, #story, #ticket, #video{
+    font-size: 15px;
+    position: relative;
+    left: -10px;
+    padding-top: 15px;
+}
+#intro{
+    padding-top: 30px;
+    display: block;
+    position: relative;
+    width: 400px;
+*    left: 50%;
+}
+#story{
+    font-size: 10px;
+    display: block;
+    padding: 0 50px;
+}
+#video{
+    position: relative;
+    top: 20px;
+}
+#video iframe{
+    width: 330px;
+    height: 330px;
+}
+.contents{
+    display: inline-block;
+    width: 50%;
+    padding-top:46.35%;
+    float: left;
+    padding-left: 3%;
+}
+.acc{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 15%;
+    float: left;
+    left: -17px;
+    height: 900px;
+}
+#ticket{
+    position: relative;
+    left: -5%;
+    top: 1%;
+}
+#abc{
+    position: relative;
+    left: -180px;
+    top: -90px;
+}

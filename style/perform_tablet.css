@@ -1,0 +1,42 @@
+#wrap{
+    margin: auto;
+    width: 100%;
+}
+#wrap2{
+    margin: auto;
+    width: 100%;
+}
+.contents{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    padding-top:69.53%;
+    float: left;
+}
+#line{
+    font-family: Franklin Gothic;
+    font-size: 25px;
+    padding-top: 10px;
+}
+#intro{
+    font-size: 25px;
+    padding-top: 60px;
+    padding-top: 70px;
+}
+#story{
+    display: block;
+    padding: 20px 0 0 0;
+}
+#story p{
+    display: block;
+    position: relative;
+    width: 800px;
+    left: 8%;
+}
+#video{
+    font-size: 20px;
+}
+#video iframe{
+    width: 700px;
+    height: 400px;
+}
