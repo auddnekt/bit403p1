@@ -1,6 +1,6 @@
 $(document).ready(function(){
     /*컨텐츠박스*/
-    
+
     /*클릭시 박스 정렬*/
     $('#array1').click(function(){
         $('.box_m').fadeOut('500');
@@ -28,8 +28,8 @@ $(document).ready(function(){
         $('#box5').insertAfter('#box2');
         $('.box_m').fadeIn('500');
     });
-    
-    
+
+
 
     /*---------+---------------+----------*/
 
@@ -66,11 +66,11 @@ $(document).ready(function(){
 
     /*--------+----------+---------*/
 
-    
-    
-    
-    
-    
+
+
+
+
+
 
 
 

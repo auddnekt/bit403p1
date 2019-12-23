@@ -7,30 +7,22 @@ box-sizing: border-box;
 /*여기서부터 서브 네비게이션*/
 #act_nav{
     position: relative;
-    top: 90px;
+    top: 50px;
     text-align: center;
     padding:0px; margin:0px;
 }
 #act_nav h6{
-    width:50%; margin: 0 auto;
-    padding:3px; margin-bottom:10px;
-    font-size:50px; color:blue;
-    font-family: Copperplate Gothic;
-}
-#act_nav a h6:hover{
-    color: red;
+    padding:3px; margin-bottom:5px;
+    font-size:20px; color:blue;
 }
 #act_nav ul{
     margin:0px; padding:0px;
     list-style: none;
 }
 #act_nav ul li{
+    /*border: 1px solid blue;*/
     margin: 0;
     padding: 3px 50px;
-    font-size: 19px;
-}
-#act_nav ul li :hover{
-    color: blue;
 }
 #act_nav select{
     display: none;
@@ -51,7 +43,7 @@ box-sizing: border-box;
 }
 #wrap{
     position: relative;
-    top: 130px;
+    top: 100px;
 }
 section ul li a {
     color: black;
@@ -63,14 +55,6 @@ section ul li a {
     position: relative;
     display: inline-block;
     width: 33.33333%;
-    padding-top:46.35%;
-    float: left;
-    margin: -1px;
-}
-.box_m_acc{
-    position: relative;
-    display: inline-block;
-    width: 100%;
     padding-top:46.35%;
     float: left;
     margin: -1px;
@@ -117,46 +101,6 @@ section ul li a {
     border-image-slice: 1;
 }
 
-/* 여기서부터 아코디언*/
-#acc{
-    position:absolute;
-    width:100%;
-    top:25%;
-    text-align: center;
-    /*margin: 0 auto;*/
-}
-h2{
-    padding:10px;
-    width:100%; height:50px;
-    position: relative;
-    margin: 0 auto;
-    font-size: 21px;
-    font-family: Franklin Gothic;
-}
-<<<<<<< HEAD
-#acc{
-    position:relative;
-    width:100%;
-    text-align: center;
-    left:0px; top:120px;
-    /*opacity: 0;*/
-}
-=======
->>>>>>> origin/master
-#acc div{
-    margin: 0 auto;
-    padding: 0px;
-}
-#acc ul{
-    padding:0px; margin: 0px;
-}
-#acc ul li{
-    display: block;
-    font-family: Franklin Gothic;
-    font-size: 15px;
-    padding:0px; margin:20px 0px;
-}
-
 /*여기서부터 컨텐츠 박스 안 텍스트*/
 .box_inner_text{
     color: white;
@@ -170,73 +114,28 @@ h2{
     padding: 3%;
 }
 #box_text_glass{
-    top: 70%;
-    height: 30%;
+    top: 75%;
+    height: 25%;
 }
 #box_text_tree{
-    top: 73%;
-    height: 27%;
+    top: 78%;
+    height: 22%;
 }
 #box_text_couple{
-    top: 67%;
-    height: 33%;
+    top: 72%;
+    height: 28%;
 }
 #box_text_back{
-    top: 70%;
-    height: 30%;
+    top: 75%;
+    height: 25%;
 }
 #box_text_leviev{
-    top: 65%;
-    height: 35%;
-}
-#box_text_cat{
-    top: 71%;
-    height: 29%;
-}
-#box_text_notebook{
     top: 70%;
     height: 30%;
 }
-#box_text_green{
-    top: 71%;
-    height: 29%;
+#box_text_cat{
+    top: 78%;
+    height: 22%;
 }
-#box_text_film{
-    top: 67%;
-    height: 33%;
-}
-
-/*여기서부터 배열*/
-#slidebar{
-    position: absolute;
-    top:730px;
-    width: 100%;
-    text-align: center;
-    background-color: black;
-}
-#slidebar ul{
-    text-decoration: none;
-}
-#slidebar ul li{
-    font-size: 25px;
-    border-radius: 100%;
-    padding: 0px;
-    margin: 0px 30px;
-    color: wheat;
-}
-#slidebar ul li:hover{
-    background-color: white;
-    color: black;
-    padding: 10px;
-}
-
-
-
-
-
-
-
-
-
 
 
