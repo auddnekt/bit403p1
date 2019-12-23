@@ -126,6 +126,11 @@ html {
 
 
 @media all and (max-width:639px){
+
+    #menu-left{
+        display: none; !important;
+    }
+
     .subdiv{
         width: 95%;
         margin: 0px auto;
