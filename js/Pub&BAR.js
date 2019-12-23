@@ -19,12 +19,17 @@ $(document).ready(function () {
         }
     });
 
-    $('article').mouseover(function () {
-        $(this).find('div').fadeToggle();
-    });
-    $('article').mouseleave(function () {
-        $(this).find('div').fadeOut();
-    });
+            $('article').mouseover(function(){
+                $(this).find('.img1').fadeOut();
+                $(this).find('.img2').fadeIn();
+                $(this).find('div').fadeIn();
+            });
+
+            $('article').mouseleave(function(){
+                $(this).find('.img2').fadeOut();
+                $(this).find('.img1').fadeIn();
+                $(this).find('div').fadeOut();
+            });
 
     $('#art1 .no1').on('click', function () {
         $('#poster1').show();
