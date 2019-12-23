@@ -4,6 +4,20 @@
     margin: auto;
     width: 87%;
 }
+.box_m_acc{
+    position: relative;
+    display: inline-block;
+<<<<<<< HEAD
+    width: 100%; height:500px;
+    padding-top:46.35%;
+    float: left;
+    margin: -1px;
+=======
+    width: 100%;
+    padding-top:69.53%;
+    float: left;
+>>>>>>> origin/master
+}
 .box_m h6{
     font-size: 15px;
 }

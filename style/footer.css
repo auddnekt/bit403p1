@@ -1,18 +1,30 @@
 /*
 각자 바디부분 콘테이너로 감싸주세요~!
 <body><div id="container"> html코드들+footer </div></body>*/
+/*
     html,body{
     height:100%; margin:0; padding:0;
     }
+*/
     #container{
     min-height: 100%;
     position: relative;
-    border: 0.1px solid rgb(255,255,255,0.0);
+/*    border: 0.1px solid rgb(255,255,255,0.0);*/
     }
     footer{
-        position: absolute;
+
+/*      아래 원본
+        position: relative;
         bottom: 0;
         width: 100%;
+*/
+        /*아래 정지모 수정 추가 부분*/
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        top: 200px;
+        /*이상 정지모 수정 추가 부분 끝*/
+
         height: 216px !important;
         border: 0px;
         background-color: #535353;
@@ -28,12 +40,12 @@
         font-size: 13px;
         margin: 0 0 10px 40px;
     }
-    .info{
+    footer .info{
         font-size: 15px;
         font-family: Franklin Gothic;
         margin: 45px 0 10px 40px;
     }
-    #abc{
+    footer #abc{
         float: right;
         font-family: Franklin Gothic;
         font-size: 20px;
@@ -49,16 +61,16 @@
         padding: 0px 20px;
 
     }
-    #about{
+    footer #about{
         right: 400px;
     }
-    #project{
+    footer #project{
         right: 280px;
     }
-    #contact{
+    footer #contact{
         right: 160px;
     }
-    #qna{
+    footer #qna{
         right: 80px;
     }
     footer ul li a{

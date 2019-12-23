@@ -1,26 +1,56 @@
-    html {
+header>nav{
+    display: none;
+}
+.wrap4 a, .wrap2 a, .wrap5 a, .wrap1 a, .wrap2 a{
+    color: black;
+    font-weight: 500;
+}
+#hr1{
+    float :left;
+    position: absolute;
+    top: 140px;
+}
+
+
+
+html {
         width:100%; height: 100%; overflow-y: scroll;
     }
 #wrap{
 
         }
-        .subdiv{
-            width: 1200px;
-            margin: 0px auto;
+
+        #nav1>h3{
+            margin-top: 100px;
+            font-size: 3rem;
         }
 
-        nav{
-            width: 1062px;
+
+        .subdiv{
+            width: 1500px;
+            margin: 0px auto;
+        }
+        #slider{
+
+            width: 80.1%;
+            margin : 0px auto;
+        }
+
+        #nav1{
+            width: 1200px;
             margin: 0px auto;
             text-align: center;
+            font-family: Copperplate Gothic;
+
         }
         #art1 article, #art2 article{
             position: relative;
             display: inline-block;
             float: left;
             padding-top: 50%;
-            width: 32.5%;
-
+            width: 33.3%;
+            z-index: 1;
+            margin: 30px 0px;
         }
         #art1 img, #art2 img{
             position: absolute;
@@ -29,12 +59,17 @@
             width: 100%;
             height: 100%;
         }
+
+        #M1{
+            position: relative;
+            z-index: 0;
+        }
         #M4 article, #M5 article, #M6 article{
             position: relative;
             display: inline-block;
             float: left;
             padding-top: 50%;
-            width: 97%;
+            width: 99.1%;
         }
         #M4 img, #M5 img, #M6 img{
             position: absolute;
@@ -53,6 +88,7 @@
             font-weight: bolder;
             font-size: 2em;
             text-align: center;
+            width: 100%;
         }
         #M4 div{
             position: absolute;
@@ -63,116 +99,43 @@
             font-size: 120%;
             transform : translate(-50%, -50%);
         }
-    a, a:link, a:visited {
-        text-decoration:none;
-        }
-    ul {
-        list-style-type: none;
-        }
 
-    .brandVisual{
-                position: relative; width: 800px;
-                margin: 0 auto;
-                overflow:hidden;
-                height: 500px;
-                }
-    .brandVisual ul {
-                    position: relative; float: left;
-                    width: 100%; height: 500px;
-                    }
-    .brandVisual li {
-                    position: absolute; width: 100%;
-                    height: 600px;
-                    }
-    .brandVisual li a {
-        display:block;
-        }
-    #M1 .brandVisual .visual_0 {
-        left: 0px ;
-        background: url('../img/POB&BAR/background/photo-1487088678257-3a541e6e3922.jpg')50% 0 no-repeat;
-        }
-
-    #M1 .brandVisual .visual_1 {
-        left: 100% ; background: url('../img/POB&BAR/background/photo-1495195129352-aeb325a55b65.jpg') 50% 0 no-repeat;
-        }
-
-    #M1 .brandVisual .visual_2 {
-        left: 200% ; background: url('../img/POB&BAR/background/photo-1513151233558-d860c5398176.jpg') 50% 0 no-repeat;
-        }
-    #M1 .brandVisual .visual_3 {
-        left: 300% ; background: url('../img/POB&BAR/background/photo-1558980664-4d79c6e77b93.jpg') 50% 0 no-repeat;
-        }
-    #M1 .brandVisual .visual_4 {
-        left: 0px ; background: url('../img/POB&BAR/background/photo-1558981806-ec527fa84c39.jpg') 50% 0 no-repeat;
-        }
-
-    #M1 .brandVisual .visual_5 {
-        left: 100% ; background: url('../img/POB&BAR/background/photo-1495195129352-aeb325a55b65.jpg') 50% 0 no-repeat;
-        }
-
-    #M1 .brandVisual .visual_6 {
-        left: 200% ; background: url('../img/POB&BAR/background/photo-1513151233558-d860c5398176.jpg') 50% 0 no-repeat;
-        }
-    #M1. brandVisual .visual_7 {
-        left: 300% ; background: url('../img/POB&BAR/background/photo-1558980664-4d79c6e77b93.jpg') 50% 0 no-repeat;
-        }
-    #M1 >.brandVisual .visual_8 {
-        left: 0px ; background: url('../img/POB&BAR/background/photo-1495195129352-aeb325a55b65.jpg') 50% 0 no-repeat;
-        }
-
-    #M1 .brandVisual .visual_9 {
-        left: 100% ; background: url('../img/POB&BAR/background/photo-1487088678257-3a541e6e3922.jpg') 50% 0 no-repeat;
-        }
-
-    #M1 .brandVisual .visual_10 {
-        left: 200% ; background: url('../img/POB&BAR/background/photo-1558980664-4d79c6e77b93.jpg') 50% 0 no-repeat;
-        }
-    #M1 .brandVisual .visual_11 {
-        left: 300% ; background: url('../img/POB&BAR/background/photo-1558981806-ec527fa84c39.jpg') 50% 0 no-repeat;
-        }
+     .carousel-caption{
+           top:50%; transform: translateY(-30%)
+      }
+     .carousel-control-prev, .carousel-control-next{
+           top:50%; transform: translateY(-0%)
+      }
+#poster1, #poster2, #poster3{
+    clear: both;
+    padding: 30px;
+    margin: 0px auto;
+    width: 80.1%;
+    white-space: pre-line;
+}
+#poster1 img, #poster2 img, #poster3 img{
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
 
 
-    .buttonList:after {
-        content:"";
-        display: block; clear: both;
-        }
-
-    .buttonList li {
-        cursor:pointer;
-        }
-
-    .buttonList{
-        position: relative;
-        width: 800px;
-        margin: 0px auto;
-        }
-        .buttonList li{
-            background-color: rgba(0,0,0,0.3);
-            width: 195px;
-            float: left;
-            text-align: center;
-            font-size: 25px;
-            font-weight: bolder;
-            position: relative;
-            bottom: 33px
-        }
-    .buttonList li.on {
-        background-position: 0 0 ;
-        }
-
-    .buttonList li a {
-        color: black;
-        }
-    #art2, #M1, #M4, #M5, #M6{
+    #art2, #M4, #M5, #M6, #poster1, #poster2, #poster3{
     display: none;
     }
 
+
 @media all and (max-width:639px){
+
+    #menu-left{
+        display: none !important;
+    }
+
     .subdiv{
-        width: 90%;
+        width: 95%;
         margin: 0px auto;
     }
-    nav{
+    #nav1{
         width:100%;
     }
     section{
@@ -181,26 +144,72 @@
     article>div{
         font-size: 150%;
     }
+    #poster1, #poster2, #poster3{
+        padding: 30px;
+        width: 100%;
+        font-size : 0.7em;
+    }
+    #art1 div, #art2 div{
+        font-size: 1em;
+    }
 }
-@media all and (min-width:640px) and (max-width:1199px){
+@media all and (min-width:640px) and (max-width:899px){
     .subdiv{
         width: 90%;
         margin: 0px auto;
     }
-    nav{
-        width:100%;
+
+    #nav1{
+        width:81%;
     }
     section{
-        width:100%;
+        width:81%;
     }
     article>div{
         font-size: 200%;
     }
 
+    #slider{
+        width: 81%;
+        margin : 0px auto;
+    }
+    #poster1, #poster2, #poster3{
+        padding: 30px;
+        width: 90%;
+        font-size : 0.85em;
+    }
+        #art1 div, #art2 div{
+        font-size: 1.2em;
+    }
 }
-@media all and (min-width:1200px){
+@media all and (min-width:900px) and (max-width:1499px){
     .subdiv{
         width: 90%;
         margin: 0px auto;
     }
+
+    #nav1{
+        width:90%;
+    }
+    section{
+        width:90%;
+    }
+    article>div{
+        font-size: 200%;
+    }
+    #slider{
+        width: 90%;
+        margin : 0px auto;
+    }
+    #poster1, #poster2, #poster3{
+        padding: 30px;
+        width: 90%;
+        font-size : 0.85em;
+    }
+        #art1 div, #art2 div{
+        font-size: 2em;
+    }
+}
+@media all and (min-width:1500px){
+
 }

@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="style/exhibition_pc.css" media="all and (min-width:1200px)">
   <link rel="stylesheet" href="style/exhibition_tablet.css" media="all and (min-width:640px) and (max-width:1199px)">
   <link rel="stylesheet" href="style/exhibition_phone.css" media="screen and (max-width:639px)">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/footerM.css">
   <!-- -- -- -- -- --header 이부분을 붙여주세요. 이용하세요! @일진 -- -- -- -- -- --><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><link href="css/style.css" rel='stylesheet' type='text/css' /><script type="text/javascript" src="js/jquery.min.js"></script><link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" /><script type="text/javascript" src="js/jquery.mmenu.js"></script><script type="text/javascript">$(function() {$('nav#menu-left').mmenu();});</script>
   <style >
     .box_map1 {
@@ -44,7 +46,7 @@
         <li> </li>
         <li> </li>
         <li> </li>
-        <li><a href="main_iljin.html">cafe</a></li>
+        <li><a href="cafe.html">cafe</a></li>
         <li><a href="./Restorant.html">restorant</a></li>
         <li><a href="./Pub&BAR.html">pub&bar</a></li>
         <li><a href="exhibition.html">exhibition</a></li>
@@ -66,11 +68,11 @@
       <img src="images/logo_2.jpg" alt="logo">
     </a>
   </div>
-  <hr color="silver">
+  <hr color="silver" id="hr1">
   <div class="wrap2">
     <ul>
       <li><a href="main_iljin.html">all</a></li>
-      <li><a href="main_iljin.html">cafe</a></li>
+      <li><a href="cafe.html">cafe</a></li>
       <li><a href="./Restorant.html">restorant</a></li>
       <li><a href="./Pub&BAR.html">pub&bar</a></li>
       <li><a href="exhibition.html">exhibition</a></li>
@@ -88,7 +90,7 @@
       <!--모바일 왼쪽 메뉴바입니다 @일진 -->
       <ul>
         <li><a href="login.html"><img src="images/loginIcon.jpg" alt="log in" width="25px">로그인을 후에 이용해주세요</a></li>
-        <li><a href="main_iljin.html">Cafe</a></li>
+        <li><a href="cafe.html">Cafe</a></li>
         <li><a href="./Restorant.html">Restorant</a></li>
         <li><a href="Pub&BAR.html">Pub&Bar</a></li>
         <li><a href="exhibition.html">Exhibit</a></li>
@@ -137,9 +139,13 @@
           <li class="box_m" id="disapear"><a class="box_link" href="#">
               <div class="box_d"><img class="box_img" src="img/etc/모아봐요6.png" alt="img5"></div>
             </a></li>
-            <a class="box_link" href="#"><video autoplay="autoplay" muted="muted" name="media" class="box_map1">
+            <div class="vimeo">
+
+<video autoplay="autoplay" muted="muted" name="media" class="box_map1" width="95%">
               <source src="https://player.vimeo.com/external/377455732.hd.mp4?s=b9c34d0d50b63e9b4ac8b9f0f2dda89ca3ef8fce&profile_id=175"
-              type="video/mp4"></video></a>
+              type="video/mp4"></video>
+            </div>
+
           <li class="box_m"><a class="box_link" href="#">
               <div class="box_d"><img class="box_img" src="img/etc/모아봐요7.png" alt="img6"></div>
             </a></li>
@@ -199,15 +205,6 @@
   <!---------------X------------모달창-------------X--------------->
 
 
-
-  <!----------------------------푸터----------------------------->
-  <footer>
-
-  </footer>
-  <!---------------X------------푸터--------------X-------------->
-
-
-
   <!---------------------------------모달 스크립트------------------------------->
   <!---.box_link 중에 클릭시 선택된 $this를 가지고 모달창을 선택하도록 구성--->
   <script>
@@ -225,6 +222,27 @@
 
   </script>
   <!-------------X--------------------모달 스크립트----------------X------------>
+  <!---------------X------------푸터--------------X-------------->
+  <footer>
+<div>
+ <h3>in PLACE</h3>
+ <p>ⓒ 2019 BITCAMP</p>
+</div>
+<div class="info">
+Tel. 000-0000-0000  |  Fax. 0000-0000-0000  |  bitcamp403@bitcamp.com<br>
+Gangnamdaero 459, Seocho-gu, Seoul, Korea  |  business license number. 000-00-00000
+</div>
+<div id="abc">
+<ul>
+  <li id="about"><a href="#">ABOUT</a></li>
+  <li id="project"><a href="#">PROJECT</a></li>
+  <li id="contact"><a href="#">CONTACT</a></li>
+  <li  id="qna"><a href="#">Q&A</a></li>
+</ul>
+</div>
+</footer>
+<!---------------X------------푸터--------------X-------------->
+
 </body>
 
 </html>

@@ -4,13 +4,19 @@
     position: relative;
     top: 80px;
 }
+.boxmodel_nav_wrap .boxmodel_nav_title {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 3% 0 5% 0;
+    font-family: Copperplate Gothic;
+    font-weight: 600;
+}
 .con_box{
     margin: auto;
     width: 100%;
     min-width: 300px;
 }
 .box_m{
-    border: 1px solid silver;
     display: inline-block;
     width: 50%;
     padding-top:46.35%;
@@ -18,8 +24,21 @@
 }
 
 .box_inner_text{
+    display: block !important;
+    font-size: 0.7rem;
+    padding: 0;
+}
+.box_inner_text span{
+    font-size: 0.6rem;
+}
+@media only screen and (max-width:640px) and (min-width:530px) {
+   .box_inner_text{
     font-size: 0.9rem;
     padding: 0;
+    }
+    .box_inner_text span{
+        font-size: 0.8rem;
+    }
 }
 .box_d:hover{
     border: 10px solid transparent;
@@ -44,10 +63,10 @@
     height: 600px;
     padding: 0px;
     background-color: white;
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    top: -30px;
+    top: 50px;
 }
 
 .modal .modal_img_box {
@@ -99,7 +118,7 @@
     color: white;
     border: 0;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 .modal_text_box p:nth-of-type(1) {
@@ -128,4 +147,19 @@
 /*    padding-top: %;*/
     font-size: 0.9rem;
 /*    background-color: aquamarine;*/
+}
+.modal .modal_link_btn:hover {
+    box-shadow: 0 0 5px 5px rgb(93,44,211);
+    font-size: 0.8rem;
+}
+
+.hidden_console button{
+    display: none;
+    position: relative;
+    width: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid silver;
+    color: black;
+    background-color: transparent;
 }
