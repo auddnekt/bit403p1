@@ -17,7 +17,7 @@ header{
 body{ margin:0; padding:5px;}
 
 body,ul,li {margin:0; padding:0;}
-div ul li span{margin:20px; }
+div ul li span{margin:0px; }
 ul,li {list-style:none;}
 
 .slideshow01:after {
@@ -160,20 +160,7 @@ ul,li {list-style:none;}
 
 
 </style>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script>
-$(document).ready(function(){
-    let w=$("body").innerWidth();
-    let h=$(".slideshow01 span").innerHeight();
-    console.log(h);
-    console.log(w);
-    $("#frame").innerWidth(w)
-               .innerHeight(h)
-               .css('border','20px')
-               .css('z-index','2');
 
-});
-</script>
 
 <body>
 <header>
